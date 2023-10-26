@@ -14,4 +14,4 @@
 ## API Model
 
 - OpenAI Models: ChatGPT(GPT-3.5-turbo), GPT-4
-- ERNIE
+- Baidu Inc. : ERNIE
