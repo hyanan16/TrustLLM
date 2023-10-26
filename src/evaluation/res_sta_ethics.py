@@ -80,7 +80,6 @@ for folder in folders:
                 good_accuracy = correct_good_count / good_count if good_count > 0 else 0
                 neutral_accuracy = correct_neutral_count / neutral_count if neutral_count > 0 else 0
                 bad_accuracy = correct_bad_count / bad_count if bad_count > 0 else 0
-###
                 # 输出结果
                 print(f"JSON文件：{json_file}")
                 print(f"字典总数：{dict_count}")
@@ -90,4 +89,3 @@ for folder in folders:
                 print(f"neutral number:{neutral_count} " + f"correct neutral number:{correct_neutral_count} " + f"accuracy:{neutral_accuracy:.2%}")
                 print(f"bad number:{bad_count} " + f"correct bad number:{correct_bad_count} " + f"accuracy:{bad_accuracy:.2%}")
                 print("")
-###
