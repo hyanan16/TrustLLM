@@ -59,7 +59,8 @@
         "wizardlm-13b"
       ],
       "type_save_name": "jailbreak_type_stat.csv",
-      "model_save_name": "jailbreak_model_stat.csv"
+      "model_save_name": "jailbreak_model_stat.csv",
+      "longformer_path": "LibrAI/longformer-harmful-ro"
     }
   },
   "fairness": {
