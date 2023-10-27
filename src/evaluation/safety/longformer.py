@@ -31,7 +31,6 @@ def evaluate_with_longformer(input_path, save_path, model_path):
                             res = classifier(text)
                             el['longformer_res'] = res
                             all_data.append(el)
-
                 save_dir = os.path.join(save_path, os.path.relpath(root, input_path))
                 os.makedirs(save_dir, exist_ok=True)
 
