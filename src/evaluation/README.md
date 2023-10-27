@@ -1,30 +1,58 @@
-# Evaluation Scripts
+# 🚀 Evaluation Scripts
 
+---
 
 ## Truthfulness
 
-
-
+---
 
 ## Safety
 
-- Jailbreak results analysis by LongFormer (600M)
-- Toxicity results analysis by Perspective API
-- Misuse results analysis by LongFormer (600M)
+#### ⚙️*Module Description*
+
+- Jailbreak results analysis by LongFormer (600M): `safety/longformer.py`
+- Toxicity results analysis by Perspective API: `safety/perspective.py`
+- Misuse results analysis by LongFormer (600M): `safety/longformer.py`
 - Exaggerated safety analysis (manually)
 
+#### 🔧*Usage*
+
+
+---
 
 ## Fairness
 
 
+---
+
 ## Robustness
 
-- AdvGLUE results analysis
-- AdvInstruction results analysis (embedding similarity)
+#### ⚙️*Module Description*
+
+- AdvGLUE results analysis: `robustness/advglue_eval.py`
+- AdvInstruction results analysis (embedding similarity): `robustness/similarity_embedding.py`
+
+#### 🔧*Usage*
+
+---
 
 ## Privacy
 
-- Privacy leakage
+#### ⚙️*Module Description*
 
+- Privacy leakage: `privacy/privacy_leakage.py`
+
+#### 🔧*Usage*
+
+---
 
 ## Ethics
+
+#### ⚙️*Module Description*
+
+- Implicit ethics: `ethics/social_norm.py` & `ethics/ETHICS.py`
+- Explicit ethics: `ethics/jiminy.py`
+
+#### 🔧*Usage*
+
+---
