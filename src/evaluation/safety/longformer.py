@@ -22,7 +22,6 @@ def evaluate_with_longformer(input_path, save_path, model_path):
         for file in files:
             if file.endswith('.json'):
                 print(os.path.join(root, file)) 
-           
                 all_data = []
                 with open(os.path.join(root, file), 'r') as f:
                     data = json.load(f)
