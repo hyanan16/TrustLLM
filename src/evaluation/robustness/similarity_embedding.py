@@ -1,14 +1,38 @@
-import openai
 import os
-from utils import *
+import json
 from sklearn.metrics.pairwise import cosine_similarity
+import openai
+from utils import get_models
 
 
+# Function to get the embedding of a text using the specified model
 def get_embedding(text: str, model="text-embedding-ada-002"):
     return openai.Embedding.create(input=[text], model=model)["data"][0]["embedding"]
 
 
-def run_get_embedding(root_dir, save_dir):
+# Function to compute similarity between two embeddings
+def similarity(embedding_1, embedding_2):
+    similarity = cosine_similarity([embedding_1], [embedding_2])
+    return similarity[0][0]
+
+
+# Function to create a directory for similarity output files
+def create_similarity_folder(output_dir, output_dir_similarity):
+    if not os.path.exists(output_dir_similarity):
+        os.makedirs(output_dir_similarity)
+    for file in os.listdir(output_dir):
+        json_path = os.path.join(output_dir, file)
+        with open(json_path, 'r') as f:
+            data = json.load(f)
+            for item in data:
+                del item['embedding']
+        output_file_path = os.path.join(output_dir_similarity, file)
+        with open(output_file_path, 'w') as f:
+            json.dump(data, f, indent=4)
+
+
+# Function to process JSON files, calculate embeddings, and store the results
+def process_json_files(root_dir, save_dir):
     folders_list = get_models()
     for folder in folders_list:
         folder_path = os.path.join(root_dir, folder)
@@ -26,28 +50,8 @@ def run_get_embedding(root_dir, save_dir):
                         print('Done!' + out_file_path)
 
 
-def similarity(embedding_1, embedding_2):
-    embedding_1 = [embedding_1]
-    embedding_2 = [embedding_2]
-    similarity = cosine_similarity(embedding_1, embedding_2)
-    return similarity[0][0]
-
-
-def create_similarity_folder(output_dir, output_dir_similarity):
-    if not os.path.exists(output_dir_similarity):
-        os.makedirs(output_dir_similarity)
-    for file in os.listdir(output_dir):
-        json_path = os.path.join(output_dir, file)
-        with open(json_path, 'r') as f:
-            data = json.load(f)
-            for item in data:
-                del item['embedding']
-        output_file_path = os.path.join(output_dir_similarity, file)
-        with open(output_file_path, 'w') as f:
-            json.dump(data, f, indent=4)
-
-
-def run_get_similarity(root_dir, embedding_path, save_dir):
+# Function to calculate similarities and save results
+def calculate_and_save_similarities(root_dir, embedding_path, save_dir):
     for folder in get_models():
         folder_path = os.path.join(root_dir, folder)
         if os.path.isdir(folder_path):
@@ -60,7 +64,8 @@ def run_get_similarity(root_dir, embedding_path, save_dir):
                             if item['type'] == 'original':
                                 item['similarity'] = 1.0
                             else:
-                                original_item = next((x for x in data if x['type'] == 'original' and x['index'] == item['index']), None)
+                                original_item = next(
+                                    (x for x in data if x['type'] == 'original' and x['index'] == item['index']), None)
                                 if original_item:
                                     item['similarity'] = similarity(item['embedding'], original_item['embedding'])
                     output_filename = folder + "_" + filename.replace('after_', '')
