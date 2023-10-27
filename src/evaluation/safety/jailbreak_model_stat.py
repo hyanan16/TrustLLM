@@ -1,12 +1,7 @@
 import os
 import pandas as pd
 import json
-
-
-def get_models(filename='../../config/evaluation_config.json'):
-    with open(filename, 'r') as f:
-        config = json.load(f)
-    return config['safety']['jailbreak']['models']
+from utils import *
 
 
 def init_dataframe():
@@ -33,12 +28,6 @@ def append_to_dataframe(model_df, model_name, item, subfolder):
             }
             model_df = pd.concat([model_df, pd.DataFrame([data_to_append])], ignore_index=True)
     return model_df
-
-
-def get_attack_types(filename='../../config/evaluation_config.json'):
-    with open(filename, 'r') as f:
-        config = json.load(f)
-    return config['safety']['jailbreak']['types']
 
 
 def get_save_name(filename="../../config/evaluation_config.json"):

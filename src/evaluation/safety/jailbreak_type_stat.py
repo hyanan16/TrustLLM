@@ -1,6 +1,7 @@
 import os
 import json
 import pandas as pd
+from utils import *
 
 
 def read_json_data(json_path):
@@ -66,18 +67,6 @@ def save_to_csv(data, save_path):
     df = pd.DataFrame(data).transpose()
     print(df.to_string(index=False))
     df.to_csv(os.path.join(save_path, get_save_name()), index=False)
-
-
-def get_attack_types(filename='../../config/evaluation_config.json'):
-    with open(filename, 'r') as f:
-        config = json.load(f)
-    return config['safety']['jailbreak']['types']
-
-
-def get_models(filename='../../config/evaluation_config.json'):
-    with open(filename, 'r') as f:
-        config = json.load(f)
-    return config['safety']['jailbreak']['models']
 
 
 def run_jailbreak_type_stat(root_dir, save_path):
