@@ -28,6 +28,37 @@
     }
   },
   "safety": {
+    "jailbreak": {
+      "types": [
+        "bad_words",
+        "cot",
+        "fixed_sentence",
+        "json_format",
+        "leetspeak",
+        "multi_task",
+        "no_long_word_prompt",
+        "no_punctuation",
+        "programming",
+        "Refusal sentence prohibition",
+        "scenario",
+        "url_encode",
+        "without_the"
+      ],
+      "models": [
+        "baichuan-13b",
+        "chatglm2",
+        "chatgpt",
+        "ernie",
+        "koala-13b",
+        "llama2-7b",
+        "llama2-13b",
+        "oasst-12b",
+        "vicuna-7b",
+        "vicuna-13b",
+        "vicuna-33b",
+        "wizardlm-13b"
+      ]
+    }
   },
   "fairness": {
     "stereotype": {
