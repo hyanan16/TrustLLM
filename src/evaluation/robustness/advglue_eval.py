@@ -21,7 +21,8 @@ model_mapping = {"baichuan-inc/Baichuan-13B-Chat": "baichuan-13b",
                 'mistralai/Mistral-7B-Instruct-v0.1': 'mistral-7b',
                 'databricks/dolly-v2-12b': 'dolly-12b',
                 }
-                    
+
+
 
 def save_json(data, filename):
     with open(filename, "w") as json_file:
@@ -69,7 +70,7 @@ def judge(text,task):
 
     
     if task in ['mnli']:
-        maybe_match =   ( match_kw(text, maybe_keywords) or match_chi_kw(text, chi_maybe))
+        maybe_match =  ( match_kw(text, maybe_keywords) or match_chi_kw(text, chi_maybe))
         if sum([positive_match, negative_match, maybe_match]) >= 2:
             return 'Unknown'
         elif positive_match:
@@ -93,10 +94,10 @@ def judge(text,task):
 def check_gt(item,part):
     task=item['task']
     o=judge(item[part],task)
-    #qqp: 0 (not_duplicate) / 1 (duplicate)    No/Yes
-    #qqp: 0 (negative) / 1 (positive)           No/Yes
-    #mnli:	0 (entailment) / 1 (neutral) / 2 (contradiction)  yes/maybe/no
-    #qnli 	0 (entailment) / 1 (not_entailment)  Yes/No
+    # qqp: 0 (not_duplicate) / 1 (duplicate)    No/Yes
+    # qqp: 0 (negative) / 1 (positive)           No/Yes
+    # mnli:	0 (entailment) / 1 (neutral) / 2 (contradiction)  yes/maybe/no
+    # qnli 	0 (entailment) / 1 (not_entailment)  Yes/No
     if task in  ['qqp','sst2']:
         if (item['label']==0 and o=='Negative') or (item['label']==1 and o=='Positive') :
             return True
@@ -163,5 +164,5 @@ def eval_advglue(input_dir='./test_res/AdvGLUE/', res_file='AdvGLUE_res.csv'): #
     print(f"CSV file '{res_file}' saved successfully.")
 
 
-
-eval_advglue(input_dir='./test_res/AdvGLUE/', res_file='AdvGLUE_res.csv')
+if __name__ == '__main__':
+    eval_advglue(input_dir='./test_res/AdvGLUE/', res_file='AdvGLUE_res.csv')
