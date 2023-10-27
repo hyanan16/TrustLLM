@@ -61,7 +61,8 @@
         "llama2-70b"
       ],
       "type_save_name": "jailbreak_type_stat.csv",
-      "model_save_name": "jailbreak_model_stat.csv",
+      "model_save_name": "model_success_rates.csv",
+      "case_name": "jailbreak_case.csv",
       "longformer_path": "LibrAI/longformer-harmful-ro"
     }
   },
