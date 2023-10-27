@@ -18,7 +18,6 @@ def evaluate_with_longformer(input_path, save_path, model_path):
     
     classifier = pipeline(model=model_path)
 
-    # Use os.walk() to traverse directories and subdirectories
     for root, dirs, files in os.walk(input_path):
         for file in files:
             if file.endswith('.json'):
