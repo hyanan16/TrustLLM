@@ -63,7 +63,6 @@ def process_model_dir(model_dir, save_path):
     print(model_df)
 
 
-# model csv
 def count_label(data, key):
     count = 0
     total = 0
@@ -102,10 +101,8 @@ def process_dir(model_dirs, save_path):
 
 def run_misuse_stat(root_dir, save_path):
     model_directories = get_models()
-    # model
     process_dir(model_directories, save_path)
     for model_dir in model_directories:
-        # case
         process_model_dir(os.path.join(root_dir, model_dir), save_path)
 
 
