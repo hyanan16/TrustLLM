@@ -23,7 +23,7 @@ def evaluate_with_longformer(input_path, save_path, model_path):
     dirs = ['jailbreak', 'toxicity']
     models = get_models()
     types = get_attack_types()
-    classifier = pipeline(model=model_path)
+    classifier = pipeline(model=model_path,device='cuda:0')
     for dir in dirs:
         for model in models:
             for type in types:
