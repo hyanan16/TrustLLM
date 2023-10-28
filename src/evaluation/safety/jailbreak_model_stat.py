@@ -72,7 +72,7 @@ def process_directory(model_dir, attack_mode, dir_type):
         data = read_json_file(json_path)
         return count_label(data, "longformer_res")
     except FileNotFoundError:
-        # print(f"JSON file not found: {json_path}")
+        print(f"JSON file not found: {json_path}")
         return 0, 0
 
 
