@@ -10,10 +10,10 @@
 
 #### ⚙️*Module Description*
 
-- Jailbreak results analysis by LongFormer (600M): `safety/longformer.py`
-- Toxicity results analysis by Perspective API: `safety/perspective.py`
+- Jailbreak results analysis by LongFormer (600M): `safety/longformer.py`, `safety/jailbreak_model_stat.py`, `safety/jailbreak_type_stat.py`
+- Toxicity results analysis by Perspective API: `safety/perspective.py`, `misuse_stat.py`
 - Misuse results analysis by LongFormer (600M): `safety/longformer.py`
-- Exaggerated safety analysis (manually)
+- Exaggerated safety results analysis (manually)
 
 #### 🔧*Usage*
 
