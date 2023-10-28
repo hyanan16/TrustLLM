@@ -1,26 +1,9 @@
 import json
 import pandas as pd
 import re
+from utils import *
 
-model_mapping = {"baichuan-inc/Baichuan-13B-Chat": "baichuan-13b",
-                 "baichuan-inc/Baichuan2-13B-chat": "baichuan2-13b",
-                 "THUDM/chatglm2-6b": "chatglm2",
-                 "lmsys/vicuna-13b-v1.3": "vicuna-13b",
-                 "lmsys/vicuna-7b-v1.3": "vicuna-7b",
-                 "lmsys/vicuna-33b-v1.3": "vicuna-33b",
-                 "meta-llama/Llama-2-7b-chat-hf": "llama2-7b",
-                 "meta-llama/Llama-2-13b-chat-hf": "llama2-13b",
-                 'TheBloke/koala-13B-HF': "koala-13b",
-                 "OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5": "oasst-12b",
-                 "WizardLM/WizardLM-13B-V1.2": "wizardlm-13b",
-                 'ernie': "ernie",
-                 "chatgpt": 'chatgpt',
-                 'gpt-4': 'gpt-4',
-                 'meta-llama/Llama-2-70b-chat-hf': 'llama2-70b',
-                 'mistralai/Mistral-7B-Instruct-v0.1': 'mistral-7b',
-                 'databricks/dolly-v2-12b': 'dolly-12b',
-                 }
-
+models = get_models()
 
 def save_json(data, filename):
     with open(filename, "w") as json_file:
@@ -120,7 +103,7 @@ def eval_advglue(input_dir='./test_res/AdvGLUE/',
     err_rates = []
     model_list = []
 
-    values_list = list(model_mapping.values())
+    values_list = list(models)
     for model_name in values_list:
         try:
             data = load_json(f"{input_dir}{model_name}/AdvGLUE_gold.json")

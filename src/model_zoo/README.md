@@ -19,3 +19,8 @@
 
 
 ## 🤖 Download LLMs
+
+
+### 🔧*Usage*
+
+`python local_model\model_download.py huggingface_model_repo`
