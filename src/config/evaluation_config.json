@@ -64,6 +64,10 @@
       "model_save_name": "model_success_rates.csv",
       "case_name": "jailbreak_case.csv",
       "longformer_path": "LibrAI/longformer-harmful-ro"
+    },
+    "misuse": {
+      "model_save_name": "model_misuse_rate.csv",
+      "case_name": "misuse_case.csv"
     }
   },
   "fairness": {

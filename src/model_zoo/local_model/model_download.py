@@ -6,10 +6,11 @@ import logging
 # Set up logging
 logging.basicConfig(filename='download_log.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
+
 def download_with_retry(repo_id, max_retries=20, retry_interval=1):
     for attempt in range(max_retries):
         try:
-            x = snapshot_download(repo_id=repo_id,local_files_only=False,resume_download=True)
+            x = snapshot_download(repo_id=repo_id, local_files_only=False, resume_download=True)
             message = f"Download successful on attempt {attempt + 1}: {x}"
             logging.info(message)
             print(message)
@@ -20,8 +21,9 @@ def download_with_retry(repo_id, max_retries=20, retry_interval=1):
             print(message)
             print("Retrying in {} seconds...".format(retry_interval))
             time.sleep(retry_interval)
-    
+
     return None  # Download failed after all retries
+
 
 def main():
     parser = argparse.ArgumentParser(description="Download a model from Hugging Face Hub.")
@@ -48,6 +50,7 @@ def main():
     message = "Download process completed."
     logging.info(message)
     print(message)
+
 
 if __name__ == "__main__":
     main()
