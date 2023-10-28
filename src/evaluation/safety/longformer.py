@@ -7,8 +7,13 @@ from utils import *
 # Usage example:
 # evaluate_with_longformer('./TrustLLM/Safety/Misuse/test_res', './TrustLLM/Safety/Misuse/eval_res', 'LibrAI/longformer-harmful-ro')
 
+def get_longformer_model_path(filename='../../config/evaluation_config.json'):
+    with open(filename, 'r') as f:
+        data = json.load(f)
+    return data['safety']['longformer_path']
 
-def evaluate_with_longformer(input_path, save_path, model_path):
+
+def evaluate_with_longformer(input_path, save_path, model_path=get_longformer_model_path()):
     """
     Evaluate data with the Longformer model.
 

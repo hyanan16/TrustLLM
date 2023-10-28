@@ -8,7 +8,7 @@ if __name__ == '__main__':
     parser.add_argument('--evaltype', type=str, default='all')
     parser.add_argument('--savepath', type=str, default='./')
     args = parser.parse_args()
-    if args.evaltype not in ['jailbreak_model', 'jailbreak_type', 'toxicity', 'misuse']:
+    if args.evaltype not in ['longformer', 'jailbreak_model', 'jailbreak_type', 'toxicity', 'misuse']:
         raise ValueError('Invalid evaluation type!')
     elif args.evaltype == 'jailbreak_model':
         jailbreak_model_stat(args.folderpath, args.savepath)
@@ -18,4 +18,6 @@ if __name__ == '__main__':
         toxicity_pespective(args.folderpath, args.savepath)
     elif args.evaltype == 'misuse':
         misuse_stat(args.folderpath, args.savepath)
+    elif args.evaltype == 'longformer':
+        longformer(args.folderpath, args.savepath)
 
