@@ -2,6 +2,21 @@
  * Your custom CSS file
  *************************************************************************/
 
+:root {
+  --nav-font: Arial, Helvetica, sans-serif;
+  --nav-height: 6vh;
+  --UCLA-gold: #FFD100;
+  --UCLA-blue: #2774AE;
+  --UCLA-darkblue: #003B5C;
+  --body-font: #212529;
+  --heading: #1859c2;
+  --nav-darkblue: #05004a;
+  --nav-color: #212529;
+  --nav-color-light: #353c42;
+  --nav-darkblue: #05004a;
+}
+
+
 .custom-dropdown {
   width: 240px;
 }
@@ -31,4 +46,63 @@
 #share-url-copy-prompt {
   display: none;
   color: #007bff;
+}
+
+
+
+#title-wrapper {   
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#title {
+  margin-top: var(--nav-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(50vh - var(--nav-height));
+  width: 100vw;
+  left: 10vw;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(180deg, var(--nav-darkblue), var(--UCLA-blue));
+
+
+}
+
+#title-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#title-text-wrapper p {
+  margin: 5px 0; /* Adjust the margin value as needed */
+}
+
+#title-text {
+  font-size: 50px;
+}
+#title-icon {
+  width: 10.5em;
+  margin: 40px;
+}
+
+
+.bibtax {
+  /* font-family: Arial; */
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 }

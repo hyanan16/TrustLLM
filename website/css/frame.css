@@ -94,7 +94,8 @@ hr {
   z-index: 2;
   position: relative;
   width: 100%;
-  background-color: #333333;
+  background-color: #404c67;
+;
   min-width: 300px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
