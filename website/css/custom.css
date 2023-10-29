@@ -106,3 +106,66 @@
   word-wrap: break-word;
   white-space: pre-wrap;
 }
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  max-width: 1800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;          /* 设置为flex布局 */
+  flex-wrap: wrap;        /* 允许多行排布，如果容器宽度不够的话 */
+  justify-content: space-between; /* 元素之间的空间均匀分布 */
+  flex-direction: row;
+}
+
+
+/* h1 {
+  text-align: center;
+  margin-bottom: 50px;
+} */
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.feature {
+  flex: 0 0 calc(27% - 10px);
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.feature img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+.feature h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feature p {
+  text-align: center;
+  font-size: 14px;
+}
