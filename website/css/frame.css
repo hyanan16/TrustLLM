@@ -86,7 +86,7 @@ li ul {
 hr {
   border: 0;
   height: 1px;
-  background: rgb(220, 220, 220);
+  background: rgb(255, 255, 255);
   margin: 0 0 10px 0;
 }
 
@@ -113,7 +113,7 @@ hr {
 }
 
 .menu .menu-table {
-  padding: 0px 10px;
+  padding: 0px 20px;
   width: 100%;
   margin: 0;
 }
@@ -166,7 +166,7 @@ hr {
 
 .menu .menu-items>a,
 .menu .menu-items>div {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.808);
   text-decoration: none;
   font-weight: 400;
   font-size: 18px;
@@ -286,9 +286,12 @@ hr {
 }
 
 .content-table {
+
   padding: 40px 10px;
   width: 100%;
   margin: 0;
+
+
 }
 
 .banner {
