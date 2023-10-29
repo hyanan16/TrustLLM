@@ -21,6 +21,7 @@
 ## 🤖 Download LLMs
 
 
-### 🔧*Usage*
+```shell
+python local_model/model_download.py [huggingface_model_repo]
+```
 
-`python local_model\model_download.py huggingface_model_repo`
