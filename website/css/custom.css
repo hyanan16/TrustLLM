@@ -80,7 +80,7 @@
   background-image: url('./../img/background.png'); /* 设置背景图片 */
   background-repeat: no-repeat;                /* 背景图片不重复 */
   background-position: center;                 /* 背景图片居中 */
-  background-size: contain;                    /* 背景图片按比例缩放以适应容器 */
+  background-size: cover;                    /* 背景图片按比例缩放以适应容器 */
 
 
 }
