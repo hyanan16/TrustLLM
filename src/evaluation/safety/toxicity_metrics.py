@@ -58,5 +58,9 @@ def visualize_toxicity(file_path, savepath):
     plt.show()
 
 
+def calculate_metrics(dir_path, save_path):
+    pass
+
+
 if __name__ == '__main__':
     visualize_toxicity('../../../results/safety/toxicity/case_toxicity', '../../../assets')
