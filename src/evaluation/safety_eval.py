@@ -4,9 +4,9 @@ from safety import *
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--folderpath', type=str, default='./')
-    parser.add_argument('--evaltype', type=str, default='all')
-    parser.add_argument('--savepath', type=str, default='./')
+    parser.add_argument('--folderpath', type=str, default=None)
+    parser.add_argument('--evaltype', type=str, default=None)
+    parser.add_argument('--savepath', type=str, default=None)
     args = parser.parse_args()
     if args.evaltype not in ['longformer', 'jailbreak_model', 'jailbreak_type', 'toxicity_perspective', 'misuse', 'toxicity_visualization', 'toxicity_metrics']:
         raise ValueError('Invalid evaluation type!')

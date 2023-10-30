@@ -34,6 +34,19 @@
 
 #### 🔧*Usage*
 
+```shell
+python robustness.py \
+--folderpath <path_to_folder> \
+--evaltype <evaluation_type> \
+--savepath <path_to_save_results> \
+[--embeddingpath <path_to_embedding>]
+```
+
+`evaltype`: `['advglue', 'advinstruction_res', 'advinstruction_sim']`  
+`advglue`: generate the results of AdvGlue dataset.  
+`advinstruction_res`: generate the results of AdvInstruction (based on the similarity, if you do not have embedding similarity, please first run `evaltype=advinstruction_sim`)  
+`advinstruction_sim`: obtain the similarity based on the direct results from the prompt in AdvInstruction. (`embeddingpath` is necessary in this  `evaltype`)
+
 ---
 
 ## Privacy
