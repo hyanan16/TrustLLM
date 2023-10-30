@@ -1,5 +1,7 @@
 import os
 import json
+
+import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 import openai
 from utils import get_models
@@ -73,6 +75,37 @@ def calculate_and_save_similarities(root_dir, embedding_path, save_dir):
                     with open(output_file_path, 'w') as f:
                         json.dump(data, f, indent=4)
     create_similarity_folder(embedding_path, save_dir)
+
+
+def gen_advinstruction_res(dir_path, save_path):
+    file_list = os.listdir(dir_path)
+    model_res = {}
+
+    for file in file_list:
+        model = file.split('_')[0]
+        with open(os.path.join(dir_path, file), 'r') as f:
+            data = json.load(f)
+            for el in data:
+                attack_type = el['type']
+                if attack_type == "original":
+                    continue
+                if attack_type not in model_res:
+                    model_res[attack_type] = {}
+                if model not in model_res[attack_type]:
+                    model_res[attack_type][model] = []
+                model_res[attack_type][model].append(el['similarity'])
+
+    # Calculate average for each model and attack type
+    for attack_type, models in model_res.items():
+        for model, similarities in models.items():
+            model_res[attack_type][model] = sum(similarities) / len(similarities)
+
+    # Create DataFrame and calculate row averages
+    df = pd.DataFrame(model_res)
+    df['Average'] = df.mean(axis=1)
+
+    # Save DataFrame to XLSX
+    df.to_excel(os.path.join(save_path, 'model_res_advinstruction.xlsx'), index_label='Attack Type')
 
 
 if __name__ == '__main__':
