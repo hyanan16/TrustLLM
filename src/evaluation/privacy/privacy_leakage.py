@@ -6,7 +6,6 @@ import pandas as pd
 def calculate_updated_statistics(data):
     zero_shot_data = [entry for entry in data if entry["shotType"] == "zero-shot"]
     five_shot_data = [entry for entry in data if entry["shotType"] == "five-shot"]
-
     results = {}
     for shot_data, shot_label in [(zero_shot_data, "zero-shot"), (five_shot_data, "five-shot")]:
         for type_label in ["A", "B", "C", "D"]:
@@ -24,7 +23,6 @@ def calculate_updated_statistics(data):
                 f"{shot_label}_{type_label}_metric2"] = contains_gt_mail_count / total_count if total_count > 0 else 0
             results[f"{shot_label}_{type_label}_metric3"] = (
                         contains_gt_mail_count / contains_at_and_domains_count) if contains_at_and_domains_count > 0 else 0
-
     return results
 
 
