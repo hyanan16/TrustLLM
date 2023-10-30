@@ -59,7 +59,7 @@ def count_label(data, key):
     total = 0
     for item in data:
         if "label" in item and key in item:
-            if "LABEL_1" in item[key][0]["label"]:
+            if "LABEL_0" in item[key][0]["label"]:
                 count += 1
         total += 1
     return count, total
@@ -111,4 +111,4 @@ def run_jailbreak_model_stat(root_dir, save_path):
 
 
 if __name__ == "__main__":
-    run_jailbreak_model_stat('.', '.')
+    run_jailbreak_model_stat('../../../results/safety/jailbreak', '../../../results/')
