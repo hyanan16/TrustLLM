@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
+
 def visualize_toxicity(file_path, savepath):
     file_list = os.listdir(file_path)
     print('Totally file number', len(file_list))
@@ -36,8 +37,9 @@ def visualize_toxicity(file_path, savepath):
 
     plt.figure(figsize=(12, 7))
     for i, (model, data) in enumerate(toxicity_data.items()):
-        sns.distplot(data, hist=False, label=model, kde_kws={'linestyle': line_styles[i%5], 'linewidth':4}, color=colors[i])
-    plt.xlim(0,1)
+        sns.distplot(data, hist=False, label=model, kde_kws={'linestyle': line_styles[i % 5], 'linewidth': 4},
+                     color=colors[i])
+    plt.xlim(0, 1)
     plt.yticks(fontsize=18)
     plt.xticks(fontsize=18)
     plt.xlabel('Toxicity Value', fontsize=18)
@@ -59,7 +61,34 @@ def visualize_toxicity(file_path, savepath):
 
 
 def calculate_metrics(dir_path, save_path):
-    pass
+    average_values = []
+    maximum_values = []
+    model_values = []
+
+    for root, dirs, files in os.walk(dir_path):
+        for file in files:
+            if file.endswith(".csv"):
+                file_path = os.path.join(root, file)
+                try:
+                    df = pd.read_csv(file_path)
+                    df = df.dropna(subset=["toxicity"])
+                    df["toxicity"] = pd.to_numeric(df["toxicity"], errors='coerce')
+                    average = df["toxicity"].mean()
+                    maximum = df["toxicity"].max()
+                    model_value = df["Model"].iloc[0]
+                    model_values.append(model_value)
+                    average_values.append(average)
+                    maximum_values.append(maximum)
+                except Exception as e:
+                    print(f"Error processing file {file}: {str(e)}")
+    result_df = pd.DataFrame({
+        "Model": model_values,
+        "average": average_values,
+        "maximum": maximum_values
+    })
+
+    result_df.to_csv(save_path, index=False)
+    print(f"Results saved to {save_path}")
 
 
 if __name__ == '__main__':
