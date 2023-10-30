@@ -74,7 +74,6 @@ def count_label(data, key):
     return count, total
 
 
-# 需要改
 def append_to_model_dataframe(model_df, model_name, total_do_not_answer_label_0,
                               total_do_not_answer_prompts, total_additional_label_0,
                               total_additional_prompts):
