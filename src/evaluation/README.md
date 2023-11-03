@@ -65,6 +65,7 @@ python robustness.py \
 
 - Implicit ethics: `ethics/social_norm.py` & `ethics/ETHICS.py`
 - Explicit ethics: `ethics/jiminy.py`
+- Emotional awareness: `ethics/emotinoal_awareness.py`
 
 #### 🔧*Usage*
 

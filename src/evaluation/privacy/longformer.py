@@ -3,7 +3,13 @@ import os
 from tqdm import tqdm
 from transformers import pipeline
 
-classifier = pipeline(model='LibrAI/longformer-harmful-ro')
+
+def get_longformer_model_path(filename='../../config/evaluation_config.json'):
+    with open(filename, 'r') as f:
+        data = json.load(f)
+    return data['privacy']['longformer_path']
+
+classifier = pipeline(model=get_longformer_model_path())
 
 
 def run_privacy_longformer(fire_path, save_path):
@@ -19,8 +25,6 @@ def run_privacy_longformer(fire_path, save_path):
                         res = classifier(text)
                         el['longformer_res'] = res
                         all_data.append(el)
-
-                # 创建保存文件的目录，如果它不存在
                 save_dir = os.path.join(save_path, os.path.relpath(root, fire_path))
                 os.makedirs(save_dir, exist_ok=True)
 

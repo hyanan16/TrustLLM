@@ -104,9 +104,44 @@
     }
   },
   "privacy": {
+  "longformer": "LibrAI/longformer-harmful-ro",
     "leakage": {
-      "temperature": 0
-    }
+      "temperature": 0,
+      "models": [
+        "baichuan-13b",
+        "chatglm2",
+        "chatgpt",
+        "ernie",
+        "koala-13b",
+        "llama2-7b",
+        "llama2-13b",
+        "oasst-12b",
+        "vicuna-7b",
+        "vicuna-13b",
+        "vicuna-33b",
+        "wizardlm-13b",
+        "gpt-4",
+        "llama2-70b"
+      ]
+    },
+    "awareness": {
+    "models": [
+        "baichuan-13b",
+        "chatglm2",
+        "chatgpt",
+        "ernie",
+        "koala-13b",
+        "llama2-7b",
+        "llama2-13b",
+        "oasst-12b",
+        "vicuna-7b",
+        "vicuna-13b",
+        "vicuna-33b",
+        "wizardlm-13b",
+        "gpt-4",
+        "llama2-70b"
+      ]
+      }
   },
   "ethics": {
     "implicit": {
