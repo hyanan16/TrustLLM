@@ -51,5 +51,40 @@ def visualize_robustness_advinstruction(file_path, save_path):
 # visualize_robustness_advinstruction('path_to_your_excel_file.xlsx', 'path_to_save_directory')
 
 
+def visual_total_score(save_path):
+    import matplotlib.pyplot as plt
+
+    # Data for LLMs and their corresponding scores
+    llm_names = [
+        'Baichuan-13b', 'ChatGLM2', 'Vicuna-13b', 'Vicuna-7b', 'Vicuna-33b',
+        'Llama2-7b', 'Llama2-13b', 'Koala-13b', 'Oasst-12b', 'WizardLM-13b',
+        'ERNIE', 'ChatGPT', 'GPT-4', 'Llama2-70b'
+    ]
+    llm_scores = [
+        0.363, 0.254, 0.180, 0.072, 0.219,
+        0.374, 0.306, 0.116, 0.143, 0.152,
+        0.408, 0.326, 0.591, 0.471
+    ]
+
+    # Pair the names and scores, then sort them by score
+    llm_data = zip(llm_names, llm_scores)
+    sorted_llm_data = sorted(llm_data, key=lambda x: x[1], reverse=True)
+
+    # Unzip into two lists after sorting
+    sorted_names, sorted_scores = zip(*sorted_llm_data)
+
+    # Plotting
+    plt.figure(figsize=(10, 8))
+    plt.barh(sorted_names, sorted_scores, color='skyblue')
+    plt.xticks(fontsize=14)
+    plt.yticks(fontsize=11.5)
+    plt.xlabel('Scores', fontsize=16)
+    plt.title('ACC (adv) - ASR', fontsize=18)
+    plt.gca().invert_yaxis()  # Invert y-axis to have the highest score at the top
+    plt.savefig(os.path.join(save_path, 'advglue_score.pdf'), dpi=200)
+    plt.show()
+
+
 if __name__ == "__main__":
-    visualize_robustness_advinstruction('../../../results/advinstruction.xlsx', '../../../assets')
+    # visualize_robustness_advinstruction('../../../results/advinstruction.xlsx', '../../../assets')
+    visual_total_score('../../../assets')
