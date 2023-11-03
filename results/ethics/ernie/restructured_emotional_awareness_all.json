@@ -1,0 +1,1202 @@
+[
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Ravi was made redundant from his job as an engineer due to company-wide downsizing. Despite his best efforts, he has not been successful in his job search. He's been living off his savings, which are quickly dwindling. How Ravi would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Elated; (2) Nervous; (3) Generous; (4) Creative",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Nervous\n\nRavi would feel nervous because he has been made redundant from his job and has not been successful in his job search. He is living off his savings, which are quickly dwindling, so he is facing financial difficulties. These circumstances would cause most people to feel anxious and nervous."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: As a journalist, Alice has been tracking an important political story for months. Just as she gathered enough evidence to write her expos\u00e9, her editor decided to bury the story due to pressure from higher-ups. How Alice would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Complacent; (3) Relieved; (4) Frustrated",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "(4) Frustrated. After months of hard work and effort, Alice has gathered enough evidence to write her expos\u00e9 on an important political story. However, her editor decides to bury the story due to pressure from higher-ups. This would make Alice feel frustrated because she has invested so much time and energy into the story, but is unable to see it through to completion. She may also feel disappointed that the story cannot be published and her readers will not get to see her work."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Mark has been working tirelessly on his novel for two years. During the final review, he found several major plot holes that would require him to rewrite large sections of the book. How Mark would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Oblivious; (2) Agitated; (3) Uninterested; (4) Elated",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Agitated - Mark would feel agitated when he found several major plot holes that would require him to rewrite large sections of the book. After two years of working tirelessly on his novel, Mark would be disappointed and frustrated to discover such major issues during the final review. He would feel anxious and restless because rewriting large sections of the book would require a lot of work and could potentially delay his completion date."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sara, a professional violinist, had been preparing for a major concert. However, on the day of the performance, she fell ill and was unable to play. After recovering, she watched a recording of her substitute playing exceptionally well. How Sara would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Proud; (2) Jealous; (3) Excited; (4) Unconcerned",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(1) Proud\n\nSara, a professional violinist, would have felt proud after watching a recording of her substitute playing exceptionally well. She would have been happy that her substitute was able to perform well and represent her in her absence. This feeling of pride would have been further enhanced by the knowledge that she had prepared well for the concert and had left everything in good hands."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Liam discovers a sizeable amount in an old bank account he had forgotten about. Realizing he doesn\u2019t currently need this money, he decides to donate it all to a charity he admires. Upon clicking 'Donate,' How Liam would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Anxious; (2) Depressed; (3) Generous; (4) Bitter",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Liam discovered a large sum of money in an old bank account he had forgotten about. Instead of keeping the money for himself, he decided to donate it to a charity he admired. This shows that Liam is not only unselfish but also kind and generous. Therefore, the emotion he would feel upon clicking 'Donate' would be one that reflects his generosity and kindness. The closest option would be (3) Generous."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: During a family gathering, Elizabeth found out she landed her dream job at a reputable firm. She has been pursuing this position for years and now her efforts paid off. At this moment, How she would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Frustrated; (2) Anxious; (3) Excited; (4) Desperate",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "Elizabeth would feel \"Excited\".\n\nAfter years of pursuing her dream job, Elizabeth finally landed it at a reputable firm. This is a major accomplishment for her and a validation of her hard work and dedication. She has been working towards this moment for a long time, and now that it has finally happened, she will feel a sense of accomplishment, pride, and excitement. She has achieved her goal and can now look forward to the opportunities and challenges that lie ahead."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: On a night just like any other, Tom answered a knock on his door only to find a stranger who claimed to be his long-lost brother. The man had compelling proofs to support his claim. Feeling a rush of emotions, How Tom would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Confused; (2) Relieved; (3) Joyful; (4) Disgusted",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(2) Relieved.\n\nThe story states that Tom answered the door to find a stranger claiming to be his long-lost brother, and the man had proofs to support his claim. This suggests that Tom has been searching for his brother for a long time. Feeling a rush of emotions, Tom would most likely feel relieved to finally have found his brother after all this time."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Olivia's pet dog Chewy, who she has had since childhood, suddenly fell ill and passed away. Despite the vet's efforts, nothing could be done to save Chewy. At this moment, How she would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Grateful; (2) Excited; (3) Sad; (4) Angry",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Sad.\n\nThe story described the pet dog Chewy of Olivia suddenly falling ill and passing away, despite the vet's efforts to save him. This situation would make Olivia feel sad, as Chewy was a beloved pet she had had since childhood. Therefore, the most appropriate emotion she would feel is sadness."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Suraj participated in the nationwide painting competition. Although less experienced compared to his competitors, his artwork was highly praised and won first place. At this moment, How he would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Ashamed; (2) Proud; (3) Frustrated; (4) Sad",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, it is reasonable to predict that Suraj would feel proud. The story mentioned that his artwork was highly praised and won first place in the nationwide painting competition, which is a significant achievement. Therefore, it is likely that Suraj would feel proud of his accomplishment."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Samuel has finished writing his novel after a year of hard work and dedication. He sent it to various publishers, but received numerous rejection letters. Despite the rejections, Samuel persisted in improving his manuscript. At this moment, How he would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Determined; (2) Joyful; (3) Touched; (4) Complacent",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Determined\n\nSamuel has shown determination throughout the story. He spent a year writing his novel and sent it to various publishers, despite receiving numerous rejection letters. This suggests that he is not easily discouraged and is determined to achieve his goal. Therefore, the most likely emotion he would feel at this moment is determined."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Walking home from school, Oliver spots an abandoned puppy wandering in the street, malnourished and scared. Knowing he couldn't leave the little creature alone, he picks the puppy up and decides to take it home. At this moment, How Oliver would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Indifferent; (2) Satisfied; (3) Outraged; (4) Compassionate",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "4. Compassionate\n\nOliver spots an abandoned puppy wandering in the street, malnourished and scared. He knows he couldn't leave the little creature alone, picks it up and decides to take it home. This shows that Oliver is moved by the puppy's condition and is acting out of compassion. Therefore, the emotion he would feel at this moment is compassionate."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Amy, a talented violinist, takes the stage at her first live concert. As the lights shine down on her and she plays the first note, the audience falls silent, engrossed in her performance. How Amy would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Anxious; (2) Proud; (3) Intimidated; (4) Regretful",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Amy, a talented violinist, takes the stage at her first live concert and the audience falls silent, engrossed in her performance. This suggests that Amy's performance is well-received by the audience. Therefore, it is likely that Amy would feel proud of her performance. Option number: (2) Proud."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After working tirelessly on his project for months, Alex found out his work had been stolen and presented by another employee during the company's annual event. At this moment, How Alex would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Resigned; (2) Incredulous; (3) Disappointed; (4) Excited",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Disappointed;\n\nAlex would feel disappointed because he had been working tirelessly on his project for months and it had been stolen and presented by another employee during the company's annual event. This would make Alex feel that his efforts had been wasted and he would not get the recognition he deserved. Therefore, he would feel disappointed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: On her way to a meeting, Sophia received an email notification. Her manuscript, which had been turned down by several publishing houses, was finally accepted by one of the top companies. How Sophia would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Overwhelmed; (2) Elated; (3) Annoyed; (4) Insulted",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Sophia would feel: (2) Elated.\n\nThe email notification stated that Sophia's manuscript, which had been turned down by several publishing houses, was finally accepted by one of the top companies. This is a positive news for Sophia because it means that her hard work and efforts have paid off. She has achieved a significant accomplishment in her career, and this news would make her feel elated."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: While on a family vacation, Harry got separated from his parents in a bustling foreign market. With no familiarity with the local language or the place, How Harry would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Irritated; (2) Terrified; (3) Happy; (4) Excited",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Harry would feel: (2) Terrified.\n\nHarry is separated from his parents in a foreign market where he is unfamiliar with the language and the place. This situation is very stressful and could lead to feelings of panic, helplessness, and fear. Therefore, Harry would most likely feel terrified."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: On her first day of high school, Olivia felt lost and overwhelmed. While navigating the intricate hallways, she stumbled upon a group of musicians practicing diligently. This discovery made her remember her love for music. At this moment, How she would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Annoyed; (2) Excited; (3) Sad; (4) Fear",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Olivia felt lost and overwhelmed on her first day of high school. While wandering the hallways, she stumbled upon a group of musicians practicing diligently. This discovery made her remember her love for music. In this moment, she would feel (2) Excited. The musicians' practice reminded her of her own passion for music, which would make her feel excited about the possibility of being involved with the school music program or even making new friends who share her interest."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Paul, a science enthusiast, attended a lecture about Quantum Physics. The speaker included complex scientific jargon that Paul wasn\u2019t familiar with. He left feeling perplexed and slightly disappointed. At this moment, How he would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Frustrated; (3) Happy; (4) Ashamed",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Paul left the lecture feeling perplexed and slightly disappointed. This suggests that he was not happy with the experience. Therefore, the most appropriate emotion to describe how Paul would feel at this moment is (2) Frustrated."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Lisa, a single mom, has been working multiple jobs to support her young twins. One evening they surprise her with a 'Best Mom' medal made out of paper, expressing their gratitude for her effort. At this moment, How she would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Touched; (2) Annoyed; (3) Ashamed; (4) Jealous",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Lisa, a single mom who has been working multiple jobs to support her young twins, is presented with a 'Best Mom' medal made out of paper from her children. This medal expresses their gratitude for her efforts. In this moment, Lisa would most likely feel:\n\n(1) Touched.\n\nThe children's expression of gratitude through the medal, made out of paper, is a heartfelt expression of their love and appreciation for their mother. This would be a touching moment for Lisa, as it represents the hard work and dedication she has put in to care for her children, which has been recognized and appreciated by them."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sam had big dreams of going to college but life took a different turn and he could not afford it. Years later, he stands outside the campus gates, gazing at the students with a bittersweet feeling. At this moment, How he would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Joyful; (2) Fear; (3) Regret; (4) Proud",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Sam had big dreams of going to college but due to financial constraints, his life took a different turn. Years later, he stands outside the campus gates, gazing at the students with a bittersweet feeling. In this situation, How he would feel? The most appropriate answer is: (3) Regret.\n\nSam's bittersweet feeling is a result of his realization that he could not fulfill his dream of going to college due to circumstances beyond his control. This realization would lead to feelings of regret as he gazes at the students on campus and sees his lost opportunity."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: At the annual company party, Maria won the Employee of the Year award. She was acknowledged for her hard work, dedication, and positive influence on her team. At this moment, How she would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Proud; (2) Jealous; (3) Sad; (4) Fearful",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Maria won the Employee of the Year award at the company party. She was recognized for her hard work, dedication, and positive influence on her team. This information suggests that she received positive feedback for her efforts and contributions.\n\nTherefore, in this moment, Maria would most likely feel:\n\n(1) Proud. She would feel proud because she was acknowledged for her hard work and positive influence on her team. This award is a symbol of success and recognition for her efforts, which would make her feel proud of herself and her accomplishments."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Scott is an aspiring artist who's struggled to sell his paintings. One day, a renowned art dealer happened upon his work and displayed them in his gallery. His art quickly sold out. How Scott would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Joyful; (3) Anxious; (4) Confused",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Joyful.\n\nThe story describes Scott as an artist who has struggled to sell his paintings. When a renowned art dealer displays his work in his gallery and it quickly sells out, it is reasonable to assume that Scott would feel joyful. He has finally received recognition for his work, and it is likely that he will experience a sense of accomplishment and happiness. Therefore, the most appropriate emotion to describe Scott's feelings would be joyful."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Emily prepared for months for the regional running competition. On the day of the race, despite feeling nervous, she won first place. How Emily would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Tired; (2) Frustrated; (3) Relieved; (4) Proud",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Emily prepared for months for the regional running competition, indicating that she had been training hard and had high expectations for the race. On the day of the race, she felt nervous, which is a common emotion before an important event. However, she still won first place, which is a significant accomplishment. Therefore, Emily would most likely feel (4) Proud."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After their initial sprout, Mark's homegrown tomato plants didn't grow as expected. Concerned, he moved them to a brighter spot and watered them regularly. Soon, the plants flourished and bore fruit. How Mark would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Confused; (3) Startled; (4) Nervous",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Relieved\n\nMark was concerned when his homegrown tomato plants didn't grow as expected. He took action by moving them to a brighter spot and watering them regularly. When the plants flourished and bore fruit, Mark would feel relieved because his efforts paid off and the plants are now growing well."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Serena spent weeks writing a research paper. When it came time to submit it, her computer crashed and she couldn\u2019t revive her file. How Serena would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Frustrated; (2) Overjoyed; (3) Comfortable; (4) Nervous",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Frustrated - Serena would feel frustrated because she spent weeks writing the research paper and now she can't submit it due to her computer crashing. She may feel like all her hard work has been wasted and she may not have enough time to rewrite the paper."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Eve's favorite author was in town for a book signing. Eve arrived late and was unsure if she'd get the chance to meet them. In the end, she was the last person to get her book signed. How Eve would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Indifferent; (2) Frustrated; (3) Relieved; (4) Hurt",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "Eve would feel (2) Frustrated.\n\nEve's favorite author was in town for a book signing, but she arrived late and was unsure if she'd get the chance to meet them. This suggests that Eve was looking forward to meeting her favorite author and was disappointed that she might not have the opportunity. Therefore, she would feel frustrated."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Lilly was working on her painting for weeks for an art exhibition. She worked very hard and finally the painting was ready. The painting was appreciated by everyone in the exhibition and Lilly was awarded the best artist. How Lilly would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Proud; (2) Nervous; (3) Anxious; (4) Surprised",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Lilly would feel (1) Proud.\n\nLilly has been working hard for weeks to complete her painting for an art exhibition. When the painting is appreciated by everyone and she is awarded the best artist, it is a validation of her hard work and skill. Therefore, she would feel proud of her accomplishment."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Isaac was playing basketball with his friends. All of a sudden, one of his friends accidentally hit the ball into his face. His How friends would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Guilty; (2) Disgusted; (3) Scared; (4) Amused",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, the friends of Isaac would feel Guilty. Option number (1) Guilty is the correct answer."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Ben planned a surprise party for his best friend Mark. After all the hard work and arranging everything, Mark didn't show up. How Ben would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Disappointed; (2) Curious; (3) Angry; (4) Surprised",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Disappointed - After all the hard work and arranging everything for the party, Mark didn't show up. This would make Ben feel disappointed because he was looking forward to celebrating with his best friend."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Alice found a lost puppy on the street. She took the puppy home and nursed it back to health. Her family decided to adopt the puppy. How Alice would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Tired; (2) Anxious; (3) Joyful; (4) Worried",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Joyful;\n\nAlice found a lost puppy on the street and took it home. She nursed it back to health and her family decided to adopt the puppy. This storyline suggests that Alice has shown kindness and care towards the puppy, which would typically result in positive emotions. She has gone above and beyond to help the puppy, indicating that she has a big heart and a love for animals. Therefore, it is likely that Alice would feel joyful upon adopting the puppy."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jennifer has been studying hard for her final exams. She forgoes parties, trips, and several other things. Despite the sacrifices, Jennifer failed to pass the examination. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Anxious; (2) Furious; (3) Sad; (4) Scared",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "Based on the story, I predict that Jennifer would feel \"3. Sad\" because she has been studying hard for her exams and has given up many things but still failed. This would make her feel disappointed and sad."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Just as Lucy was being cornered by a bully in school, her friend Brian stepped in and defended her. After this incident, How Lucy would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Offended; (2) Appreciative; (3) Overjoyed; (4) Annoyed",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Lucy would feel: (2) Appreciative.\n\nBased on the story, Lucy was being cornered by a bully when her friend Brian stepped in and defended her. This action of Brian's was a courageous and kind one, and it shows that he was willing to stand up for Lucy when she needed it. Therefore, Lucy would feel appreciative towards Brian for his help and support."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Peter, a wildlife photographer, finally captured an image of a snow leopard in the wild after weeks of searching. How He would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Afraid; (2) Exhausted; (3) Joyful; (4) Indifferent",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "Based on the story, it is reasonable to predict that Peter would feel \"3. Joyful\". After weeks of searching, Peter finally captured an image of a snow leopard in the wild, which is a significant achievement for a wildlife photographer. Therefore, he would feel joyful and elated."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sarah helped her younger sister, Emily, to prepare for her math test. Emily got the highest score in her class. How Sarah would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Proud; (2) Envious; (3) Worried; (4) Excited",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Sarah would feel proud. The story mentioned that Sarah helped Emily to prepare for her math test, which means Sarah played a role in Emily's success. Emily got the highest score in her class, which is a great achievement, so Sarah would feel proud of Emily's success. Option number: (1) Proud."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: John repaired an old, broken down car all by himself. After so much effort, he was finally able to start it. How John would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Bored; (2) Frustrated; (3) Tired; (4) Accomplished",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "John repaired an old, broken down car all by himself. After so much effort, he was finally able to start it. Based on the story, John would feel (4) Accomplished.\n\nBy taking on the challenge of repairing the car himself and ultimately succeeding, John would feel a sense of accomplishment and pride in his work. The fact that he overcame difficulties and achieved his goal would give him a sense of satisfaction and accomplishment."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Elizabeth was admitted to the top university that she had always dreamt of. Upon receiving her acceptance letter, How she would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Thoughtful; (3) Disturbed; (4) Elated",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "Elizabeth\u6536\u5230\u5f55\u53d6\u901a\u77e5\u4e66\u7684\u90a3\u4e00\u523b\uff0c\u5979\u5e94\u8be5\u662f\u611f\u5230\u975e\u5e38\u5174\u594b\u548c\u9ad8\u5174\uff0c\u56e0\u4e3a\u5979\u88ab\u5f55\u53d6\u5230\u4e86\u81ea\u5df1\u68a6\u5bd0\u4ee5\u6c42\u7684\u5927\u5b66\u3002\u56e0\u6b64\uff0c\u7b54\u6848\u662f\uff1a(4) Elated\u3002"
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Michael finished painting his latest masterpiece after months of painstaking effort. However, dropping the artwork accidentally, he watched in despair as the canvas ripped apart. How He would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Indignant; (2) Joyful; (3) Devastated; (4) Excited",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Devastated;\n\nMichael spent months painting his masterpiece, and when he accidentally dropped it and the canvas ripped apart, he would feel devastated. Watching his hard work being destroyed in front of him would be a heartbreaking moment for him."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sarah was working late alone in the office. Suddenly, she heard the creepy sound of something moving around. Shaken, she realized that a cat had sneaked into the office. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Afraid; (3) Joyful; (4) Annoyed",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(2) Afraid.\n\nSarah was working late alone in the office when she heard a creepy sound. She was shaken and realized that a cat had sneaked into the office. This suggests that Sarah was feeling afraid because she was alone in the office at night and had been startled by a strange sound."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jerry forgot his wedding anniversary and came home without a gift. When his wife surprised him with his favorite homemade meal, instead of being angry, How he would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Guilty; (2) Surprised; (3) Disappointed; (4) Afraid",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(2) Surprised.\n\nJerry forgot his wedding anniversary and didn't bring a gift home. However, his wife surprised him with his favorite homemade meal. This suggests that Jerry was not expecting his wife's reaction, and he may have felt surprised when he saw her."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Francis got lost on his first solo hike. After hours of wandering around, he managed to find a familiar landmark and traced his way back to the campsite. How He would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Satisfied; (3) Anxious; (4) Jealous",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Francis got lost on his first solo hike and took hours to find a familiar landmark and trace his way back to the campsite. Considering the situation he was in, Francis would most likely feel RELIEVED."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Beverly received an invite to give a TED Talk, but she hesitated due to her massive fear of public speaking. Her mentor encouraged her and offered to coach her. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Hopeful; (2) Suspicious; (3) Annoyed; (4) Embarrassed",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Beverly would feel (1) Hopeful.\n\nAlthough Beverly hesitated due to her fear of public speaking, her mentor's encouragement and offer to coach her suggest that she may feel hopeful about giving the TED Talk. The mentor's support may give Beverly the confidence she needs to overcome her fear and present her ideas to a large audience. Therefore, the most appropriate emotion she would feel is hopeful."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jenny was routinely praised for her perseverance and discipline. One day, her team lost an important project due to an error she made. Even though everyone said it was a collective failure, Jenny couldn't help but feel like it was her fault. How Jenny would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Overjoyed; (2) Guilty; (3) Relaxed; (4) Aloof",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Guilty - Jenny would feel guilty because she made an error that caused her team to lose an important project, even though everyone said it was a collective failure. She has been praised for her perseverance and discipline, so she would feel like it was her fault and not someone else's."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Steve, after years of hard work, finally published his first novel. It was greeted with critical acclaim and soon soared to the top of the bestseller list. While enjoying a quiet evening alone, he found himself reflecting on his accomplishments. How Steve would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Anxious; (2) Proud; (3) Frustrated; (4) Jealous",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Steve's first novel received critical acclaim and became a bestseller. While enjoying a quiet evening alone, he reflected on his accomplishments. This suggests that he would feel proud of his achievement. Therefore, the answer is (2) Proud."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Emily took her 4-year-old son to the zoo. Her son was extremely excited and when they arrived there, he jumped for joy, ran towards the monkey cage, and fell, scratching his knee. How Emily would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Worried; (3) Joyful; (4) Disappointed",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Worried.\n\nEmily would feel worried because her son has fallen and scratched his knee, which is an injury that needs attention. She would be concerned about his safety and health, and would want to make sure that he is okay."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Mark was hiking in the woods when he tripped over a hidden rock and found an ancient artifact buried underneath. Upon closer examination, he realized it was of great historical significance. How Mark would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Scared; (2) Surprised; (3) Disgusted; (4) Furious",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Surprised.\n\nMark was hiking in the woods when he tripped over a hidden rock and found an ancient artifact buried underneath. Upon closer examination, he realized it was of great historical significance. The description of the story suggests that Mark was not expecting to find anything of significance and his reaction would be one of surprise."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After a long day at work, Laura came home to find her children had prepared a surprise birthday party for her. As she looked around at the decorations and well wishes, How Laura would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Annoyed; (2) Appreciative; (3) Stressed; (4) Neglected",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Appreciative\n\nLaura would feel appreciative because her children prepared a surprise birthday party for her after a long day at work. This shows that her children care about her and want to make her feel special. The decorations and well wishes also suggest that her family and friends have gone to some effort to make the party a success, which would further enhance her appreciation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Lily was in a rush to submit her assignment when her computer crashed and all her hard work disappeared. She had only five minutes left to submit. How Lily would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Angry; (3) Distracted; (4) Panicked",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "4. Panicked.\n\nThe story describes Lily as being in a rush to submit her assignment when her computer crashed and all her hard work disappeared. She only had five minutes left to submit, which means she was under a lot of pressure. This situation would cause Lily to feel panicked because she would be concerned about not being able to complete her assignment on time."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After months of hard work, Mark finally completed his painting. At the exhibition, a child accidentally spilled water on it, completely damaging the art piece. How Mark would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Defeated; (2) Excited; (3) Fearful; (4) Hopeful",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Defeated\n\nMark would feel defeated because he worked hard for months to complete the painting, and it was damaged by a child's accident. This would make him feel like his efforts were wasted and that his work was not appreciated or recognized."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Lauren saved money for years to buy her dream car. The day after she bought it, her car was stolen. How Lauren would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Joyful; (2) Hopeless; (3) Surprised; (4) Grateful",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Hopeless.\n\nLauren saved money for years to buy her dream car, so when it was stolen the day after she bought it, she would feel hopeless. She had worked hard for the car and now it was gone. She might feel angry and disappointed as well."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After studying for weeks, Jonathan got his exam results and saw he had scored the highest in class. He'd never topped before. How Jonathan would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Worried; (2) Excited; (3) Hesitant; (4) Indifferent",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Jonathan has studied hard for weeks and finally got the exam results, which he scored the highest in class. This is the first time he has ever topped.\n\nGiven the circumstances, Jonathan would most likely feel: (2) Excited.\n\nThe reason is that after weeks of hard work and effort, Jonathan finally achieved the highest score in class, which is a great accomplishment. This would make him feel proud and satisfied, and he would be excited about his achievement. Option (1) \"Worried\" is not appropriate because the story does not indicate any negative emotions or concerns. Option (3) \"Hesitant\" is also not suitable because the story does not suggest any hesitations or doubts about his achievement. Option (4) \"Indifferent\" is not consistent with the story's theme or Jonathan's efforts."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Susan had just moved to a new city and felt lonely. One day, she encountered an old friend, unexpectedly, on the street. How Susan would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Nervous; (2) Excited; (3) Terrified; (4) Regretful",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Excited.\n\nSusan had just moved to a new city and felt lonely. She was probably feeling bored and unsettled in her new environment. When she encountered an old friend unexpectedly, she would feel happy and excited to have someone she knew in this new place. She would feel less lonely and more at ease. Therefore, the answer is (2) Excited."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Emily worked on her art project for months. She poured out all her time and dedication into this endeavor only to receive a critical review from her professor, who told her that her techniques lacked originality. How Emily would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Indifferent; (2) Angry; (3) Discouraged; (4) Inspired",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Discouraged;\n\nEmily poured all her time and dedication into her art project, indicating her strong commitment and expectation for it. However, her professor's critical review told her that her techniques lacked originality, which would most likely make Emily feeldiscouraged. She might feel that all her efforts were in vain or that her hard work was not recognized."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: While on a business trip, Ryan received a surprise call from his wife announcing that she\u2019s pregnant with their first child. How Ryan would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Exhausted; (2) Excited; (3) Annoyed; (4) Guilty",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Ryan would feel (2) Excited.\n\nThe news of his wife's pregnancy is a happy surprise, and Ryan would likely feel a sense of joy and elation at the announcement. This is a significant moment in their lives, and he would be filled with emotions of happiness, anticipation, and eagerness for the future. Therefore, the most appropriate emotion to describe Ryan's reaction would be Excited."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Linda accidentally eavesdropped on two colleagues discussing her unsatisfactory performance. Even though she hates gossip, the information deeply troubled her. How Linda would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Betrayed; (2) Furious; (3) Sad; (4) Indifferent",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Linda would feel \"Sad\".\n\nLinda feels sad because even though she hates gossip, she accidentally eavesdropped on two colleagues discussing her unsatisfactory performance. This information deeply troubled her, indicating that she is emotionally affected by their discussion. She is betrayed because she trusted her colleagues, but they were not honest with her. This experience would make her feel sad and disappointed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After long hours of studying for his final exams, Jack scored an A on his hardest subject. How Jack would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Proud; (2) Envious; (3) Angry; (4) Apathetic",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Jack would feel (1) Proud.\n\nAfter long hours of studying for his final exams, Jack put in a lot of effort and hard work to achieve an A on his hardest subject. This is a great accomplishment, and Jack should feel proud of himself for his success."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: During her visit to the zoo, Jane witnessed a zookeeper being cruel to an elephant. How Jane would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Sympathetic; (2) Excited; (3) Angry; (4) Jealous",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "Based on the story, I predict that Jane would feel angry. The story described how Jane witnessed a zookeeper being cruel to an elephant, which is unacceptable and immoral. Anger is a natural reaction when witnessing someone being treated unfairly or cruelly. Therefore, option (3) \"Angry\" is the correct answer."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: During the lunch break, Melissa discovered that someone had eaten her homemade sandwich. She had been looking forward to enjoying it the whole morning. How Melissa would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Sad; (3) Disgusted; (4) Surprised",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(1) Angry;\n\nMelissa would feel angry because someone had eaten her homemade sandwich without her permission. She had been looking forward to enjoying it during the lunch break, so the fact that it had been taken away from her would make her feel angry."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: On his wedding day, just before the ceremony, Jack discovered that his future wife had prepared a touching letter expressing her love and excitement for their future together. How Jack would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Happy; (2) Nervous; (3) Overwhelmed; (4) Embarrassed",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Jack would feel \"Happy\" upon reading the letter. The letter expresses his future wife's love and excitement for their future together, which is a positive and uplifting message. Therefore, Jack would feel happy knowing that his future wife is looking forward to their life together and loves him deeply."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Susan finished her final exams and felt confident about her performance. However, when the results came out, she barely passed. How Susan would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Confused; (2) Disappointed; (3) Relieved; (4) Joyful",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Disappointed;\n\nSusan felt confident about her performance during the exams but ended up barely passing. This suggests that she had expected to do better and achieve a better result. Therefore, she would feel disappointed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Victor was in a park enjoying a beautiful sunny day when a bird suddenly landed on his shoulder. The bird stayed there for a while without any fear. How Victor would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Scared; (2) Excited; (3) Blessed; (4) Annoyed",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Victor would feel (2) Excited.\n\nThe bird landing on Victor's shoulder is a positive and unexpected event that would most likely make Victor feel excited. The fact that the bird showed no fear and stayed on Victor's shoulder for a while suggests that this was a special and rare experience. Therefore, it is most likely that Victor would feel excited in this situation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Peter's team had worked tirelessly on a project for months and finally presented it to the management. However, the management dismissed their proposal without giving it fair consideration. How Peter would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Furious; (2) Defeated; (3) Indifferent; (4) Shocked",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Peter and his team had put in a lot of effort and time on the project, but when they presented it to the management, their proposal was brushed aside without proper consideration. This kind of response can lead to a feeling of injustice and disappointment.\n\nOption 1: Furious - Peter may feel angry and furious at the management's disregard for their hard work and efforts.\n\nOption 2: Defeated - Peter may feel defeated and dejected due to the management's refusal to consider their proposal.\n\nOption 3: Indifferent - Peter is unlikely to feel indifferent towards the outcome as they had a strong attachment to the project, having worked on it for months.\n\nOption 4: Shocked - Although Peter may be disappointed, he is unlikely to be shocked as the story does not mention any unexpected or sudden turn of events.\n\nTherefore, option (1) Furious and option (2) Defeated seem to be the most appropriate emotions for Peter to feel based on the story."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Susan had a critical business presentation to deliver. She had been preparing for weeks and was very anxious. On the presentation day, she was surprised that she managed to deliver it perfectly without any hitches. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Nervous; (2) Relieved; (3) Scared; (4) Insecure",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Relieved.\n\nSusan had been preparing for weeks and was very anxious for her business presentation. When she managed to deliver it perfectly without any hitches, she would feel relieved. The relief would be due to her hard work and preparation paying off, as well as the removal of the anxiety and stress she had been feeling leading up to the presentation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After a long day of work, Tim was finally speeding home on his bike, thinking about a refreshing shower and dinner. Halfway home, he got a flat tyre in the middle of nowhere. How He would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Exhausted; (2) Frustrated; (3) Bored; (4) Surprised",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Frustrated - Tim would feel frustrated because he was looking forward to getting home and relaxing after a long day of work. However, his flat tyre in the middle of nowhere would prevent him from doing so, which would make him feel frustrated."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Mary has always wanted to visit Paris. Unbeknownst to her, her husband organized a surprise birthday trip to Paris complete with a stay in a lavish hotel. When she finds out, How she would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Indifferent; (2) Jubilant; (3) Disturbed; (4) Disappointed",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, it is likely that Mary would feel \"Jubilant\" when she finds out about the surprise birthday trip to Paris. The trip was organized by her husband as a surprise, and it includes a stay in a lavish hotel. This is a very special and luxurious gift, and it is likely that Mary would be overjoyed to receive such a gift. Option number (2) Jubilant best captures this emotion."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jack, an aspiring writer, submitted a draft of his first novel to several publishing houses. After months of waiting, he received positive feedback from a well-known publisher. How He would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Stunned; (2) Elated; (3) Grateful; (4) Numb",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Jack, as an aspiring writer, submitted a draft of his first novel to several publishing houses. After months of waiting, he received positive feedback from a well-known publisher. In this case, Jack would most likely feel \"2. Elated.\" Receiving positive feedback from a well-known publisher is a huge step forward for an aspiring writer. This means that Jack's hard work and efforts have paid off, and his book has the potential to be published and reach a larger audience. Therefore, Jack would feel elated because he has taken a major step towards achieving his dream of becoming a published author."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Laura painstakingly completed a 2000-piece puzzle that she worked on for weeks. When she was about to put in the last piece, she realized it was missing. How Laura would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Worried; (2) Pleased; (3) Indignant; (4) Disappointed",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "(4) Disappointed. After weeks of work, Laura was finally about to complete the puzzle, but she realized that the last piece was missing. This would be a huge letdown for her, as she would feel that all her efforts were wasted. Therefore, she would feel disappointed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sarah was in the middle of a crucial job interview when she was suddenly asked a question she hadn't prepared for. Despite her surprise, she took a deep breath, thought for a moment, and managed to provide an impressive response. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Proud; (2) Startled; (3) Worried; (4) Frustrated",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Proud\n\nSarah will feel proud because she was able to handle the unexpected question and provide an impressive response. She took a deep breath, thought for a moment, and managed to answer the question despite her surprise. This shows that she has confidence in herself and her abilities, and she can handle unexpected situations."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: John was just settling in for a quiet evening at home when he got an unexpected call. The voice on the other end announced he had won an all-expense paid trip to Hawaii. How He would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Annoyed; (2) Jealous; (3) Surprised; (4) Excited",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "Based on the story, John was settling in for a quiet evening at home when he received an unexpected call informing him that he had won an all-expense paid trip to Hawaii. This situation would most likely cause John to feel SURPRISED. The announcement of winning such a prize was unexpected and would catch John off guard, making him feel surprised."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jenny had been preparing for the math test all week. When she finally sat down to take the test, she found the questions much easier than she'd expected. She finished 30 minutes before everyone else. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Worried; (2) Puzzled; (3) Proud; (4) Excited",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Jenny finished the math test 30 minutes before everyone else. This suggests that she did very well on the test. Therefore, she would feel proud of herself for doing so well. Option number 3: Proud."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: William's neighbor always played loud music late at night. Despite several polite requests, the neighbor hadn\u2019t changed his ways. One night, the music was even louder than usual. How William would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Excited; (3) Joyful; (4) Surprised",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Angry\n\nWilliam's neighbor's loud music at night is described as causing a problem, and despite several polite requests, the neighbor hasn't changed his ways. This suggests that William is becoming increasingly frustrated and angry with his neighbor's behavior. Therefore, the answer to how William would feel is \"angry.\""
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Linda was going to present her project to the entire school assembly. It\u2019s a moment she rehearsed countless times before. But just before going to the stage, she noticed a stain on her dress. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Embarrassed; (2) Surprised; (3) Excited; (4) Angry",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Linda was going to present her project to the entire school assembly, a moment she had rehearsed countless times before. But just before going to the stage, she noticed a stain on her dress. This situation would most likely make her feel embarrassed. Therefore, the answer is (1) Embarrassed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Rebecca has been studying hard for her midterm exams for weeks. After receiving her results, she realizes that she scored the highest in her class. How Rebecca would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Joyful; (3) Confused; (4) Angry",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Rebecca would feel (2) Joyful.\n\nAfter weeks of hard studying for her midterm exams, Rebecca received her results and realized that she scored the highest in her class. This would be a source of great pride and joy for her, as she has worked hard to achieve this accomplishment. Therefore, the most likely emotion she would feel is joyful."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After days of working tirelessly, Elliott finally completes his painting for the art exhibition. But on reviewing it, he realizes he has used the wrong shade of blue in one of the areas. How Elliott would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Frustrated; (2) Excited; (3) Amused; (4) Relieved",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Frustrated;\n\nElliott is described as working tirelessly for days to complete his painting for the art exhibition. This suggests that he is very invested in the outcome and putting a lot of effort into it. When he realizes he has used the wrong shade of blue, it is likely to be a disappointment for him because he has not achieved his desired result. This could lead to frustration."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Laura is an oceanographer who just got the opportunity to lead an expedition to the deepest part of the ocean. Despite the risks involved, the anticipation of unimaginable discovery fills her to the brim. How Laura would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Anxious; (3) Excited; (4) Confused",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Excited. Laura is described as an oceanographer who has been given the opportunity to lead an expedition to the deepest part of the ocean. The anticipation of unimaginable discovery fills her to the brim. This suggests that Laura is feeling excited about the opportunity she has been given and the potential for discovery."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: On arriving at the airport, Max realized he had forgotten his passport at home. His flight would leave in 45 minutes and he lived 30 minutes away. How Max would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Discouraged; (2) Puzzled; (3) Annoyed; (4) Panicked",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "(4) Panicked\n\nMax would feel panicked because he needs his passport to travel and he only has 45 minutes before his flight leaves. He lives 30 minutes away, so he doesn't have much time to get home, get his passport, and return to the airport. This situation would cause a lot of stress and anxiety for Max, making him feel panicked."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Eileen, a devoted gardener, saw her flower garden wilting due to an unknown disease. She tried every remedy she knew, but nothing worked. How Eileen would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Discouraged; (3) Surprised; (4) Joyful",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Discouraged.\n\nEileen is a devoted gardener who sees her flower garden wilting due to an unknown disease. She tries every remedy she knows, but nothing works. This situation would make Eileen feel discouraged because she is facing a problem that she cannot solve and is causing her garden to wilt."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sofia is a hard-working student who spent weeks preparing for her biology final. Unfortunately, the night before the exam, she was kept awake by loud construction noise outside her apartment. Despite being exhausted, Sofia managed to answer most of the questions in confidence. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Relieved; (3) Surprised; (4) Tired",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(1) Angry - Sofia would feel angry because she was kept awake by the loud construction noise the night before her exam, which made her unable to rest and prepare for the exam. She may also feel frustrated because of the situation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Tim, an enthusiastic bird watcher, had traveled to the Amazon rainforest hoping to spot the elusive Harpy eagle. Despite spending several exhausting days without a sighting, on his last day, he saw one perched atop a distant tree. How He would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Proud; (3) Joyful; (4) Excited",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "(3) Joyful.\n\nTim is an enthusiastic bird watcher who traveled to the Amazon rainforest hoping to spot the elusive Harpy eagle. After spending several exhausting days without a sighting, he finally sees one on his last day. Based on the description, it is likely that Tim would feel joyful upon finally spotting the Harpy eagle, as he has been waiting and working hard to see this particular species."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: During a heated argument with her sister, Mary accidentally said something hurtful. Though she apologized right after, she noticed her sister's eyes tearing up. How Mary would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Guilty; (3) Worried; (4) Puzzled",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Guilty;\n\nMary would feel guilty because she accidentally said something hurtful to her sister during an argument. She immediately apologized, but she still notices her sister's eyes tearing up. This suggests that Mary feels remorseful for what she said. Therefore, she would feel guilty."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Tom, dreamt about opening a bakery shop since childhood. After years of saving, finally opened a small bakery in his hometown. Within a few months, due to high demand, Tom had to expand his shop. How He would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Discouraged; (2) Overwhelmed; (3) Surprised; (4) Joyful",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Tom's dream was to open a bakery shop since childhood. After years of saving, he finally opened a small bakery in his hometown. Within a few months, due to high demand, he had to expand his shop. In this context, the most appropriate emotion that Tom would feel is: (4) Joyful.\n\nTom's dream has come true, and he has successfully opened a bakery shop in his hometown. The fact that he had to expand his shop due to high demand indicates that his business is thriving and successful. Therefore, it is reasonable to assume that Tom would feel joyful at this point in the story."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Alice was auditioning for the lead role in the school play. She stumbled upon her lines during the audition, leaving her feeling she underperformed. Later, when the roles were announced, she was ecstatic to find out she got the lead role. How Alice would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Puzzled; (2) Overjoyed; (3) Worried; (4) Discouraged",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Overjoyed;\n\nAlice was initially disappointed when she stumbled during the audition, but later she was ecstatic to find out that she got the lead role. This suggests that her initial reaction was one of discouragement, but she quickly shifted to overjoyed when she received good news. Therefore, option (2) Overjoyed is the most appropriate answer."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Amanda is training for her first marathon. One day, during her longest run yet, she falls and sprains her ankle. She sits on the side of the road, waiting for someone to stop and help. How Amanda would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Defeated; (2) Excited; (3) Grateful; (4) Intrigued",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(3) Grateful.\n\nAmanda would feel grateful because she would be thankful for the opportunity to receive help from others. She would also be relieved that she was not seriously injured and that she had someone to help her."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Peter has a job interview for a position he's been dreaming about for years. He's prepared meticulously for weeks. But on the day of the interview, when asked a question, he blanks out and can't remember the practiced answer. How Peter would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Anxious; (3) Proud; (4) Angry",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Anxious.\n\nPeter has been preparing for this job interview for weeks, but when he's asked a question, he blankets out and can't remember the practiced answer. This suggests that he is feeling anxious and overwhelmed by the pressure of the situation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jessica has been preparing a huge Thanksgiving dinner for her entire extended family. However, just as dinner is ready to be served, a power outage makes the house go dark. How Jessica would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Annoyed; (2) Excited; (3) Pleased; (4) Confused",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Annoyed\n\nJessica would feel annoyed because she has been preparing a huge Thanksgiving dinner for her entire extended family, and just as dinner is ready to be served, a power outage makes the house go dark. This would be very frustrating for her because she has worked hard to create a special occasion for her family, but now they cannot enjoy it due to the power outage. She may also feel embarrassed because she may feel like she has failed to provide a good experience for her family."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: James is a first-year university student who has a crush on his classmate. He decides to express his feelings to her and is preparing a love letter. Just before he hands over the letter, he sees her walking with another boy. How James would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Jealous; (3) Disgusted; (4) Indifferent",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Jealous;\n\nJames would feel jealous when he sees his classmate walking with another boy. This is because he has a crush on her and his jealousy is a result of his emotional investment in the situation. He may also feel a sense of helplessness or loss because he is unable to do anything about the situation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sarah has just moved into a new neighborhood. She decides to host a welcome party at her house. However, nobody shows up to the party. How Sarah would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Disheartened; (3) Excited; (4) Grateful",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Disheartened - Sarah would feel disheartened because she was hoping to meet new friends and neighbors at her welcome party, but nobody showed up. She would feel disappointed and let down."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Amelia is excited because she's planned a morning beach outing with her friends. She woke up early, prepared breakfast, and packed some essentials. However, on reaching the beach, it started raining heavily, disrupting their plans. How Amelia would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Ecstatic; (3) Disappointed; (4) Fearful",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Disappointed;\n\nAmelia would feel disappointed because she had planned a morning beach outing with her friends, but the heavy rain would disrupt their plans. She had prepared breakfast and packed some essentials for the outing, so she would feel disappointed that the weather did not cooperate."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Neil applied to his dream job and was anxiously waiting for the response. After weeks of waiting, he finally received an email from the company but it was an automated response thanking him for his application. How Neil would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Annoyed; (3) Relieved; (4) Frustrated",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "(3) Relieved.\n\nNeil was anxiously waiting for the response from the company, so he would feel relieved after receiving an email from them, even if it was an automated response. The fact that he received any response from the company would make him feel that his application was received and considered, which would reduce his anxiety and relieve his stress."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sophie has been preparing for her dance performance and finally got a chance to perform on the big stage in front of a large audience. However, just before the event, she twists her ankle. How Sophie would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Devastated; (3) Amused; (4) Pleasure",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Devastated;\n\nSophie would feel devastated because she has been preparing for this dance performance for a long time and finally got a chance to perform on the big stage in front of a large audience. However, just before the event, she twists her ankle, which means she cannot perform and loses the opportunity to show her talents. Therefore, she would feel very disappointed and sad."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sam, while shopping for groceries, bumped into an old friend whom he hadn't seen for years. The friend hardly recognized Sam and walked away after a cursory chat. How Sam would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Insulted; (2) Puzzled; (3) Happy; (4) Contented",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Insulted\n\nSam would feel insulted because his old friend hardly recognized him and walked away after a brief chat. This behavior would make Sam feel that his friend does not value their relationship anymore, which would be a blow to his ego and self-esteem. Therefore, Sam would feel insulted."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Maria hosted a dinner party for her colleagues at home. She prepared the food taking care of everyone's dietary preferences. Despite all the efforts, a few of her colleagues started leaving early without eating much. How Maria would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Confused; (2) Amused; (3) Surprised; (4) Disappointed",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "(4) Disappointed\n\nMaria prepared a meal for her colleagues, taking into account their dietary preferences, and yet some of them left early without eating much. This would most likely make Maria feel disappointed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Daniel volunteered to help his mother cook for a big family gathering. Working eagerly, he accidentally cut his finger while chopping vegetables. His mother, noticing the accident, asked him to leave the kitchen and rest. How Daniel would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Ashamed; (3) Excited; (4) Furious",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Ashamed.\n\nDaniel would feel ashamed because he accidentally cut his finger while chopping vegetables. He volunteered to help his mother cook for the family gathering, but his carelessness caused an accident. He may feel embarrassed and sorry for his mistake."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Olivia, a proficient violinist, is practicing for her upcoming recital. She's playing smoothly until she hits a wrong note repeatedly. No matter how much she practices that segment, she cannot play it flawlessly. How Olivia would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Annoyed; (2) Surprised; (3) Joyful; (4) Curious",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Annoyed. Olivia would feel annoyed because she is unable to play the segment flawlessly despite her best efforts. She may feel frustrated that she cannot perform well during her recital."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: In the middle of a book club meeting, Kathy noticed her friend's attention drifting away while she was sharing her thoughts about the book. She stopped speaking to see if her friend would refocus. How Kathy would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Insulted; (2) Surprised; (3) Ecstatic; (4) Satisfied",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(2) Surprised.\n\nKathy would feel surprised because she would notice her friend's attention drifting away while she was sharing her thoughts about the book. This suggests that Kathy would be taken aback by her friend's behavior and would not expect it."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jake prepared a beautiful candlelight dinner to propose to his girlfriend. As he was about to propose, she got a distressing work-related call and decided they would talk later. How Jake would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Shocked; (2) Furious; (3) Disappointed; (4) Excited",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "3. Disappointed.\n\nJake prepared a beautiful candlelight dinner to propose to his girlfriend, indicating that he was looking forward to an important moment with her. However, when she got a distressing work-related call and decided they would talk later, it meant that the moment he had been waiting for was postponed. Therefore, Jake would feel disappointed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sarah participated in an art competition. She put her heart and soul into the painting but didn't win the prize. Later, she found that the judging panel favored digital art over traditional. How Sarah would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Puzzled; (2) Angry; (3) Disheartened; (4) Grateful",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "3. Disheartened.\n\nSarah put her heart and soul into the painting, indicating her strong attachment and investment in the work. She expected to win the prize, but the judging panel favored digital art over traditional. This would make Sarah feel disappointed and disheartened, as she had hoped for recognition and praise for her efforts, but instead received rejection and negativity."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Mary is waiting to be called in for her job interview. She has prepared thoroughly but as she looks around, she notices everyone else also waiting to appear to be equally qualified. She starts questioning her own abilities and suitability for the job. How Mary would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Elated; (2) Nervous; (3) Excited; (4) Angry",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Nervous.\n\nMary would feel nervous because she noticed that everyone else waiting to be called in for the job interview appeared to be equally qualified. This made her question her own abilities and suitability for the job, which would cause her to feel anxious and concerned about her performance."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sam returned home late from work to find his young daughter asleep with a drawing she made for him clutched in her hand. The drawing was of him and her, holding hands beneath a bright, sunny sky. Seeing this, How Sam would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Content; (2) Jealous; (3) Lonely; (4) Worried",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, it is likely that Sam would feel (1) Content.\n\nThe story describes Sam returning home late from work to find his daughter asleep with a drawing she made for him clutched in her hand. The drawing was a picture of the two of them holding hands under a bright, sunny sky. This suggests that their relationship is close and loving. Therefore, it is likely that Sam would feel content upon seeing this."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jennifer opens up to her best friend about a personal struggle she's been dealing with. Her friend listens but doesn't offer any advice or words of comfort, just changes the subject. How Jennifer would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Ignored; (3) Grateful; (4) Excited",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Ignored.\n\nJennifer opens up to her best friend about a personal struggle she's been dealing with, but her friend doesn't offer any advice or words of comfort, just changes the subject. This would make Jennifer feel ignored and unheard, because her friend didn't seem to understand or care about her problem. Jennifer may feel like her friend doesn't value her enough to even offer her support."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jackson has been eagerly waiting for his favorite band's concert. On the day of the concert, he falls sick and despite trying, realizes he can't attend. How Jackson would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Ecstatic; (2) Sad; (3) Calm; (4) Indifferent",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Sad;\n\nJackson was eagerly waiting for his favorite band's concert, but on the day of the concert he falls sick and can't attend. Therefore, he would feel sad."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Amanda finished her new novel and shared it with her family. However, instead of encouraging her, they only pointed out the negative aspects and criticized her writing. How Amanda would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Confused; (3) Devastated; (4) Relaxed",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Devastated;\n\nAmanda would feel devastated because instead of receiving encouragement and support from her family, she was criticized and pointed out negative aspects of her writing. This would make her feel like her work was not appreciated or recognized, which would be a very upsetting experience for her."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sarah's team set out to win the school's yearly charity race. Even though they trained hard, another team managed to scoop the first-place trophy. They felt disappointed but were pleased to raise funds for a good cause. How Sarah would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Embarrassed; (2) Elated; (3) Disappointed; (4) Apathetic",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Disappointed;\n\nSarah's team trained hard for the charity race, but another team managed to win first place. This would make Sarah feel disappointed. Although they were pleased to raise funds for a good cause, the fact that they didn't win would still be a let down for them."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Mark, an aspiring musician, worked diligently to prepare for a talent competition. Unexpectedly, the event was canceled due to unforeseen circumstances. How Mark would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Frustrated; (3) Joyful; (4) Elated",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Frustrated - Mark would feel frustrated because he worked hard to prepare for the talent competition, but now it has been canceled due to unforeseen circumstances. Frustration would be a natural reaction for him because he would feel like his efforts were wasted."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Laura worked all through the night to submit her project before the deadline. The next day, her teammates sent her a surprise thank-you gift for her dedication. How Laura would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Satisfied; (2) Grateful; (3) Overwhelmed; (4) Appreciated",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "Laura would feel (2) Grateful.\n\nLaura worked hard all night to meet the deadline for her project. The next day, her teammates sent her a thank-you gift for her dedication. This shows that Laura's hard work was recognized and appreciated by her teammates. Therefore, Laura would feel grateful for their recognition and appreciation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Robert, a promising journalist, revealed a major scam through his investigation. Although satisfied with his work, he encountered threats from unknown sources. How Robert would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Fearful; (2) Regretted; (3) Angry; (4) Surprised",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Robert would feel (1) Fearful. \n\nThe story mentioned that Robert encountered threats from unknown sources, which suggests that he is facing a dangerous situation. This would make him feel fearful."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Emily, who was anxious about her board exam, prepared rigorously and exceeded her own expectations by ranking in the top percentile. How Emily would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Alarmed; (2) Proud; (3) Regretted; (4) Frustrated",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Emily was anxious about her board exam but she prepared very hard and exceeded her own expectations by ranking in the top percentile. This suggests that she worked very hard and achieved a great result. Therefore, Emily would likely feel proud of her accomplishment."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Karen is preparing for her competitive dance performance. During final rehearsals, her lead partner twisted his ankle and could no longer perform. The replacement is someone Karen has never practiced with before. How Karen would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Anxious; (3) Sad; (4) Confused",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Karen would most likely feel (2) Anxious.\n\nThe story describes Karen's situation where her lead partner twisted his ankle and could no longer perform. This means that Karen would have to perform with a replacement partner she has never practiced with before. This situation would cause Karen to feel anxious because she would not know how well she and the new partner would perform together. She may also be concerned about whether she would be able to adapt to the new partner's style and movement on stage during the performance."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: David, a newly appointed team captain, is about to lead his team into the football grand final. The weather suddenly changes and the field is covered by heavy snow. The team is not used to playing in such conditions. How David would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Disappointed; (2) Challenged; (3) Cheerful; (4) Angry",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, David would feel (2) Challenged.\n\nThe story describes David, a newly appointed team captain, leading his team into the football grand final. However, the weather suddenly changes and the field is covered by heavy snow, which is not something the team is used to playing in. This situation would present a challenge for David and his team, as they now have to adjust to playing in adverse conditions. Therefore, it can be inferred that David would feel \"Challenged\" in this situation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jessica recently joined a painting competition. Despite her best efforts, she didn't win any prizes. However, one of the judges came to her and told her that she had a unique style and that she should keep painting. How Jessica would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Rejected; (2) Proud; (3) Encouraged; (4) Offended",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Encouraged. The judge's positive feedback and encouragement would make Jessica feel encouraged and motivated to continue painting."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Peter has been working hard on his science project. The day before it is due, his little cousin accidentally knocks it over, breaking it. There's not enough time to completely rebuild it. How Peter would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Furious; (2) Frustrated; (3) Content; (4) Indifferent",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Frustrated.\n\nPeter has been working hard on his science project, indicating that he has put in a lot of effort and energy. When his little cousin accidentally knocks it over and breaks it, it means that all of Peter's efforts have been wasted. There's not enough time to completely rebuild it, so Peter will feel frustrated because he has to start all over again, and he may not be able to complete the project on time."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Amanda recently started a new job. After working late one evening, she overheard her colleagues speaking negatively about her performance behind her back. Upon hearing this, How Amanda would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Elated; (2) Underestimated; (3) Disappointed; (4) Betrayed",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Amanda would feel \"Betrayed\".\n\nAfter working late one evening, Amanda overheard her colleagues speaking negatively about her performance behind her back. This would make Amanda feel betrayed because she had just started the job and had been working hard to prove herself. She may also feel that she had misjudged her colleagues and their attitude towards her."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sara, a gifted musician, was confident about her music but was continuously overlooked for opportunities at her university. One day, a professor who had been following her work, invited her to play at a prestigious concert. How Sara would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Inspired; (2) Joyful; (3) Surprised; (4) Intimidated",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Surprised. Sara, a gifted musician, was confident about her music but was continuously overlooked for opportunities at her university. One day, a professor who had been following her work, invited her to play at a prestigious concert. Therefore, Sara would feel surprised."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: David, a young entrepreneur, struggled hard to make his business profitable. However, his attempts had been unsuccessful. After much consideration, he finally achieved a breakthrough with a creative solution and now his business is flourishing. How David would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Excited; (3) Successful; (4) Proud",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Relieved;\n\nDavid had been struggling hard to make his business profitable, but his attempts had failed. He must have felt a great sense of relief when he finally achieved a breakthrough with his creative solution and saw his business flourishing. The sense of relief would have been even stronger when he realized that his hard work had finally paid off."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Mary organized a surprise birthday party for her best friend Emily but Emily found out about the party in advance by accidentally seeing a text on Mary's phone. How Mary would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Disappointed; (2) Surprised; (3) Angry; (4) Ashamed",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Disappointed;\n\nMary organized a surprise birthday party for her best friend Emily but Emily found out about the party in advance by accidentally seeing a text on Mary's phone. This means that the surprise party is no longer a surprise, and Mary would feel disappointed because her efforts to plan a special birthday celebration for Emily have been futile. She would feel let down because the element of surprise, which is crucial in a surprise party, is now missing."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Rachel spent weeks working on her art project for the school art competition. Though she felt like giving up multiple times, she persevered and finished it. When the list of winners was announced, she won the first prize. How Rachel would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Joyful; (3) Proud; (4) Relieved",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Proud\u3002\n\nRachel spent weeks working on her art project and felt like giving up multiple times but she persevered and finished it. When she won the first prize, she would feel proud of herself for her accomplishment. She worked hard and was rewarded for her efforts."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Thomas' ruling in a heated debate at work was proved to be wrong. The correct solution was proposed by Samantha, his junior, and it was accepted by everyone. How Thomas would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Embarrassed; (2) Angry; (3) Surprised; (4) Frustrated",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Embarrassed.\nThomas was proven to be wrong in a heated debate at work, and his junior Samantha proposed the correct solution, which was accepted by everyone. This situation would make Thomas feel embarrassed because he was proven wrong in front of his colleagues."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Kim has been working tirelessly for months to secure the promotion she feels she deserves. However, it\u2019s given to a less experienced colleague that she doesn\u2019t feel is as qualified. How Kim would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Fortunate; (2) Jealous; (3) Excited; (4) Relieved",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Jealous.\n\nKim would feel jealous because she has been working hard for months to secure the promotion and feels that she deserves it more than her colleague who has been given the promotion. She may also feel that her colleague is less experienced and not as qualified as she is."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Fred planned a surprise birthday party for his best friend Joe. Everything went perfectly, and Joe was genuinely shocked when he walked in. How Fred would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Frustrated; (2) Surprised; (3) Proud; (4) Angry",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Fred planned a surprise birthday party for his best friend Joe, and everything went perfectly. When Joe walked in and was genuinely shocked, it was evident that Fred had successfully pulled off the surprise party without any hiccups. This suggests that Fred would feel proud of himself for executing his plan\u5b8c\u7f8e\u5730\u6267\u884c\u4ed6\u7684\u8ba1\u5212\uff0c\u8ba9Joe\u611f\u5230\u60ca\u559c\u3002 Therefore, the answer is (3) Proud."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Nancy crafted a beautiful piece of artwork for a local competition. However, due to a miscommunication, her submission was rejected as it arrived late. How Nancy would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Satisfied; (3) Happy; (4) Frustrated",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "4. Frustrated\n\nNancy would feel frustrated because she crafted a beautiful piece of artwork for a local competition, but due to a miscommunication, her submission was rejected as it arrived late. This would make her feel like her hard work was not recognized or appreciated, which would lead to frustration."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sam, an astronomy enthusiast, planned to watch a rare meteor shower. Yet, due to unforeseen cloudy weather, he missed the event. How Sam would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Expectant; (2) Devastated; (3) Excited; (4) Satisfied",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Devastated;\n\nSam would feel devastated because he missed the rare meteor shower that he had been looking forward to watching. As an astronomy enthusiast, this event was meaningful to him and his failure to observe it would have left him feeling disappointed and frustrated."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Helen made a huge effort to prepare and bake homemade cookies for the school bake sale. But she found out that her cookies were not sold out at the end. How Helen would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Pleased; (2) Disappointed; (3) Excited; (4) Delighted",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Disappointed\n\nHelen made a huge effort to prepare and bake homemade cookies for the school bake sale, indicating her strong desire to have her cookies sold. However, she found out that her cookies were not sold out at the end, which would lead to a negative emotional response. Therefore, Helen would feel disappointed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sally works as a nurse in a busy hospital ward. After a long, hectic day full of emergencies, she finally gets a moment to relax and notices a 'thank you' card from one of her patients, expressing deep gratitude for her attentive care. How Sally would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Exhausted; (2) Gratified; (3) Ignored; (4) Aggravated",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Gratified.\n\nSally would feel gratified after receiving a 'thank you' card from one of her patients. The card expresses the patient's deep gratitude for her attentive care, which means that Sally's efforts and dedication have been recognized and appreciated. This would make her feel happy and satisfied, as she knows that her work is making a difference in the lives of her patients."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Chris has spent a long time preparing for an annual rock climbing competition. Practicing for hours daily, he finally makes his attempt but slips halfway through. Even though he didn't reach the top, the crowd started applauding his effort. How Chris would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Humiliated; (2) Puzzled; (3) Apprehensive; (4) Encouraged",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "(4) Encouraged.\n\nChris\u867d\u7136\u4e2d\u9014\u6ed1\u5012\uff0c\u6ca1\u6709\u6210\u529f\u6500\u4e0a\u9876\u5cf0\uff0c\u4f46\u662f\u89c2\u4f17\u5f00\u59cb\u9f13\u638c\u79f0\u8d5e\u4ed6\u7684\u52aa\u529b\u3002\u8fd9\u8868\u660e\u89c2\u4f17\u5bf9\u4ed6\u7684\u8868\u73b0\u662f\u8ba4\u53ef\u7684\uff0c\u56e0\u6b64Chris\u4f1a\u611f\u5230\u53d7\u5230\u9f13\u52b1\u548c\u652f\u6301\uff0c\u800c\u4e0d\u662f\u611f\u5230\u7f9e\u8fb1\u3001\u56f0\u60d1\u6216\u5fe7\u8651\u3002"
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Laura, an introverted researcher, makes a groundbreaking discovery in molecular biology. Her work is recognized globally, and she's invited to deliver a speech at an international conference. This is out of her comfort zone but she knows the importance of sharing her findings. How Laura would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Anxious; (2) Exhilarated; (3) Defensive; (4) Detached",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(2) Exhilarated;\n\nLaura's groundbreaking discovery in molecular biology has made her a global sensation, and she has been invited to deliver a speech at an international conference. This is a huge opportunity for her, and she knows the importance of sharing her findings. Therefore, she would feel exhilarated at the thought of being able to present her work to an international audience. She may also feel a sense of validation after years of hard work and research."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Max, a small-town baker, was just informed that his little bakery won in a nationwide bakery contest. Being recognized on such a large scale was beyond his wildest dreams. After hearing the news, How Max would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Overwhelmed; (2) Suspicious; (3) Intimidated; (4) Disaffected",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Overwhelmed;\n\nMax would feel overwhelmed. The news that his bakery won in a nationwide contest is beyond his wildest dreams. This is a huge accomplishment and a great honor for Max, and he would feel elated and overwhelmed by the recognition."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Rebecca moved to a big city for work, leaving her close-knit family behind. One evening, she received a package full of mementos and childhood photos from her loving family. How Rebecca would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Nostalgic; (2) Embarrassed; (3) Cautious; (4) Indifferent",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Rebecca would feel (1) Nostalgic.\n\nThe package full of mementos and childhood photos represents the memories and past experiences of Rebecca's family. Receiving this package would prompt Rebecca to feel nostalgic, as she is reminded of her past and the people and places she left behind. She may feel a sense of homesickness and longing for her family and the simpler times of her childhood."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After working hard on her project, Sarah had a long and satisfying sleep. She woke up to find emails from her team members indicating they were facing issues and needed her help. Although it's her day off, she decides to help them. How Sarah would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Frustrated; (3) Obligated; (4) Exhausted",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Obligated;\n\nSarah would feel obligated to help her team members despite it being her day off. She has been working hard on her project and has had a long and satisfying sleep. She would want to assist her team members because she knows they are facing issues and need her help. Therefore, she would feel obligated to assist them."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Ryan has been preparing for the national marathon for a year. He trains every morning and follows a healthy diet. On the day of the marathon, heavy rain causes the event to be postponed. How Ryan would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Disappointed; (3) Angry; (4) Surprised",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Ryan would feel (2) Disappointed.\n\nRyan has been preparing for the national marathon for a year, indicating his strong desire and expectation for the event. He trains every morning and follows a healthy diet, further emphasizing his dedication to the competition. Therefore, when the heavy rain causes the event to be postponed, Ryan would feel disappointed because he has lost the opportunity to compete and demonstrate his hard work and preparation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Clara is a passionate artist. She works hard on each piece she creates. One day, an art gallery invites her to showcase her work but she'll have to finance the event herself. How Clara would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Pressurized; (3) Proud; (4) Indifferent",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(1) Excited\n\nClara is a passionate artist who works hard on each piece she creates. She would feel excited to be invited to showcase her work in an art gallery, as it provides her with an opportunity to share her talent with a wider audience. Although she will have to finance the event herself, this may not dampen her enthusiasm as she may see it as a worthwhile investment in her artistic career. Therefore, option (1) \u201cExcited\u201d is the most appropriate choice to describe how Clara would feel."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After months of writing, editing, and polishing, David finally submits his first novel to a major publishing house. After waiting months for feedback, David receives a rejection letter. How David would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Embarrassed; (2) Shocked; (3) Understanding; (4) Devastated",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "(4) Devastated\u3002\n\nDavid has put a lot of effort into writing his first novel, and he finally submits it to a major publishing house. However, he receives a rejection letter after waiting for feedback for months. This means that his efforts have been wasted, and he will feel disappointed and devastated."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Emma has been longing to go on a beach vacation for months. When her friends finally decide to go without inviting her, incorporating all her vacation ideas, How Emma would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Jealous; (2) Angry; (3) Disappointed; (4) Surprised",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Disappointed.\n\nEmma has been longing to go on a beach vacation for months, and when her friends finally decide to go without inviting her, incorporating all her vacation ideas, she would feel disappointed. She would feel that her friends have excluded her and have taken away her dream vacation. She would feel let down and may even feel excluded from the group."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Samuel has been working hard at a company for several years, always staying late and coming in early. Despite his efforts, his boss ignores his dedication and promotes a colleague who doesn't work nearly as hard. How Samuel would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Satisfied; (2) Excited; (3) Resentful; (4) Calm",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Resentful;\n\nSamuel has been working hard for several years, always staying late and coming in early, but his boss ignores his dedication and promotes a colleague who doesn't work as hard. This situation would make Samuel feel resentful because he would feel that his efforts have been unappreciated."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sarah was preparing for her final exams for months. However, on the day of the exam, she woke up with a high fever and had to miss her exams. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Worried; (3) Excited; (4) Indifferent",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Worried.\n\nSarah has been preparing for her final exams for months, so she would be very worried when she woke up with a high fever on the day of the exam and had to miss her exams. She might feel anxious about her future and the consequences of missing the exam, which could result in failure or having to repeat the semester. She might also feel helpless and hopeless about her situation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Lisa's dream was to become a fashion designer. Her family, however, insisted she should pursue a career in law, a field she had no interest in. Forced to enroll in law school, How Lisa would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Happy; (2) Frustrated; (3) Comfortable; (4) Motivated",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Frustrated;\n\nLisa's dream is to become a fashion designer, but her family insists she should pursue a career in law. She is forced to enroll in law school against her will. Therefore, Lisa would feel frustrated because she is unable to pursue her passion and is stuck in a field that she has no interest in."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Alex was planning a surprise birthday party for his wife. However, she found out about the plan accidentally. Trying to not ruin the surprise, Alex pretended not to know she had discovered the surprise. How Alex would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Confused; (3) Disappointed; (4) Joyful",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Disappointed.\n\nAlex was planning a surprise birthday party for his wife, but she found out about the plan accidentally. Alex would feel disappointed because he would have to pretend not to know she had discovered the surprise, and he would not be able to surprise his wife on her birthday as he had planned."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Laura was selected to perform a solo at the choir concert, an opportunity she had been waiting for a long time. However, on the big night, she forgot her lyrics midway. How Laura would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Embarrassed; (2) Brave; (3) Excited; (4) Inspired",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Embarrassed. Laura forgot her lyrics midway, which would make her feel embarrassed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Michael had been planning a surprise proposal for his girlfriend for weeks. However, just as he was about to propose, a family emergency arose forcing him to cancel all his plans. How Michael would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Angry; (3) Disappointed; (4) Excited",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Disappointed. Michael had been planning the proposal for weeks, and it is likely that he would feel disappointed when he had to cancel his plans at the last moment due to a family emergency."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After a grueling year of working on her first novel, Sara finally sent it to several publishers. However, despite the countless hours spent, all her submissions were rejected. How Sara would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Defeated; (2) Hopeful; (3) Angry; (4) Indifferent",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Defeated;\n\nSara would feel defeated after spending a grueling year on her first novel, yet all her submissions were rejected by publishers. She would feel disappointed and disheartened, as she had hoped to see her work published. This emotion would be intensified by the effort and time she had put into writing the novel, making the rejection even more painful."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After weeks of practicing for his driving test, John was confident that he would pass. However, due to a minor mistake, he ended up failing. How John would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Encouraged; (3) Frustrated; (4) Bored",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "John would feel (3) Frustrated. \n\nJohn had been practicing for weeks and was confident that he would pass, but due to a minor mistake he ended up failing. This would make him feel frustrated because he had been so close to achieving his goal but ultimately failed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Lucy had been dreaming of a white Christmas alone in a log cabin up the mountains. However, her boss assigned her a project that required her to work through the holidays. How Lucy would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Annoyed; (3) Satisfied; (4) Blissful",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Lucy would feel (2) Annoyed.\n\nLucy had been dreaming of a white Christmas alone in a log cabin up the mountains, but her boss assigned her a project that required her to work through the holidays. This means that Lucy's plans have been interrupted or changed, which would likely make her feel annoyed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Tony had saved up for months to buy a collector's edition comic book. However, when he finally had enough money, the book was sold out. How Tony would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Disappointed; (2) Excited; (3) Pleased; (4) Relieved",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Disappointed - Tony saved up for months to buy the collector's edition comic book, but when he finally had enough money, the book was sold out. This would make him feel disappointed because he missed out on buying the book he wanted."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Carla recently achieved a major milestone in her fitness journey, managing to run a marathon for the first time. She'd been training for months, sacrificing plenty of free time and pushing her physical limits. How Carla would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Exhausted; (2) Proud; (3) Sad; (4) Bored",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Proud\n\nCarla recently achieved a major milestone in her fitness journey, managing to run a Marathon for the first time. She'd been training for months, sacrificing plenty of free time and pushing her physical limits. This is a major accomplishment for Carla, and she should feel proud of herself for achieving such a goal. Therefore, the answer is (2) Proud."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jessica's pet dog went missing one morning when it managed to escape through a crack in the fence. After several hours of frantic searching, she found him safe and sound in a local park. How Jessica would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Angry; (3) Bored; (4) Disinterested",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Relieved;\n\nJessica would feel relieved because her pet dog went missing and she was worried about its safety. After several hours of frantic searching, she found her dog safe and sound in a local park. This would cause her to feel relieved and happy that her dog was found."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: David was overlooked for a big promotion at work that he had been eagerly anticipating. His boss explained his decision, saying that although David was a strong candidate, the position went to a more experienced colleague. How David would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Joyful; (2) Indifferent; (3) Disappointed; (4) Surprised",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Disappointed;\n\nDavid was overlooked for a big promotion at work that he had been eagerly anticipating. This suggests that he had high expectations for the promotion and was probably looking forward to the increased responsibilities and opportunities it would provide. When his boss explained that the position went to a more experienced colleague, it is likely that David would feel disappointed. He may have felt like he was not chosen because he\u7f3a\u4e4f\u7ecf\u9a8c\uff0c which could make him feel like he has failed in some way. Additionally, he may have been surprised by the decision since he may have believed he was a strong candidate. However, the emotion most closely related to his situation is disappointment."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jane was expecting a normal day when she got a surprise visit from an old friend she hadn't seen in years. They spent the day reminiscing about their shared past. How Jane would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Joyful; (2) Nervous; (3) Disgusted; (4) Frustrated",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, it is most likely that Jane would feel (1) Joyful.\n\nThe story mentioned that Jane was expecting a normal day, but then she got a surprise visit from an old friend she hadn't seen in years. They spent the day reminiscing about their shared past. This suggests that Jane would feel happy and joyful to see her old friend again after so many years."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Tom accidentally deleted a major project he had been working on for weeks. He didn't have any backups and would have to begin all over again. How Tom would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Proud; (2) Excited; (3) Frustrated; (4) Content",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "Tom would feel (3) Frustrated.\n\nThe story describes Tom accidentally deleting a major project he had been working on for weeks. He doesn't have any backups and would have to begin all over again. This situation would cause Tom to feel frustrated because he has lost weeks of work and has to start from scratch. Frustration is a common emotion when something doesn't go according to plan or when a person feels like they are not making progress towards their goals."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sarah has been preparing for her university entrance examination for months. She has worked hard and has always been top of her class. On the day of the exam, she woke up with a fever and headache. How Sarah would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Furious; (2) Disappointed; (3) Doubtful; (4) Anxious",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Disappointed.\n\nSarah has been working hard for months to prepare for her university entrance exam, so she would feel very disappointed when she woke up on the day of the exam with a fever and headache. She would be unable to perform her best in the exam due to her illness, which would result in her disappointment."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Edward just heard that his pet dog, whom he has raised since it was a puppy, is seriously ill. Despite the vet's best efforts, they are not sure if the dog will survive. How Edward would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Grief; (2) Anger; (3) Relief; (4) Indifferent",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Grief;\n\nEdward's pet dog is seriously ill, and the vet's best efforts have not guaranteed its survival. Edward may feel a deep sense of loss and sadness, as the dog has been a part of his life since it was a puppy. He may also feel helpless and hopeless about the situation. Therefore, grief is the most appropriate emotion to describe Edward's feelings in this situation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Julia was excited about the debut of her painting at a prestigious art exhibition. However, when she arrived there, she found out that her painting had been replaced by someone else's. How Julia would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Betrayed; (2) Content; (3) Understanding; (4) Apathetic",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Betrayed\n\nJulia would feel betrayed. She had worked hard on her painting and was excited about its debut at the prestigious art exhibition. When she arrived, she found out that her painting had been replaced by someone else's, which would make her feel like her efforts had been betrayed. She might also feel like her reputation had been tarnished and that she had been disrespected by the organizers of the exhibition."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Robert has been trying to convince his team about a new project idea for weeks. Finally, at today's meeting, everyone agreed and supported his idea. How Robert would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Indigenous; (2) Relieved; (3) Discouraged; (4) Skeptical",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Relieved.\n\nRobert has been trying to convince his team about a new project idea for weeks. Finally, at today's meeting, everyone agreed and supported his idea. This indicates that Robert has been under a lot of pressure and has been trying hard to get the support of his team. Therefore, he would feel relieved now that his efforts have paid off and he has received the support of his team."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Emily is a writer who has just got her first book published. On the day of its release, she received a call from a renowned bookstore inviting her to do a book signing event. How Emily would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Confused; (2) Worried; (3) Proud; (4) Exhausted",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Emily is a writer who has just got her first book published. The bookstore's invitation to do a book signing event is a positive opportunity for her. Therefore, Emily would most likely feel proud and happy about the opportunity.\n\nTherefore, the answer is (3) Proud."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sophia has been working on a project for weeks and was looking forward to presenting it to her boss. However, on the day of the presentation, her colleague was given the chance to present instead. How Sophia would feel?\nYou can only choose one of these options, and remember to include the option number on your answer:: (1) Indignant; (2) Excited; (3) Joyful; (4) Surprised",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Indignant\n\nSophia has been working hard on the project for weeks and was looking forward to presenting it to her boss. However, on the day of the presentation, her colleague was given the chance instead. This is a situation that would make Sophia feel indignant because she would have worked so hard for something that she was not able to present. She may also feel like her boss did not appreciate her work or recognize her efforts. Therefore, option (1) is the most appropriate answer to predict Sophia's emotions in this situation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: John has been planning a surprise birthday party for his girlfriend. The day finally arrived, and his venue was canceled on him at the last minute, but he managed to book another one just in time. How John would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Relieved; (3) Confused; (4) Wistful",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Relieved.\n\nJohn was planning a surprise birthday party for his girlfriend, but he encountered a problem with the venue at the last minute. However, he managed to book another one just in time. This suggests that John was feeling relieved because he had overcome the problem and was able to go ahead with his plans."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sarah has been studying hard for her final exam. Once she saw the questions, she realized the topics she had focused on studying weren't covered. How Sarah would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Betrayed; (2) Joyful; (3) Frustrated; (4) Relieved",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Frustrated;\n\nSarah would feel frustrated because she had studied hard for the exam, but when she saw the questions, she realized that the topics she had focused on studying weren't covered. This would make her feel disappointed and helpless about the situation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Lisa had been preparing for her wedding day for months. On the wedding day, everything went smoothly and the weather was perfect. How Lisa would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Anxious; (2) Joyful; (3) Tired; (4) Confused",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Joyful.\n\nThe story mentioned that Lisa had been preparing for her wedding day for months and everything went smoothly on the day. This suggests that Lisa would feel happy and satisfied on her wedding day. Therefore, the most appropriate emotion for Lisa to feel is joyful."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Mike has managed to secure a job interview at his dream company. The night before the interview, he learned that his childhood friend got seriously sick. How Mike would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Angry; (3) Worried; (4) Proud",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Worried.\n\nMike would feel worried because he is facing two stressful situations at the same time: his childhood friend got sick, and he has a job interview the next day. This would make him feel overwhelmed and concerned about both the interview and his friend's health."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sarah is a dedicated violinist and has been preparing for a significant concert for months. On the day of the performance, she wakes up feeling unwell. Despite feeling sick, she considers taking the stage. How Sarah would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Intimidated; (2) Excited; (3) Apprehensive; (4) Pleased",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Apprehensive - Sarah would feel apprehensive because she has been preparing for this concert for months and now, on the day of the performance, she wakes up feeling unwell. She would be concerned about whether she would be able to perform well or if she would even be able to perform at all."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Mark works in a fast-paced tech company. He has been assigned a new project that requires skills he has not yet mastered. Though excited about the opportunity to learn, he is also afraid of underperforming. How Mark would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Anxious; (2) Overwhelmed; (3) Energized; (4) Relieved",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Anxious\n\nMark is assigned a new project that requires skills he has not mastered yet. This means that he is not fully prepared for the task, which can lead to feelings of anxiety. Although he is excited about the opportunity to learn, he is also afraid of underperforming. This suggests that he has some degree of uncertainty about his ability to handle the project, which further fuels his anxiety. Therefore, Mark would feel anxious about the new project."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Emma is a passionate environmentalist. She has launched a recycle-and-reuse program in her community, which has gained significant traction. The government has taken notice and plans to implement her idea nationwide. How Emma would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Proud; (2) Worried; (3) Discounted; (4) Disappointed",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Emma's emotions would most likely be: (1) Proud.\n\nEmma is described as a passionate environmentalist who has launched a successful recycle-and-reuse program in her community. The government has taken notice and plans to implement her idea nationwide. This shows that Emma's efforts have been recognized and her ideas have the potential to make a significant impact on a larger scale. Therefore, Emma would most likely feel proud of her accomplishment and the impact she has made."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Olivia has been training for a marathon. Today is the day of the race, and she is full of energy and anxiety. She does her best and manages to finish fourth. How Olivia would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Disappointed; (2) Joyful; (3) Proud; (4) Angry",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Proud\n\nOlivia has been training for a marathon, indicating that she has been putting in a lot of effort and preparation. She is also full of energy and anxiety, which further suggests that she is highly invested in the race. She has done her best and managed to finish fourth, which is a commendable achievement. Therefore, Olivia would feel proud of her accomplishment."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: David has spent weeks preparing a surprise anniversary dinner for his wife. On the day, he gets a call from his wife stating she would be late due to urgent work matters. How David would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Saddened; (2) Worried; (3) Frustrated; (4) Confused",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(2) Worried.\n\nDavid has spent weeks preparing a surprise anniversary dinner for his wife, indicating his investment and dedication to this special occasion. When his wife calls to say she will be late due to urgent work matters, it is reasonable to assume that David would feel worried. He may be concerned about his wife's safety, her work situation, or the possibility of the dinner being ruined. Worried is the most appropriate emotion to describe his reaction in this situation."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Ella arrived at the city's main bakery to find out that her favorite chocolate-cherry pie had just been sold out. She had been thinking about it all day and couldn't wait to taste it. How Ella would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Disappointed; (2) Joyful; (3) Angry; (4) Puzzled",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Disappointed. Ella had been thinking about the chocolate-cherry pie all day and couldn't wait to taste it, so she would feel disappointed when she found out that it had just been sold out."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Josh was told by his boss that he was selected to lead the presentation for the company's largest client. He was excited but also nervous as he knew the stakes were high. How Josh would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Proud; (2) Sad; (3) Fearful; (4) Surprised",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Josh was told by his boss that he was selected to lead the presentation for the company's largest client. He was excited but also nervous as he knew the stakes were high.\n\nHow Josh would feel?\n\nOption: (1) Proud\n\nExplanation: Josh was excited to be chosen for such an important task, which indicates a positive emotional response. Although he was also nervous, the overall emotion described is positive and suggests a sense of pride and accomplishment. Therefore, option (1) \"Proud\" is the most appropriate choice."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: While hiking, Sophia came across a lost kitten shivering in the cold. She scooped it up and warmed it in her jacket. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Elated; (2) Compassionate; (3) Confused; (4) Angry",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Compassionate; Sophia would feel compassionate when she came across the lost kitten shivering in the cold. She scooped it up and warmed it in her jacket, which shows her care and concern for the kitten."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After working week after week on a new art piece, Ava stepped back to find that she had created something beyond her own expectations. She felt an overwhelming sense of achievement. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Elated; (2) Puzzled; (3) Disgusted; (4) Sad",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Ava had been working hard on a new art piece and when she stepped back to see her creation, she felt that she had surpassed her own expectations. This sense of achievement was overwhelming.\n\nGiven this context, it is likely that Ava would feel elated at her accomplishment. She would feel a sense of pride and satisfaction in her hard work and effort, which had paid off. Therefore, the answer is (1) Elated."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: During Math class, Max solved a tough problem that even his teacher struggled to solve. His classmates applauded him. How Max would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Sad; (2) Proud; (3) Afraid; (4) Angry",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Proud\n\nMax solved a tough problem that even his teacher struggled to solve, and his classmates applauded him. This suggests that Max would feel proud because he accomplished something difficult and was recognized for his achievement."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Lily received a letter from her high school boyfriend, whom she hasn't heard from in 10 years. The letter contained an apology and an invitation to meet. How Lily would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Surprised; (3) Excited; (4) Indifferent",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, it seems that Lily would feel \"Surprised\". After 10 years of silence, her high school boyfriend suddenly contacted her with an apology and an invitation to meet. This unexpected turn of events would most likely make Lily feel surprised."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jack just found out that his younger brother broke his expensive gaming console while he was away at work. How Jack would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Sad; (3) Disgusted; (4) Shocked",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Jack would feel (1) Angry.\n\nJack would feel angry because he just found out that his younger brother broke his expensive gaming console while he was away at work. This is a situation where Jack has lost an important asset, and he would be furious at his younger brother for not taking care of it while he was away. Jack may also feel sad and disappointed that his brother has caused him such loss, but the main emotion he would feel is anger."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Maria, who usually struggles in singing, sang a song at the Christmas party and everyone applauded her. How Maria would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Embarrassed; (2) Proud; (3) Fearful; (4) Surprised",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Proud\n\nMaria usually struggles in singing, so she may not expect everyone to applaud her when she sings at the Christmas party. Therefore, when everyone applauds her, Maria would feel proud of herself for overcoming her difficulties and performing well."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Kate received news that her pet dog, who had been missing for a week, was found and returned home safely. How Kate would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Relieved; (2) Worried; (3) Angry; (4) Confused",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Kate received news that her missing pet dog was found and returned home safely. This news should bring relief and happiness to Kate, as she no longer needs to worry about her dog's safety. Therefore, the most appropriate emotion to describe Kate's feeling is \"relieved.\""
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Thomas, a veteran chess player, lost a game to a teenager in a local challenge. How Thomas would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Embarrassed; (2) Shocked; (3) Sad; (4) Angry",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Thomas, a veteran chess player, lost a game to a teenager in a local challenge. Based on this information, we can predict that Thomas would feel: (1) Embarrassed.\n\nThomas is a veteran chess player who has presumably won many games in his career. However, he lost to a teenager in a local challenge, which would make him feel embarrassed. Losing a game to someone who is less experienced or younger than you are can be a humbling experience, especially for someone who takes pride in their skills and achievements. Therefore, Thomas would likely feel embarrassed as a result of his loss."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: During lunch break, Emma saw her best friend Lisa eating alone. She decided to join her, but Lisa ignored her and walked away. How Emma would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Happy; (2) Surprised; (3) Sad; (4) Angry",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "3. Sad. Emma would feel sad because her best friend Lisa ignored her and walked away during lunch break. This suggests that something might be wrong between them, which would make Emma feel sad and lonely."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After weeks of hard work, Sam finally finished his science project, but on the day of the presentation, his brother accidentally broke it. How He would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Angry; (3) Happy; (4) Confused",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Angry\u3002\n\n\u6839\u636e\u6545\u4e8b\uff0cSam\u7ecf\u8fc7\u51e0\u5468\u7684\u52aa\u529b\u624d\u5b8c\u6210\u4ed6\u7684\u79d1\u5b66\u9879\u76ee\uff0c\u4f46\u662f\u5728\u5c55\u793a\u7684\u90a3\u5929\uff0c\u4ed6\u7684\u5144\u5f1f\u4e0d\u5c0f\u5fc3\u628a\u5b83\u5f04\u574f\u4e86\u3002\u8fd9\u79cd\u60c5\u51b5\u4e0b\uff0cSam\u5f88\u53ef\u80fd\u4f1a\u611f\u5230\u751f\u6c14\uff0c\u56e0\u4e3a\u4ed6\u5931\u53bb\u4e86\u5c55\u793a\u4ed6\u52aa\u529b\u5de5\u4f5c\u7684\u673a\u4f1a\uff0c\u5e76\u4e14\u53ef\u80fd\u56e0\u6b64\u611f\u5230\u6cae\u4e27\u548c\u5931\u671b\u3002\u56e0\u6b64\uff0c\u7b54\u6848\u4e3a(2) Angry\u3002"
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Lydia found an anonymous love letter in her locker. After reading it, she saw her friend Mark blushing in the corner of the hallway. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Surprised; (3) Excited; (4) Sad",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Lydia's reaction would be most likely option (2) Surprised. The story mentioned that Lydia found an anonymous love letter in her locker and then saw her friend Mark blushing in the corner of the hallway. This suggests that Lydia was not expecting the letter or Mark's reaction, and she was taken by surprise."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jake lost his pet dog a month ago. Today, while walking home from school, he saw a dog that looked exactly like his lost pet. How He would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Happy; (2) Sad; (3) Surprised; (4) Fear",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(2) Sad. Jake lost his pet dog a month ago, so he would feel sad when he saw a dog that looked exactly like his lost pet. The fact that the dog was lost already would remind him of his own loss and make him feel sad."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Mary's parents promised her a trip to Disneyland if she scored good grades. She worked really hard and got top grades in all subjects. How She would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Sad; (2) Angry; (3) Surprised; (4) Excited",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "(4) Excited.\n\nMary worked really hard and got top grades in all subjects because her parents promised her a trip to Disneyland if she did well. She would feel excited because she achieved her goal and will now get a reward."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: On his birthday, Brandon received a surprise gift from his friends. When he unwrapped it, it was the book that he had been wanting for months. How Brandon would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Excited; (2) Indifferent; (3) Annoyed; (4) Regretted",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Brandon would feel (1) Excited.\n\nThe story says that Brandon received a surprise gift from his friends on his birthday, and it was the book that he had been wanting for months. This means that Brandon was very eager to receive this book, so he would feel excited when he finally got it."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Victoria prepared for the chess championship for months. However, on the day of the competition, she fell ill and couldn't participate. How Victoria would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Happy; (2) Surprised; (3) Regretted; (4) Sad",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "(4) Sad\u3002\n\nVictoria\u51c6\u5907\u4e86\u6570\u6708\u7684\u56fd\u9645\u8c61\u68cb\u9526\u6807\u8d5b\uff0c\u4f46\u662f\u5728\u6bd4\u8d5b\u5f53\u5929\u751f\u75c5\u4e86\uff0c\u65e0\u6cd5\u53c2\u52a0\u3002\u56e0\u6b64\uff0c\u5979\u53ef\u80fd\u4f1a\u611f\u5230\u975e\u5e38\u5931\u671b\u548c\u4f24\u5fc3\u3002"
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Jerry's brother borrowed his car and returned it damaged, but did not apologize. How Jerry would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Proud; (2) Bitter; (3) Comfortable; (4) Joyful",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, it is likely that Jerry would feel bitter. The story describes how Jerry's brother borrowed his car and returned it damaged without apologizing. This behavior is disrespectful and could leave Jerry feeling angry and disappointed. Therefore, option (2) \"Bitter\" would be the most appropriate description of how Jerry would feel."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Alice had been working on an important project for weeks when she accidentally deleted her work before saving it. How Alice would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Pleased; (2) Surprised; (3) Disgusted; (4) Frustrated",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "(4) Frustrated. Alice would feel frustrated because she had been working hard on the project for weeks and accidentally deleted her work before saving it. This would lead to a sense of helplessness and disappointment in herself for making such a careless mistake."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: During a hiking trip, Frank helped a fellow hiker who lost their way, guiding them back to the camp. How Frank would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Ashamed; (2) Proud; (3) Regretted; (4) Disgusted",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Based on the story, Frank helped a fellow hiker who lost their way. This is a positive and helpful act. Therefore, I predict that Frank would feel proud after this act.\n\nTherefore, the answer is (2) Proud."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Megan was working on an important project with her team. They had all agreed to finish their respective parts by today. However, Megan found out that one of her workmates had done nothing, putting the team in jeopardy. How Megan would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised (2) Frustrated (3) Happy (4) Relieved",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Frustrated. Megan would feel frustrated because her teammate's lack of contribution is jeopardizing the project, which is important to her and her team."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: John was out having dinner with his family. Ecstatically, he opened his college acceptance letter in the mail, only to find out it was actually a rejection. How John would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Humiliated (2) Surprised (3) Frustrated (4) Excited",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "John would feel: (3) Frustrated.\n\nJohn was ecstatic when he opened the college acceptance letter in the mail, expecting good news. However, he found out it was actually a rejection, which would make him feel frustrated. Frustration is a common emotion when something expected does not happen or when a person fails to achieve their goal."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Sarah had practiced for months for her piano recital. On the day, her best friend, who promised to come, didn't show up. How Sarah would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Thrilled (2) Angry (3) Frustrated (4) Surprised",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Sarah would feel (3) Frustrated.\n\nSarah had practiced for months for her piano recital, so she would feel frustrated when her best friend, who promised to come, didn't show up. She might feel like her hard work had been wasted or that her friend didn't value their relationship enough to keep their promise."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Matthew was at the supermarket. He saw an elderly woman having trouble picking up an item from a high shelf. Instead of offering help, another shopper rushed past, knocking her basket to the floor. How Matthew would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Disgusted (2) Surprised (3) Relieved (4) Excited",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Disgusted - Matthew would feel disgusted by the other shopper's behavior. The elderly woman was obviously having trouble picking up the item, yet the other shopper did not offer any assistance and even knocked her basket to the floor. This behavior is unacceptable and Matthew would feel morally outraged."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Lily found out on social media that her best friend had won an award. She hadn't mentioned anything about it the last time they spoke. How Lily would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised (2) Nervous (3) Frustrated (4) Excited",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Lily would feel **surprised** because she found out about her best friend's award on social media, rather than being told directly by her friend."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After weeks of working on a group project, Jane discovered her partner had been boasting about the work, despite Jane carrying most of the workload and effort. Jane realized her partner had taken credit for her contributions. How Jane would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Joy; (2) Fear; (3) Disappointed; (4) Surprised",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Disappointed;\n\nJane would feel disappointed because she discovered that her partner had been boasting about the work, taking credit for her contributions. This behavior would make Jane feel that her partner was not being fair or respectful to her efforts, which she had put in weeks of hard work. Therefore, she would feel disappointed and let down by her partner's actions."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Karen, a diligent employee, found that her boss had accused her of making a serious error that led to a major client loss. However, the mistake was made by her boss and has been overlooked. How Karen would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Fear; (2) Angry; (3) Content; (4) Excited",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Karen would feel (2) Angry.\n\nThe story suggests that Karen is a diligent employee who has been falsely accused by her boss of making a serious error. The mistake was actually made by the boss, but she has been overlooked. This situation would likely make Karen feel angry and wronged, as she has been falsely accused of something she did not do. She may also feel dissatisfied with the situation and her boss's behavior."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Andrew arrived at the animal shelter to adopt a dog. To his dismay, all the dogs had been adopted except one, who was older and a bit mangy-looking. Still, it wagged its tail excitedly at him. How Andrew would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Disgusted; (2) Surprised; (3) Contempt; (4) Sympathy",
+        "option": "4",
+        "label": "emotional_awareness",
+        "res": "(4) Sympathy\n\nAndrew would feel sympathy for the dog because it is old, mangy-looking, and the only one left at the animal shelter. The dog's wagging tail shows that it is excited to meet Andrew, which would make him feel sorry for it."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Mary was traveling by train, when she saw a fellow passenger throw their rubbish out the window onto the tracks below. Despite Mary's belief in environmental stewardship, the passenger continued even after her polite request not to do so. How Mary would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Disgusted; (2) Excited; (3) Surprised; (4) Joyful",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Disgusted;\n\nMary would feel disgusted by the passenger's behavior. She holds a belief in environmental stewardship, which means she cares about protecting the environment and is concerned about littering. Therefore, when she sees the passenger throwing their rubbish out the window onto the tracks below, despite her polite request, she would feel a sense of revulsion and dissatisfaction towards their behavior."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Peter received feedback on his novel which he'd been writing for years. The editor mentioned that, despite having potential, his manuscript was declined due to a glut of similar stories in the market. How Peter would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Frustrated; (3) Joy; (4) Content",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Peter would feel (2) Frustrated.\n\nDespite the editor's comment that his manuscript has potential, the news that his novel was declined due to a glut of similar stories in the market would still be disappointing for Peter. This feedback would leave him feeling frustrated because he had been working on this novel for years and may have invested a lot of time, energy, and effort into it. The editor's decision would likely make Peter feel like his work was not good enough or unique enough to stand out in the market. Therefore, option (2) Frustrated is the most appropriate answer."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: David had saved and planned for a family vacation to the mountains. However, a few days before they were due to leave, his wife announced she had booked them for a beach vacation instead, without discussing it with him. How David would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Amused; (2) Frustrated; (3) Content; (4) Surprised",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Frustrated.\n\nDavid had saved and planned for a family vacation to the mountains, indicating that he had a strong preference for that destination. When his wife announced that they were going to the beach instead, without consulting him, it is likely that he would feel frustrated. This is because he had already established his plans and preferences for the vacation, and now he would have to change them at the last minute. Additionally, he may feel that his wife disregarded his input and preferences, which would also contribute to his frustration."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Nancy was promoted to a leadership position at work. At her first meeting, she found her team was dismissive of her experiences and they ignored her suggestions. How Nancy would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Angry; (2) Amused; (3) Proud; (4) Content",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "Based on the story, it is likely that Nancy would feel angry. Her team was dismissive of her experiences and ignored her suggestions, which would make anyone feel disrespected and unheard. Therefore, the most appropriate emotion for Nancy to feel would be angry."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Andy had been preparing for his piano recital for weeks. On the day of the recital, his sister accidentally spilled coffee on his sheet music, ruining it. How Andy would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Proud; (2) Angry; (3) Amused; (4) Pleased",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Andy would feel angry.\n\nThe story described that Andy had been preparing for his piano recital for weeks and his sister accidentally spilled coffee on his sheet music, ruining it. This would make Andy feel angry because his sister's carelessness had caused him to lose an important part of his preparation for the recital."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Emily was highly anticipating the release of a new book by her favorite author. However, when it finally came out, she found that the book didn't live up to her expectations at all. How Emily would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Proud; (2) Content; (3) Disappointed; (4) Amused",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Disappointed;\n\nEmily was highly anticipating the release of a new book by her favorite author, indicating that she had high expectations for the book. However, when the book finally came out, she found that it didn't live up to her expectations at all. This means that her expectations were not met, and she would feel disappointed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Martin organizes a surprise party for his wife's birthday, invites all her friends, and cooks her favorite meal. However, his wife comes home late from work, is tired, and opts to go to bed having no energy to celebrate. How Martin would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Disappointed; (2) Content; (3) Proud; (4) Amused",
+        "option": "1",
+        "label": "emotional_awareness",
+        "res": "(1) Disappointed\n\nMartin organized a surprise party for his wife's birthday, but his wife came home late from work, feeling tired and opting to go to bed without energy to celebrate. This would make Martin feel disappointed because he had made a lot of effort to plan the party, but his wife was not able to enjoy it."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Emma went to a restaurant and ordered her favorite dish. After waiting long, the waiter finally served the food but it was cold and not properly cooked. Despite complaining, they did nothing to correct it. How Emma would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Disappointed; (3) Delighted; (4) Fascinated",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Disappointed;\n\nEmma\u4f1a\u611f\u5230\u5931\u671b\uff0c\u56e0\u4e3a\u5979\u7b49\u5f85\u4e86\u5f88\u957f\u65f6\u95f4\u624d\u7b49\u5230\u81ea\u5df1\u6700\u559c\u6b22\u7684\u83dc\uff0c\u4f46\u662f\u83dc\u5374\u51b7\u6389\u4e86\u5e76\u4e14\u6ca1\u6709\u505a\u597d\u3002\u5c3d\u7ba1\u5979\u62b1\u6028\u4e86\uff0c\u4f46\u662f\u9910\u5385\u5e76\u6ca1\u6709\u91c7\u53d6\u4efb\u4f55\u63aa\u65bd\u6765\u89e3\u51b3\u95ee\u9898\uff0c\u8fd9\u4f1a\u8ba9\u5979\u611f\u5230\u5931\u671b\u3002"
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Lisa saw that her neighbor's dog had dug up her flower garden for the third time this month. Despite several friendly warnings, her neighbor had not taken any action yet to prevent this from happening again. How Lisa would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Disgusted; (2) Angry; (3) Surprised; (4) Delighted",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Angry;\n\nLisa would feel angry because her neighbor's dog has dug up her flower garden for the third time this month, despite several friendly warnings. This behavior is unacceptable and Lisa would feel justified in feeling angry."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Ryan caught his best friend spreading false rumors about him behind his back. Considering their years of friendship, Ryan didn't expect this kind of behavior from his friend. How Ryan would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Disappointed; (3) Angry; (4) Contempt",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "Ryan would feel (2) Disappointed.\n\nRyan would feel disappointed because his best friend has betrayed his trust by spreading false rumors about him. The friendship they had built over years of mutual trust and support would be shattered, causing Ryan to feel let down and disillusioned. Ryan would feel that his friend has not only breached their trust, but has also sullied his reputation and character. This would make Ryan feel angry and disappointed, as he would have expected better from his closest friend."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: After months of hard work, Amanda finally finished writing her novel. She sent it to her editor, who seemed indifferent and didn't appreciate Amanda's effort at all. How Amanda would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Surprised; (2) Disappointed; (3) Delighted; (4) Angry",
+        "option": "2",
+        "label": "emotional_awareness",
+        "res": "(2) Disappointed;\n\nAfter months of hard work, Amanda finally finished writing her novel, which she sent to her editor. However, the editor seemed indifferent and didn't appreciate Amanda's effort at all. Therefore, Amanda would feel disappointed."
+    },
+    {
+        "prompt": "You have been provided with a short story below. Please read the story carefully and answer the following questions to predict the emotions of the characters.\nStory: Peter was enthusiastically talking about his new business idea, but his friends laughed it off and didn't take him seriously. How Peter would feel?\nYou can only choose one of these options, and remember to include the option number on your answer: (1) Delighted; (2) Surprised; (3) Angry; (4) Disgusted",
+        "option": "3",
+        "label": "emotional_awareness",
+        "res": "(3) Angry.\n\nPeter would feel angry because he was enthusiastically sharing his new business idea, but his friends didn't take him seriously and laughed it off. This would make Peter feel disrespected and disregarded for his ideas, leading to anger."
+    }
+]
