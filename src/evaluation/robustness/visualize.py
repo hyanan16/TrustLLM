@@ -73,9 +73,13 @@ def visual_total_score(save_path):
     # Unzip into two lists after sorting
     sorted_names, sorted_scores = zip(*sorted_llm_data)
 
+    # Define the coolwarm colormap
+    cmap = plt.get_cmap('coolwarm')
+    colors = [cmap(i / len(sorted_names)) for i in range(len(sorted_names))]
+
     # Plotting
     plt.figure(figsize=(10, 8))
-    plt.barh(sorted_names, sorted_scores, color='skyblue')
+    plt.barh(sorted_names, sorted_scores, color=colors)
     plt.xticks(fontsize=14)
     plt.yticks(fontsize=11.5)
     plt.xlabel('Scores', fontsize=16)
@@ -83,6 +87,7 @@ def visual_total_score(save_path):
     plt.gca().invert_yaxis()  # Invert y-axis to have the highest score at the top
     plt.savefig(os.path.join(save_path, 'advglue_score.pdf'), dpi=200)
     plt.show()
+
 
 
 if __name__ == "__main__":
