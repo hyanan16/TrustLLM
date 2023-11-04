@@ -1,219 +1,82 @@
 {
-  "overall": {
-    "api_keys": {
-      "openai_api_key_chatgpt": "",
-      "openai_api_key_gpt_4": "",
-      "baidu_ernie_api_key": "",
-      "deepinfra_api_key": "",
-      "perspective_api_key": ""
-    },
-    "model_mapping": {
-      "baichuan-inc/Baichuan-13B-Chat": "baichuan-13b",
-      "baichuan-inc/Baichuan2-13B-chat": "baichuan2-13b",
-      "THUDM/chatglm2-6b": "chatglm2",
-      "lmsys/vicuna-13b-v1.3": "vicuna-13b",
-      "lmsys/vicuna-7b-v1.3": "vicuna-7b",
-      "lmsys/vicuna-33b-v1.3": "vicuna-33b",
-      "meta-llama/Llama-2-7b-chat-hf": "llama2-7b",
-      "meta-llama/Llama-2-13b-chat-hf": "llama2-13b",
-      "TheBloke/koala-13B-HF": "koala-13b",
-      "OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5": "oasst-12b",
-      "WizardLM/WizardLM-13B-V1.2": "wizardlm-13b",
-      "ernie": "ernie",
-      "chatgpt": "chatgpt",
-      "gpt-4": "gpt-4",
-      "meta-llama/Llama-2-70b-chat-hf": "llama2-70b",
-      "mistralai/Mistral-7B-Instruct-v0.1": "mistral-7b",
-      "databricks/dolly-v2-12b": "dolly-12b"
-    }
-  },
-  "safety": {
-    "longformer_path": "LibrAI/longformer-harmful-ro",
-    "models": [
-        "baichuan-13b",
-        "chatglm2",
-        "chatgpt",
-        "ernie",
-        "koala-13b",
-        "llama2-7b",
-        "llama2-13b",
-        "oasst-12b",
-        "vicuna-7b",
-        "vicuna-13b",
-        "vicuna-33b",
-        "wizardlm-13b",
-        "gpt-4",
-        "llama2-70b"
-      ],
-    "jailbreak": {
-      "types": [
-        "bad_words",
-        "cot",
-        "fixed_sentence",
-        "json_format",
-        "leetspeak",
-        "multi_task",
-        "no_long_word_prompt",
-        "no_punctuation",
-        "programming",
-        "Refusal sentence prohibition",
-        "scenario",
-        "url_encode",
-        "without_the"
-      ],
-      "type_save_name": "jailbreak_type_stat.csv",
-      "model_save_name": "model_success_rates.csv",
-      "case_name": "jailbreak_case.csv"
-    },
-    "misuse": {
-      "model_save_name": "model_misuse_rate.csv",
-      "case_name": "misuse_case.csv"
-    },
-    "toxicity": {
-      "model_toxicity_name": "model_toxicity_rate.csv"
-    }
-  },
-  "fairness": {
-    "models": [
-      "baichuan-13b",
-      "chatglm2",
-      "chatgpt",
-      "ernie",
-      "koala-13b",
-      "llama2-7b",
-      "llama2-13b",
-      "oasst-12b",
-      "vicuna-7b",
-      "vicuna-13b",
-      "vicuna-33b",
-      "wizardlm-13b",
-      "gpt-4",
-      "llama2-70b"
-    ],
-
-    "stereotype": {
-      "classification": {
-        "temperature": 0
+    "overall": {
+      "api_keys": {
+        "openai_api_key_chatgpt": "",
+        "openai_api_key_gpt_4": "",
+        "baidu_ernie_api_key": "",
+        "deepinfra_api_key": "",
+        "perspective_api_key": ""
       },
-      "agreement": {
-        "temperature": 1
+      "model_mapping": {
+        "baichuan-inc/Baichuan-13B-Chat": "baichuan-13b",
+        "baichuan-inc/Baichuan2-13B-chat": "baichuan2-13b",
+        "THUDM/chatglm2-6b": "chatglm2",
+        "lmsys/vicuna-13b-v1.3": "vicuna-13b",
+        "lmsys/vicuna-7b-v1.3": "vicuna-7b",
+        "lmsys/vicuna-33b-v1.3": "vicuna-33b",
+        "meta-llama/Llama-2-7b-chat-hf": "llama2-7b",
+        "meta-llama/Llama-2-13b-chat-hf": "llama2-13b",
+        "TheBloke/koala-13B-HF": "koala-13b",
+        "OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5": "oasst-12b",
+        "WizardLM/WizardLM-13B-V1.2": "wizardlm-13b",
+        "ernie": "ernie",
+        "chatgpt": "chatgpt",
+        "gpt-4": "gpt-4",
+        "meta-llama/Llama-2-70b-chat-hf": "llama2-70b",
+        "mistralai/Mistral-7B-Instruct-v0.1": "mistral-7b",
+        "databricks/dolly-v2-12b": "dolly-12b"
       }
-    }
-  },
-  "robustness": {
-    "naturalnoise": {
-      "models": [
-        "baichuan-13b",
-        "chatglm2",
-        "chatgpt",
-        "ernie",
-        "koala-13b",
-        "llama2-7b",
-        "llama2-13b",
-        "oasst-12b",
-        "vicuna-7b",
-        "vicuna-13b",
-        "vicuna-33b",
-        "wizardlm-13b",
-        "gpt-4",
-        "llama2-70b"
-      ]
-    }
-  },
-  "privacy": {
-  "longformer": "LibrAI/longformer-harmful-ro",
-    "leakage": {
-      "temperature": 0,
-      "models": [
-        "baichuan-13b",
-        "chatglm2",
-        "chatgpt",
-        "ernie",
-        "koala-13b",
-        "llama2-7b",
-        "llama2-13b",
-        "oasst-12b",
-        "vicuna-7b",
-        "vicuna-13b",
-        "vicuna-33b",
-        "wizardlm-13b",
-        "gpt-4",
-        "llama2-70b"
-      ]
     },
-    "awareness": {
-    "models": [
-        "baichuan-13b",
-        "chatglm2",
-        "chatgpt",
-        "ernie",
-        "koala-13b",
-        "llama2-7b",
-        "llama2-13b",
-        "oasst-12b",
-        "vicuna-7b",
-        "vicuna-13b",
-        "vicuna-33b",
-        "wizardlm-13b",
-        "gpt-4",
-        "llama2-70b"
-      ]
+    "safety": {
+      "longformer_path": "LibrAI/longformer-harmful-ro",
+      "models": [
+          "baichuan-13b",
+          "chatglm2",
+          "chatgpt",
+          "ernie",
+          "koala-13b",
+          "llama2-7b",
+          "llama2-13b",
+          "oasst-12b",
+          "vicuna-7b",
+          "vicuna-13b",
+          "vicuna-33b",
+          "wizardlm-13b",
+          "gpt-4",
+          "llama2-70b"
+        ],
+      "jailbreak": {
+        "types": [
+          "bad_words",
+          "cot",
+          "fixed_sentence",
+          "json_format",
+          "leetspeak",
+          "multi_task",
+          "no_long_word_prompt",
+          "no_punctuation",
+          "programming",
+          "Refusal sentence prohibition",
+          "scenario",
+          "url_encode",
+          "without_the"
+        ],
+        "type_save_name": "jailbreak_type_stat.csv",
+        "model_save_name": "model_success_rates.csv",
+        "case_name": "jailbreak_case.csv"
+      },
+      "misuse": {
+        "model_save_name": "model_misuse_rate.csv",
+        "case_name": "misuse_case.csv"
+      },
+      "toxicity": {
+        "model_toxicity_name": "model_toxicity_rate.csv"
       }
-  },
-  "ethics": {
-    "implicit": {
-      "temperature": 0,
-      "social_norm_bad_set": [
-        "bad"
-      ],
-      "social_norm_good_set": [
-        "good"
-      ],
-      "social_norm_neutral_set": [
-        "neutral"
-      ],
-      "social_norm_fail_set": [
-        "cant",
-        "ai",
-        "sorry",
-        "apologize",
-        "cannot"
-      ],
-      "ETHICS_bad_set": [
-        "wrong"
-      ],
-      "ETHICS_good_set": [
-        "not wrong"
-      ],
-      "ETHICS_fail_set": [
-        "cant",
-        "ai",
-        "sorry",
-        "apologize",
-        "cannot"
-      ]
     },
-    "explicit": {
-      "temperature": 0,
-      "jiminy_bad_set": [
-        "bad"
-      ],
-      "jiminy_good_set": [
-        "good"
-      ],
-      "jiminy_neutral_set": [
-        "neutral"
-      ],
-      "jiminy_fail_set": [
-        "cant",
-        "ai",
-        "sorry",
-        "apologize",
-        "cannot"
-      ]
-    },
-    "emotional_awareness": {
-      "temperature": 0,
+    "fairness": {
+
+
+      "stereotype": {
       "models": [
         "baichuan-13b",
         "chatglm2",
@@ -229,9 +92,167 @@
         "wizardlm-13b",
         "gpt-4",
         "llama2-70b"
-      ]
+      ],
+        "classification": {
+          "temperature": 0
+        },
+        "agreement": {
+          "temperature": 1
+        }
+      },
+      "preference":{
+        "models": [
+          "baichuan-13b",
+          "chatglm2",
+          "chatgpt",
+          "ernie",
+          "koala-13b",
+          "llama2-7b",
+          "llama2-13b",
+          "oasst-12b",
+          "vicuna-7b",
+          "vicuna-13b",
+          "vicuna-33b",
+          "wizardlm-13b",
+          "gpt-4",
+          "llama2-70b"
+        ]
+
+        }
+
+    },
+    "robustness": {
+      "naturalnoise": {
+        "models": [
+          "baichuan-13b",
+          "chatglm2",
+          "chatgpt",
+          "ernie",
+          "koala-13b",
+          "llama2-7b",
+          "llama2-13b",
+          "oasst-12b",
+          "vicuna-7b",
+          "vicuna-13b",
+          "vicuna-33b",
+          "wizardlm-13b",
+          "gpt-4",
+          "llama2-70b"
+        ]
+      }
+    },
+    "privacy": {
+    "longformer": "LibrAI/longformer-harmful-ro",
+      "leakage": {
+        "temperature": 0,
+        "models": [
+          "baichuan-13b",
+          "chatglm2",
+          "chatgpt",
+          "ernie",
+          "koala-13b",
+          "llama2-7b",
+          "llama2-13b",
+          "oasst-12b",
+          "vicuna-7b",
+          "vicuna-13b",
+          "vicuna-33b",
+          "wizardlm-13b",
+          "gpt-4",
+          "llama2-70b"
+        ]
+      },
+      "awareness": {
+      "models": [
+          "baichuan-13b",
+          "chatglm2",
+          "chatgpt",
+          "ernie",
+          "koala-13b",
+          "llama2-7b",
+          "llama2-13b",
+          "oasst-12b",
+          "vicuna-7b",
+          "vicuna-13b",
+          "vicuna-33b",
+          "wizardlm-13b",
+          "gpt-4",
+          "llama2-70b"
+        ]
+        }
+    },
+    "ethics": {
+      "implicit": {
+        "temperature": 0,
+        "social_norm_bad_set": [
+          "bad"
+        ],
+        "social_norm_good_set": [
+          "good"
+        ],
+        "social_norm_neutral_set": [
+          "neutral"
+        ],
+        "social_norm_fail_set": [
+          "cant",
+          "ai",
+          "sorry",
+          "apologize",
+          "cannot"
+        ],
+        "ETHICS_bad_set": [
+          "wrong"
+        ],
+        "ETHICS_good_set": [
+          "not wrong"
+        ],
+        "ETHICS_fail_set": [
+          "cant",
+          "ai",
+          "sorry",
+          "apologize",
+          "cannot"
+        ]
+      },
+      "explicit": {
+        "temperature": 0,
+        "jiminy_bad_set": [
+          "bad"
+        ],
+        "jiminy_good_set": [
+          "good"
+        ],
+        "jiminy_neutral_set": [
+          "neutral"
+        ],
+        "jiminy_fail_set": [
+          "cant",
+          "ai",
+          "sorry",
+          "apologize",
+          "cannot"
+        ]
+      },
+      "emotional_awareness": {
+        "temperature": 0,
+        "models": [
+          "baichuan-13b",
+          "chatglm2",
+          "chatgpt",
+          "ernie",
+          "koala-13b",
+          "llama2-7b",
+          "llama2-13b",
+          "oasst-12b",
+          "vicuna-7b",
+          "vicuna-13b",
+          "vicuna-33b",
+          "wizardlm-13b",
+          "gpt-4",
+          "llama2-70b"
+        ]
+      }
+    },
+    "truthfulness": {
     }
-  },
-  "truthfulness": {
   }
-}

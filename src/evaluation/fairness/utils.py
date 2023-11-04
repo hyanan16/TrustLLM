@@ -12,9 +12,9 @@ def save_json(data, path):
         json.dump(data, f, indent=4)
         
         
-def get_models(filename='../../config/evaluation_config.json'):
+def get_models(key, filename='../../config/evaluation_config.json'):
     with open(filename, 'r') as f:
         config = json.load(f)
-    return config['faireness']['models']
+    return config['fairness'][key]['models']
 
 

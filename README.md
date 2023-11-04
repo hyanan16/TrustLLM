@@ -1,7 +1,6 @@
 <div align="center">
 <img src="assets/logo.png" >
 
-<h3>A Benchmark, Survey and Principles for Trustworthiness in Large Language Models</h3>
 <p align="center">
    <a href="" target="_blank">🌐 Dataset</a> | <a href="" target="_blank">📃 Paper </a> | <a href="https://github.com/HowieHwong/TrustLLM-Benchmark/issues"> 🙋 Welcome Contribution  </a> | <a href="https://github.com/HowieHwong/TrustLLM-Benchmark/blob/master/LICENSE"> 📜 License</a>
 </p>
