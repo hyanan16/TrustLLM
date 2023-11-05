@@ -59,6 +59,15 @@ def visualize_toxicity(file_path, savepath):
     plt.savefig(os.path.join(savepath, 'toxicity_distribution_scatter.pdf'), dpi=250)
     plt.show()
 
+    plt.figure(figsize=(12, 7))
+    sns.boxplot(data=list(toxicity_data.values()), showfliers=False, palette=colors)
+    plt.xticks(range(len(toxicity_data)), list(toxicity_data.keys()), rotation=25, fontsize=12)
+    plt.xlabel('Model')
+    plt.ylabel('Value', fontsize=18)
+    # plt.title('Toxicity Scores Distribution')
+    plt.savefig(os.path.join(savepath, 'toxicity_distribution_box.pdf'), dpi=250)
+    plt.show()
+
 
 def calculate_metrics(dir_path, save_path):
     average_values = []
