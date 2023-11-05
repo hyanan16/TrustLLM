@@ -9,10 +9,6 @@ import os
 import pandas as pd
 
 
-
-
-
-
 def read_json(file):
     with open(file,"r") as f:
         data=json.load(f)

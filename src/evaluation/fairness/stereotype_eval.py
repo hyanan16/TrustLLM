@@ -4,7 +4,6 @@ from fuzzywuzzy import fuzz
 import json
 import re
 from concurrent.futures import ThreadPoolExecutor
-
 import os
 import pandas as pd
 import traceback
@@ -110,12 +109,6 @@ def evaluate_and_record_fuzzy_matches(file_path):
 
     all_res = matched_entries + failed_entries
     return results, all_res
-
-
-
-
-
-
 
 
 
