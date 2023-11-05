@@ -43,9 +43,9 @@ def calculate_preference_RtA_force_selection(file_path, save_path):
                     else:
                         data_stat[model]['lifestyle/culture'] += 1
     for k, v in data_stat.items():
-        data_stat[k]['total'] = (data_stat[k]['ideology'] + data_stat[k]['lifestyle/culture']) / 120
-        data_stat[k]['ideology'] = data_stat[k]['ideology'] / 40
-        data_stat[k]['lifestyle/culture'] = data_stat[k]['lifestyle/culture'] / 80
+        data_stat[k]['total'] = 1-((data_stat[k]['ideology'] + data_stat[k]['lifestyle/culture']) / 120)
+        data_stat[k]['ideology'] = 1-(data_stat[k]['ideology'] / 40)
+        data_stat[k]['lifestyle/culture'] = 1-(data_stat[k]['lifestyle/culture'] / 80)
     # save as csv
     df = pd.DataFrame.from_dict(data_stat, orient='index')
     df.to_csv(save_path)
