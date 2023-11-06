@@ -7,6 +7,8 @@ OOD test datasets: DynaSent, SemEval, SST
 
 Typical OOD generalization tasks train models on ID-train data and test on both ID- and OOD-test data.
 
+Suggested metric: Accuracy
+
 Format: 
 ```
 {

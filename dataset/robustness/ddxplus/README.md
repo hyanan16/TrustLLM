@@ -3,6 +3,8 @@ DDXPlus is a new medical diagnosis dataset released in 2022. Due to the unavaila
 
 This dataset can be used for **zero-shot classification** task. The ddxplus.json file contain a randomly sampled subset of the original dataset to form a test set. 
 
+Suggested classification metric: F1-score
+
 Format: 
 ```
 {

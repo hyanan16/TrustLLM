@@ -3,6 +3,8 @@ Flipkart is a product review dataset released in 2022. Due to the unavailability
 
 This dataset can be used for **zero-shot classification** task. The flipkart.json file contain a reformat of the original dataset to form a test set. 
 
+Suggested classification metric: F1-score
+
 Format: 
 ```
 {
