@@ -2,7 +2,10 @@
 Task includes one ID dataset and three associated OOD datasets. The processed data are given in train.json or test.json under each folder.
 
 ID train/test dataset: Amazon
+
 OOD test datasets: DynaSent, SemEval, SST 
+
+Typical OOD generalization tasks train models on ID-train data and test on both ID- and OOD-test data.
 
 Format: 
 ```
@@ -13,7 +16,7 @@ Format:
 ```
 
 Task: Sentiment Analysis. Amazon contains reviews of 29 different categories of products from the Amazon website. DynaSent first identifies naturally challenging sentences from several existing datasets, and then creates adversarial sentences with a human-and-model-in-the-loop annotation approach. SemEval is a three-class sentiment analysis dataset focusing on tweets. SST consists of sentence-level movie reviews from the Rotten Tomatoes website.
-# Original data:
+# Original data information
 # Amazon
 
 Paper: [Hidden factors and hidden topics: understanding rating dimensions with review text](https://dl.acm.org/doi/10.1145/2507157.2507163)
@@ -28,20 +31,6 @@ Citation:
     year = {2013},
     booktitle = {Proceedings of ACM Conference on Recommender Systems},
 }
-```
-# DSC
-
-Paper: [Continual Learning with Knowledge Transfer for Sentiment Classification](https://arxiv.org/abs/2112.10021v1)
-
-Dataset Link: [Github](https://github.com/ZixuanKe/LifelongSentClass/tree/master/dat/dsc)
-
-Citation: 
-```
-@inproceedings{ke2020continual,
-    author= {Zixuan Ke and Bing Liu and Hao Wang and Lei Shu},
-    title= {Continual Learning with Knowledge Transfer for Sentiment Classification},
-    booktitle = {Proceedings of ECML-PKDD},
-    year = {2020}}
 ```
 
 
@@ -61,22 +50,6 @@ Citation:
       Kiela, Douwe",
     booktitle = "Proceedings of ACL-IJCNLP",
     year = "2021",
-}
-```
-
-# IMDb
-
-Paper: [Learning Word Vectors for Sentiment Analysis](https://aclanthology.org/P11-1015/)
-
-Dataset Link: [HuggingFace](https://huggingface.co/datasets/imdb)
-
-Citation: 
-```
-@inproceedings{maas2011learning,
-    author = {Maas, Andrew L.  and  Daly, Raymond E.  and  Pham, Peter T.  and  Huang, Dan  and  Ng, Andrew Y.  and  Potts, Christopher},
-    title = {Learning Word Vectors for Sentiment Analysis},
-    booktitle = {Proceedings of NAACL},
-    year = {2011},
 }
 ```
 
@@ -119,23 +92,6 @@ Citation:
       Potts, Christopher",
     booktitle = "Proceedings of EMNLP",
     year = "2013",
-}
-```
-
-
-# Yelp
-
-Paper: [Character-level Convolutional Networks for Text Classification](https://arxiv.org/abs/1509.01626)
-
-Dataset Link: [HuggingFace](https://huggingface.co/datasets/yelp_review_full)
-
-Citation: 
-```
-@article{asghar2016yelp,
- author = {Asghar, Nabiha},
- journal = {arXiv preprint arXiv:1605.05362},
- title = {Yelp dataset challenge: Review rating prediction},
- year = {2016}
 }
 ```
 

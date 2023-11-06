@@ -3,7 +3,10 @@
 Task includes one ID dataset and three associated OOD datasets. The processed data are given in train.json or test.json under each folder.
 
 ID train/test dataset: civil_comments
+
 OOD test datasets: implicit_hate, adv_civil, toxigen
+
+Typical OOD generalization tasks train models on ID-train data and test on both ID- and OOD-test data.
 
 Format: 
 ```
@@ -14,7 +17,7 @@ Format:
 ```
 
 Task: Toxic Detection. Civil Comments contains public comments on the Civil Comments platform, with users from diverse groups and various subtypes of toxic texts. AdvCivil, a new toxic dataset introduced in this paper, is generated from Civil Comments by textual adversarial attacks in an automated model-in-the-loop adversarial pipeline. Implicit Hate contains toxic tweets in both explicit and implicit forms. The latter can circumvent keyword-based toxic detection systems. ToxiGen is synthesized by GPT-3, covering several types of subtly and implicitly toxic texts on 13 minority groups.
-# Original data:
+# Original data information
 # AbuseAnalyzer
 
 Paper: [AbuseAnalyzer: Abuse Detection, Severity and Target Prediction for Gab Posts](https://arxiv.org/abs/2010.00038)
@@ -40,13 +43,6 @@ Citation:
 # AdvCivil
 Paper: [Revisiting Out-of-distribution Robustness in NLP: Benchmarks, Analysis, and LLMs Evaluations]()
 
-Dataset Link: [Github]()
-
-Citation:
-```
-
-```
-
 # Civil Comments
 
 Paper: [Nuanced Metrics for Measuring Unintended Bias with Real Data for Text Classification](https://arxiv.org/abs/1903.04561)
@@ -64,41 +60,6 @@ Citation:
   title = {Nuanced Metrics for Measuring Unintended Bias with Real Data for Text Classification},
   journal = {CoRR},
   year = {2019},
-}
-```
-
-# Hate Speech
-
-Paper: [Hate Speech Dataset from a White Supremacy Forum](https://arxiv.org/abs/1809.04444)
-
-Dataset Link: [HuggingFace](https://huggingface.co/datasets/hate_speech18)
-
-Citation:
-```
-@inproceedings{de-gibert-etal-2018-hate,
-    title = "Hate Speech Dataset from a White Supremacy Forum",
-    author = "de Gibert, Ona  and
-      Perez, Naiara  and
-      Garc{\'\i}a-Pablos, Aitor  and
-      Cuadros, Montse",
-    booktitle = "Proceedings of Workshop on Abusive Language Online ({ALW}2)",
-    year = "2018",
-}
-```
-
-# HSOL
-
-Paper: [Automated Hate Speech Detection and the Problem of Offensive Language](https://arxiv.org/abs/1703.04009)
-
-Dataset Link: [Github](https://github.com/t-davidson/hate-speech-and-offensive-language/tree/master/data)
-
-Citation:
-```
-@inproceedings{davidson2017automated,
-    title={Automated Hate Speech Detection and the Problem of Offensive Language},   
-    author={Davidson, Thomas and Warmsley, Dana and Macy, Michael and Weber, Ingmar}, 
-    booktitle={Proceedings of AAAI on Web and Social Media}, 
-    year={2017}, 
 }
 ```
 
@@ -121,29 +82,6 @@ Citation:
       Yang, Diyi",
     booktitle = "Proceedings of EMNLP",
     year = "2021",
-}
-```
-
-
-
-# OLID
-
-Paper: [Predicting the Type and Target of Offensive Posts in Social Media](https://arxiv.org/abs/1902.09666v2)
-
-Dataset Link: [Kaggle](https://www.kaggle.com/datasets/feyzazkefe/olid-dataset)
-
-Citation:
-```
-@inproceedings{zampieri-etal-2019-olid,
-    title = "Predicting the Type and Target of Offensive Posts in Social Media",
-    author = "Zampieri, Marcos  and
-      Malmasi, Shervin  and
-      Nakov, Preslav  and
-      Rosenthal, Sara  and
-      Farra, Noura  and
-      Kumar, Ritesh",
-    booktitle = "Proceedings of NAACL",
-    year = "2019",
 }
 ```
 
