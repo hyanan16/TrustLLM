@@ -126,5 +126,20 @@ def deal_with_crows_paris(filename):
     with open('../../fairness/crows_paris.json', 'w') as f:
         json.dump(all_data, f, indent=4)
 
+
+
+def get_ood_detection_dataset(filepath):
+    all_data = []
+    files = os.listdir(filepath)
+    for file in files:
+        with open(os.path.join(filepath, file)) as f:
+            for el in f.readlines():
+                all_data.append({'prompt': el})
+    # save as json
+    with open('../../robustness/ood_detection.json', 'w') as f2:
+        json.dump(all_data, f2, indent=4)
+
+
 if __name__ == '__main__':
-    deal_with_crows_paris('../crows_pairs/crows_pairs_anonymized.csv')
+    # deal_with_crows_paris('../crows_pairs/crows_pairs_anonymized.csv')
+    get_ood_detection_dataset('../ood')
