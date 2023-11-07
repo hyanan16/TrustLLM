@@ -3,7 +3,7 @@ import pandas as pd
 import re
 from utils import *
 
-models = get_models()
+models = get_models('naturalnoise')
 
 def save_json(data, filename):
     with open(filename, "w") as json_file:
