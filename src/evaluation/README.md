@@ -35,7 +35,7 @@
 #### 🔧*Usage*
 
 ```shell
-python robustness.py \
+python robustness_eval.py \
 --folderpath <path_to_folder> \
 --evaltype <evaluation_type> \
 --savepath <path_to_save_results> \
@@ -43,9 +43,9 @@ python robustness.py \
 ```
 
 `evaltype`: `['advglue', 'advinstruction_res', 'advinstruction_sim']`  
-`advglue`: generate the results of AdvGlue dataset.  
-`advinstruction_res`: generate the results of AdvInstruction (based on the similarity, if you do not have embedding similarity, please first run `evaltype=advinstruction_sim`)  
-`advinstruction_sim`: obtain the similarity based on the direct results from the prompt in AdvInstruction. (`embeddingpath` is necessary in this  `evaltype`)
+- `advglue`: generate the results of AdvGlue dataset.  
+- `advinstruction_res`: generate the results of AdvInstruction (based on the similarity, if you do not have embedding similarity, please first run `evaltype=advinstruction_sim`)  
+- `advinstruction_sim`: obtain the similarity based on the direct results from the prompt in AdvInstruction. (`embeddingpath` is necessary in this  `evaltype`)
 
 ---
 
@@ -53,9 +53,23 @@ python robustness.py \
 
 #### ⚙️*Module Description*
 
+- Privacy Awareness: `privacy/privacy_awareness.py`
 - Privacy leakage: `privacy/privacy_leakage.py`
 
 #### 🔧*Usage*
+```shell
+python privacy_eval.py \
+--folderpath <path_to_folder> \
+--evaltype <evaluation_type> \
+--savepath <path_to_save_results> \
+[--datatype <privacy awareness datatype>]
+```
+
+`evaltype`: `['awareness', 'leakage', 'longformer']`  
+- You must run `longformer` type before running `awareness` type
+- When you want to run `awareness`, please specify the data type (`normal` or `aug`) because of their different prompt templates.
+
+
 
 ---
 
