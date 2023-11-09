@@ -27,6 +27,12 @@ def get_models(key, filename='../../config/evaluation_config.json'):
 
 
 
+def get_save_name(key, filename="../../config/evaluation_config.json"):
+    with open(filename, 'r') as f:
+        config = json.load(f)
+    return config['fairness']
+
+
 
 import re
 from concurrent.futures import ThreadPoolExecutor
