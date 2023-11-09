@@ -36,7 +36,7 @@
 
 # Contact
 
-We are still working in next version of TrustLLM and welcome your constribution. You can contribute to the following sections:
+We are still working on next version of TrustLLM and welcome your contribution. You can contribute to the following sections:
 
 - Dataset construction
 - The expansion of other trustworthy aspects
