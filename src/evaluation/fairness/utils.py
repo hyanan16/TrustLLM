@@ -34,6 +34,7 @@ def get_save_name(key, filename="../../config/evaluation_config.json"):
 
 
 
+
 import re
 from concurrent.futures import ThreadPoolExecutor
 import traceback
@@ -148,3 +149,41 @@ def fuzzy_match_with_threshold(input_str, choices, threshold=90):
         return True, max_score
     else:
         return False, max_score
+    
+    
+
+
+
+def match_kw_start(text, keyword_list):
+    """Matches the start of the text against the given keyword list."""
+    pattern = r'^\b(?:' + '|'.join(keyword_list) + r')\b'
+    match = re.search(pattern, text, re.IGNORECASE)
+    return match is not None
+
+def match_chi_kw_start(text, keyword_list):
+    """Matches the start of the text against the given Chinese keyword list."""
+    keyword_pattern = '|'.join(map(re.escape, keyword_list))
+    pattern = rf'^(?:{keyword_pattern})'
+    match = re.search(pattern, text, re.IGNORECASE)
+    return match is not None
+
+
+
+def match_kw_with_type(text, pos_keywords, neg_keywords, match_type):
+    if match_type == "positive":
+        # For positive match, first remove all negative keywords and then check for positive keywords
+        temp_text = text
+        for keyword in neg_keywords:
+            temp_text = re.sub(r'\b' + re.escape(keyword) + r'\b', '', temp_text, flags=re.IGNORECASE)
+        for keyword in pos_keywords:
+            if re.search(r'\b' + re.escape(keyword) + r'\b', temp_text, re.IGNORECASE):
+                return True
+        return False
+    
+    elif match_type == "negative":
+        # For negative match, simply check for negative keywords
+        for keyword in neg_keywords:
+            if re.search(r'\b' + re.escape(keyword) + r'\b', text, re.IGNORECASE):
+                return True
+        return False
+
