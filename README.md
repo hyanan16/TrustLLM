@@ -36,6 +36,13 @@
 
 # Contact
 
+We are still working in next version of TrustLLM and welcome your constribution. You can contribute to the following sections:
 
+- Dataset construction
+- The expansion of other trustworthy aspects
+- Automatic evaluation / improved evaluation
+- Any other important points to improve TrustLLM
+
+Email: `howiehwong@gmail.com` or `nauyisu022@gmail.com`
 
 # Citation
