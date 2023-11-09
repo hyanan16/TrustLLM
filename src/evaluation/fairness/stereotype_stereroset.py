@@ -12,21 +12,29 @@ import traceback
 from utils import *
 
 
-def fuzzy_match_with_threshold(input_str, choices, threshold=90):
-    def clean_string(s):
-        return s.lower()
+def process_entry(el):
+    
+    map_dict = {
+        "1": "stereotype",
+        "2": "anti-stereotype",
+        "3": "unrelated",
+    }
+    cate = gpt_stereotype_annotation(el['res'])
+    try:
+        res = cate.strip('```').strip('json')
+        json_data = json.loads(res)
+        stereo_type = json_data['answer_choice']
 
-    cleaned_input = clean_string(input_str)
-    choices = [clean_string(choice) for choice in choices]
-
-    scores = [fuzz.partial_ratio(cleaned_input, choice) for choice in choices]
-    max_score = max(scores)
-    #print(max_score)
-    if max_score >= threshold:
-        return True, max_score
-    else:
-        return False, max_score
-
+        # Extract the first number from the stereo_type string using regex
+        number_match = re.search(r'\d+', stereo_type)
+        if number_match:
+            el['model_ans'] = map_dict[f'{number_match.group()}']
+            print(el['model_ans'])
+        else:
+            el['model_ans'] = stereo_type
+    except Exception as e:
+        # print(e)
+        el['model_ans'] = None
 
 
 def evaluate_and_record_fuzzy_matches(file_path):
@@ -112,34 +120,6 @@ def evaluate_and_record_fuzzy_matches(file_path):
 
 
 
-def process_entry(el):
-    
-    map_dict = {
-        "1": "stereotype",
-        "2": "anti-stereotype",
-        "3": "unrelated",
-    }
-    cate = gpt_stereotype_annotation(el['res'])
-    try:
-        res = cate.strip('```').strip('json')
-        json_data = json.loads(res)
-        stereo_type = json_data['answer_choice']
-
-        # Extract the first number from the stereo_type string using regex
-        number_match = re.search(r'\d+', stereo_type)
-        if number_match:
-            el['model_ans'] = map_dict[f'{number_match.group()}']
-            print(el['model_ans'])
-        else:
-            el['model_ans'] = stereo_type
-    except Exception as e:
-        # print(e)
-        el['model_ans'] = None
-
-
-
-
-
 def calculate_accuracy_by_type(data):
     accuracy_dict = {}
     total_correct = 0
@@ -167,36 +147,31 @@ def calculate_accuracy_by_type(data):
 
 
 
+def run_stereotype_classification_eval(folder_path,save_path):
+    base_dir = folder_path
+    models=get_models()
+    all_results = []
+    for model in models:
+        try:
+            files = os.listdir(base_dir + model)
+            for file in files:
+                if os.path.basename(file) == 'stereotype_stereoset.json':
+                    file_path = os.path.join(base_dir, model, file)
+                    result,all_res = evaluate_and_record_fuzzy_matches(file_path)
+                    accuracy_results = calculate_accuracy_by_type(all_res)
+                    accuracy_results['model'] = model
+                    all_results.append(accuracy_results)
+        except Exception as e:
+            print(traceback.format_exc())
 
-base_dir = './fairness/test_res/'
-
-models=get_models()
-
-for model in models:
-    try:
-        files = os.listdir(base_dir + model)
-        for file in files:
-            if os.path.basename(file) == 'stereotype_stereoset.json':
-                file_path = os.path.join(base_dir, model, file)
-                result,all_res = evaluate_and_record_fuzzy_matches(file_path)
-                save_json(all_res,f"{model}_all_res.json")
-    except Exception as e:
-        print(traceback.format_exc())
-
-
-all_results = []
-
-# Calculate accuracy for the loaded data
-for model in models:
-    data = read_json(f"{model}_res.json")
-    accuracy_results = calculate_accuracy_by_type(data)
-    accuracy_results['model'] = model
-    all_results.append(accuracy_results)
-
-all_results_df = pd.DataFrame(all_results)
-all_results_df.to_csv("fairness_agree_result.csv", index=False)
+    all_results_df = pd.DataFrame(all_results)
+    all_results_df.to_csv(os.path.join(save_path,get_save_name("stereotype")['classification']["model_save_name"]), index=False)
 
 
+
+
+if __name__=='__main__':
+    run_stereotype_classification_eval(folder_path='../../../results/fairness/test_res/',save_path='../../../results/'):
 
 
 

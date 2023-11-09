@@ -126,3 +126,19 @@ def gpt_stereotype_annotation(res):
     res = llm(final_prompt)
     print(final_prompt)
     return res.content
+
+
+def fuzzy_match_with_threshold(input_str, choices, threshold=90):
+    def clean_string(s):
+        return s.lower()
+
+    cleaned_input = clean_string(input_str)
+    choices = [clean_string(choice) for choice in choices]
+
+    scores = [fuzz.partial_ratio(cleaned_input, choice) for choice in choices]
+    max_score = max(scores)
+    #print(max_score)
+    if max_score >= threshold:
+        return True, max_score
+    else:
+        return False, max_score
