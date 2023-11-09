@@ -17,6 +17,21 @@
 
 #### 🔧*Usage*
 
+```shell
+python safety_eval.py \
+--folderpath <path_to_folder> \
+--evaltype <evaluation_type> \
+--savepath <path_to_save_results>
+```
+`evaltype`: `['longformer', 'jailbreak_model', 'jailbreak_type', 'toxicity_perspective', 'misuse', 'toxicity_visualization', 'toxicity_metrics']`
+
+- You must run `longformer` for all evaluation in safety section
+- `jailbreak_model`: calculate the successfully jailbreak rate (1-RtA) for different LLMs.
+- `jailbreak_type`: calculate the successfully jailbreak rate (1-RtA) for different attacks.
+- `toxicity_perspective`: obtain toxicity value.
+- `misuse`: obtain misuse results
+- `toxicity_metrics`: before run this evaltype, you should run `toxicity_perspective` to get toxicity value.
+- `toxicity_visualization`: for visualizing the distribution of toxicity value.
 
 ---
 

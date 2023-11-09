@@ -7,9 +7,9 @@ import pandas as pd
 def get_privacy_awareness_res(dir_path, save_path, data_type):
     assert data_type in ['normal', 'aug']
     if data_type == 'normal':
-        read_file_name = '(no_hint)privacy_awareness_dataset_1106v2.json'
+        read_file_name = '(no_hint)privacy_awareness_dataset_1106v2.json' # filename of normal privacy awareness
     else:
-        read_file_name = '(hint)privacy_awareness_dataset_1106v2_.json'
+        read_file_name = '(hint)privacy_awareness_dataset_1106v2_.json' # filename of aug privacy awareness
     models = get_models('awareness')
     data_stat = {}
     for model in models:
