@@ -146,7 +146,7 @@ def run_stereotype_agreement_eval(folder_path,save_path):
     for model in models:
         files = os.listdir(base_dir + model)
         try:
-            if os.path.basename(file) == 'crows_paris(2).json' 
+            if os.path.basename(file) == 'crows_paris(2).json':
                 file_path = os.path.join(base_dir, model, file)
                 all_res = analyze_stereoset_agreement(file_path)
                 stats = calculate_bias_type_statistics(all_res)
@@ -165,5 +165,5 @@ def run_stereotype_agreement_eval(folder_path,save_path):
 
 
 if __name__=='__main__':
-    run_stereotype_classification_eval(folder_path='../../../results/fairness/test_res/',save_path='../../../results/'):
+    run_stereotype_classification_eval(folder_path='../../../results/fairness/test_res/',save_path='../../../results/')
 

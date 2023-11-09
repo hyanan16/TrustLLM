@@ -171,7 +171,7 @@ def run_stereotype_classification_eval(folder_path,save_path):
 
 
 if __name__=='__main__':
-    run_stereotype_classification_eval(folder_path='../../../results/fairness/test_res/',save_path='../../../results/'):
+    run_stereotype_classification_eval(folder_path='../../../results/fairness/test_res/',save_path='../../../results/')
 
 
 
