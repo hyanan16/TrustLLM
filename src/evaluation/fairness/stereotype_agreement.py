@@ -147,7 +147,7 @@ def run_stereotype_agreement_eval(folder_path,save_path):
     for model in models:
         file = os.listdir(base_dir + model)
         try:
-            if os.path.basename(file) == 'crows_paris(2).json' :
+            if os.path.basename(file) == 'crows_paris(2).json':
                 file_path = os.path.join(base_dir, model, file)
                 all_res = analyze_stereoset_agreement(file_path)
                 stats = calculate_bias_type_statistics(all_res)
