@@ -25,7 +25,7 @@ python safety_eval.py \
 ```
 `evaltype`: `['longformer', 'jailbreak_model', 'jailbreak_type', 'toxicity_perspective', 'misuse', 'toxicity_visualization', 'toxicity_metrics']`
 
-- You must run `longformer` for all evaluation in safety section
+- You must run `longformer` before run any other evaluation in safety section.
 - `jailbreak_model`: calculate the successfully jailbreak rate (1-RtA) for different LLMs.
 - `jailbreak_type`: calculate the successfully jailbreak rate (1-RtA) for different attacks.
 - `toxicity_perspective`: obtain toxicity value.
