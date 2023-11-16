@@ -62,7 +62,7 @@ with open(filename, 'w') as f:
     json.dumps(data, f, indent=4)
 ```
 
-Finally, Finally, you need to compress your files as a `zip.` file according to the following directory structure:
+Finally, you need to compress your files as a `zip.` file according to the following directory structure:
 
 ```sh
 └── Results/
@@ -97,4 +97,4 @@ We are still working on next version of TrustLLM and welcome your contribution. 
 
 Email: `howiehwong@gmail.com`
 
-# Citation
+## Citation
