@@ -1,0 +1,3 @@
+model,CODAH,SQuAD2.0,AdversarialQA,HotpotQA
+gpt-4,0.05,0.44,0.652,0.4
+llama2-70b,0.05,0.264,0.531,0.292
