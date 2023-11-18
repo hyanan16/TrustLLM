@@ -43,10 +43,13 @@ We have released the dataset in <a href="https://huggingface.co/datasets/TrustLL
 
 | Dataset       | Source                                                        | Dataset   | Source   |
 |---------------|---------------------------------------------------------------|------|------|
-| Do-Not-Answer | <a href="https://github.com/Libr-AI/do-not-answer">Github</a> | 单元3  | 单元4  |
-| 单元5           | 单元6                                                           | 单元7  | 单元8  |
-| 单元9           | 单元10                                                          | 单元11 | 单元12 |
-| 单元13          | 单元14                                                          | 单元15 | 单元16 |
+| SQuAD2.0 | <a href="https://rajpurkar.github.io/SQuAD-explorer/explore/v2.0/dev/">Website</a> | CODAH  | <a href="https://github.com/Websail-NU/CODAH">Website</a>  |
+| HotpotQA           | <a href="https://hotpotqa.github.io/">Website</a>                                                           | AdversarialQA  | <a href="https://adversarialqa.github.io/">Website</a>  |
+| Climate-FEVER           | <a href="https://huggingface.co/datasets/climate_fever">Website</a>                                                          | SciFact | <a href="https://allenai.org/data/scifact">Website</a> |
+| COVID-Fact         | <a href="https://github.com/asaakyan/covidfact">Website</a>                                                          | HealthVER | <a href="https://github.com/sarrouti/HealthVer">Website</a>|
+| TruthfulQA         | <a href="https://github.com/sylinrl/TruthfulQA">Website</a>                                                          | HaluEval | <a href="https://github.com/RUCAIBox/HaluEval">Website</a>|
+| Sycophancy         | <a href="https://github.com/nrimsky/LM-exp/blob/main/datasets/sycophancy/sycophancy.json">Website</a>                                                          | TBD | <a href="TBD">Website</a>|
+
 
 
 
