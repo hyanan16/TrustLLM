@@ -19,14 +19,28 @@
 
 ## Introduction
 
-
-
+Large language models (LLMs), exemplified by ChatGPT, have gained considerable attention for their formidable natural language processing capabilities. Nonetheless, these LLMs present many challenges, particularly in the realm of trustworthiness. Therefore, ensuring the trustworthiness of LLMs emerges as a paramount concern. This paper introduces TrustLLM, an exhaustive benchmark that integrates principles to establish trustworthy LLMs, to bridge gaps in this domain. 
+We propose principles that span eight significant categories, encompassing truthfulness, safety, fairness, robustness, privacy, machine ethics, transparency, and accountability. Based on these principles, we establish a benchmark across six domains. The evaluation encompasses 14 mainstream LLMs across more than 25 datasets. 
+Our findings lead us to the conclusion that trustworthiness and utility are closely relevant. Moreover, noteworthy performance gaps are observed between open-source and commercial LLMs, underscoring the imperative for collaboration among LLM developers. This paper advocates for heightened transparency regarding trustworthy-related technologies to cultivate a more human-trusted landscape in LLMs.
 
 ## Models
 
+In TrustLLM, we have curated a selection of 14 distinguished LLMs in the domain including both commercial and open-source LLMs.
 
+<img src="assets/models_overview.png" >
+
+We are still working on including more LLMs.
 
 ## Dataset
+
+### Overview
+
+We have released the dataset in <a href="https://huggingface.co/datasets/TrustLLM/TrustLLM-dataset" target="_blank">huggingface</a>.
+
+<img src="assets/dataset_overview.png" >
+
+### Raw dataset
+
 
 
 
@@ -40,7 +54,7 @@
 
 - You can conduct the evaluation for your LLMs based on our code or submit the output of your LLMs ask us to evaluate. 
 
-- However, please note that we will mark the source of the evaluation ways for your LLM on the leaderboard (by us or by yourself).
+- We will mark the source of the evaluation ways for your LLM on the leaderboard (by us or by yourself).
 
 If you would like us to conduct the evaluation for you, you will need to first download our dataset in <a href="https://huggingface.co/datasets/TrustLLM/TrustLLM-dataset" target="_blank">huggingface</a>. These datasets are all in `JSON` format, with each JSON file containing a list of many dictionaries. Each dictionary has a fixed key `prompt`. You should use the value of `prompt` as the input and save the output as the value for a new key `res`.
 
