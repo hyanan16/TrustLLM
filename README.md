@@ -105,6 +105,10 @@ Finally, you need to compress your files as a `zip.` file according to the follo
 Send it to the email: `trustllm@gmail.com`
 
 
+## TODO
+
+
+
 
 ## Contact
 
@@ -118,3 +122,8 @@ We are still working on next version of TrustLLM and welcome your contribution. 
 Email: `howiehwong@gmail.com`
 
 ## Citation
+
+
+## License
+
+TrustLLM is licensed under the terms of the MIT license. See LICENSE for more details.

@@ -210,6 +210,41 @@ def open_file():
         print(data)
 
 
+def misuse_process(filename, savefile):
+    import pandas as pd
+    raw_data = pd.read_csv(filename)
+    dataset = []
+    for index, el in raw_data.iterrows():
+        dataset.append({'prompt': el['question'], 'type': el['content_policy_name']})
+    # save dataset
+    with open(savefile, 'w') as f:
+        json.dump(dataset, f, indent=4)
+
+import os
+import json
+
+def merge_json_files(folder_path, output_file):
+    # 获取文件夹下所有的文件名
+    file_names = [f for f in os.listdir(folder_path) if f.endswith('.json')]
+
+    # 初始化一个空的列表，用于存储所有的json数据
+    all_data = []
+
+    # 遍历每个文件，读取json数据并添加到列表中
+    for file_name in file_names:
+        file_path = os.path.join(folder_path, file_name)
+        with open(file_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            all_data.extend(data)
+
+    # 将合并后的数据写入新的json文件
+    with open(output_file, 'w', encoding='utf-8') as output:
+        json.dump(all_data, output, ensure_ascii=False, indent=2)
+
+
+
+
+
 if __name__ == '__main__':
-    # count_chatgpt_res()
-    open_file()
+    merge_json_files('../../safety/jailbreak/JailbreakTrigger/ITC', '../../safety/jailbreak/JailbreakTrigger/ITC.json')
+    merge_json_files('../../safety/jailbreak/JailbreakTrigger/QBB', '../../safety/jailbreak/JailbreakTrigger/QBB.json')
