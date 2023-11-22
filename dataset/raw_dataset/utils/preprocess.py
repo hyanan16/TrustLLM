@@ -242,9 +242,7 @@ def merge_json_files(folder_path, output_file):
         json.dump(all_data, output, ensure_ascii=False, indent=2)
 
 
-
-
-
 if __name__ == '__main__':
-    merge_json_files('../../safety/jailbreak/JailbreakTrigger/ITC', '../../safety/jailbreak/JailbreakTrigger/ITC.json')
-    merge_json_files('../../safety/jailbreak/JailbreakTrigger/QBB', '../../safety/jailbreak/JailbreakTrigger/QBB.json')
+    pass
+    # merge_json_files('../../safety/jailbreak/JailbreakTrigger/ITC', '../../safety/jailbreak/JailbreakTrigger/ITC.json')
+    # merge_json_files('../../safety/jailbreak/JailbreakTrigger/QBB', '../../safety/jailbreak/JailbreakTrigger/QBB.json')
