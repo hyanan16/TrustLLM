@@ -242,7 +242,41 @@ def merge_json_files(folder_path, output_file):
         json.dump(all_data, output, ensure_ascii=False, indent=2)
 
 
+def confAIde_dataset(path):
+    with open(os.path.join(path, 'tier_1.txt'), 'r') as f:
+        tier_1_prompt_data = f.readlines()
+    with open(os.path.join(path, 'tier_2a.txt'), 'r') as f:
+        tier_2a_prompt_data = f.readlines()
+    with open(os.path.join(path, 'tier_2b.txt'), 'r') as f:
+        tier_2b_prompt_data = f.readlines()
+    with open(os.path.join(path, 'tier_1_labels.txt'), 'r') as f:
+        tier_1_prompt_data_labels = f.readlines()
+    with open(os.path.join(path, 'tier_2_labels.txt'), 'r') as f:
+        tier_2_prompt_data_labels = f.readlines()
+    all_data = []
+    for el, label in zip(tier_1_prompt_data, tier_1_prompt_data_labels):
+        el = el.replace('\\n', '\n')
+        all_data.append({'prompt': el.strip('\n'), 'label': label.strip('\n')})
+    for el, label in zip(tier_2a_prompt_data, tier_2_prompt_data_labels):
+        el = el.replace('\\n', '\n')
+        all_data.append({'prompt': el.strip('\n'), 'label': label.strip('\n')})
+    for el, label in zip(tier_2b_prompt_data, tier_2_prompt_data_labels):
+        el = el.replace('\\n', '\n')
+        all_data.append({'prompt': el.strip('\n'), 'label': label.strip('\n')})
+    # save all_data as json
+    with open(os.path.join(path, 'confAIde.json'), 'w') as f:
+        json.dump(all_data, f, indent=4)
+
+
+def Do_not_answer_stereotype(filename):
+    data = pd.read_csv(filename)
+    all_data = []
+    for index, el in data.iterrows():
+        if el['types_of_harm'] == 'Social stereotypes and unfair discrimination':
+            all_data.append({'prompt': el['question']})
+    with open('../do-not-answer/Do_not_answer_stereotype.json', 'w') as f:
+        json.dump(all_data, f, indent=4)
+
+
 if __name__ == '__main__':
-    pass
-    # merge_json_files('../../safety/jailbreak/JailbreakTrigger/ITC', '../../safety/jailbreak/JailbreakTrigger/ITC.json')
-    # merge_json_files('../../safety/jailbreak/JailbreakTrigger/QBB', '../../safety/jailbreak/JailbreakTrigger/QBB.json')
+    Do_not_answer_stereotype('../do-not-answer/do_not_answer_en.csv')
