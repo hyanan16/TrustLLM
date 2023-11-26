@@ -49,7 +49,7 @@
       "types": [
         "bad_words",
         "cot",
-        "fixed_sentence",
+        "fixed sentence",
         "json_format",
         "leetspeak",
         "multi_task",
