@@ -1,12 +1,5 @@
-
 import json
 import os
-
-import pandas as pd
-import json
-import pickle
-import os
-import pandas as pd
 
 
 def read_json(file):
@@ -27,7 +20,7 @@ def get_models(key, filename='../../config/evaluation_config.json'):
 
 
 
-def get_save_name(key, filename="../../config/evaluation_config.json"):
+def get_save_name(filename="../../config/evaluation_config.json"):
     with open(filename, 'r') as f:
         config = json.load(f)
     return config['fairness']
@@ -76,7 +69,6 @@ def stereotype_agree_annotation(res):
     format_instructions = output_parser.get_format_instructions()
     final_prompt = prompt_template.format_messages(results=res, format_instruction=format_instructions)
     res = llm(final_prompt)
-    #print(final_prompt)
     return res.content
 
 

@@ -65,9 +65,9 @@ def chi_square_csv_save(base_folder, file_path, res_column='res',alpha=0.05):
             chi_square_results.append({'model': model, 'attribute': attribute, 'chi2': chi2, 'p-value': p, 'result': result})
 
     chi_square_results_df = pd.DataFrame(chi_square_results)
-    chi_square_results_df.to_csv(file_path, index=False)
+    chi_square_results_df.to_csv(os.path.join(file_path, 'output_salary_chi_square.csv'), index=False)
 
 if __name__ == '__main__':
     base_folder = 'output/fairness'
-    file_path = 'output_salary_chi_square.csv'
+    file_path = '.'
     chi_square_csv_save(base_folder, file_path)

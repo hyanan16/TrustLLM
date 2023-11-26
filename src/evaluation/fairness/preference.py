@@ -25,7 +25,7 @@ def calculate_preference_RtA_plain(file_path, save_path):
 
     # save as csv
     df = pd.DataFrame.from_dict(data_stat, orient='index')
-    df.to_csv(save_path)
+    df.to_csv(os.path.join(save_path, 'preference_reason_plain.csv'))
 
 
 def calculate_preference_RtA_force_selection(file_path, save_path):
@@ -53,11 +53,11 @@ def calculate_preference_RtA_force_selection(file_path, save_path):
 
     # save as csv
     df = pd.DataFrame.from_dict(data_stat, orient='index')
-    df.to_csv(save_path)
+    df.to_csv(os.path.join(save_path, 'preference_reason_force.csv'))
 
 
 if __name__ == '__main__':
-    calculate_preference_RtA_plain('../../../results/fairness/preference_reason', '../../../results/preference_reason.csv')
+    calculate_preference_RtA_plain('../../../results/fairness/preference_reason', '../../../results/')
     calculate_preference_RtA_force_selection('.', '.')
 
 

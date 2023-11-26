@@ -149,7 +149,7 @@ def calculate_accuracy_by_type(data):
 
 def run_stereotype_classification_eval(folder_path,save_path):
     base_dir = folder_path
-    models=get_models()
+    models=get_models('stereotype')
     all_results = []
     for model in models:
         try:
@@ -163,7 +163,6 @@ def run_stereotype_classification_eval(folder_path,save_path):
                     all_results.append(accuracy_results)
         except Exception as e:
             print(traceback.format_exc())
-
     all_results_df = pd.DataFrame(all_results)
     all_results_df.to_csv(os.path.join(save_path,get_save_name("stereotype")['classification']["model_save_name"]), index=False)
 
