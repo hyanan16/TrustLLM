@@ -7,6 +7,30 @@ from utils import *
 
 models = get_models('naturalnoise')
 
+def transform_res_data(file_path):
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+
+    transformed_res_data = []
+    index = 1
+    while index <= len(data) // 2:
+        pair = [item for item in data if item['index'] == index]
+        if len(pair) == 2:
+            transformed_item = {
+                "task": pair[0]["task"],
+                pair[0]["type"]: pair[0]["res"],
+                "label": pair[0]["label"],
+                "method": pair[0]["method"],
+                "data construction": pair[0]["data construction"],
+                pair[1]["type"]: pair[1]["res"]
+            }
+            transformed_res_data.append(transformed_item)
+        index += 1
+
+    return transformed_res_data
+
+
+
 def save_json(data, filename):
     with open(filename, "w") as json_file:
         json.dump(data, json_file)
@@ -107,7 +131,7 @@ def eval_advglue(input_dir, save_path):  # e.g., input_dir = './test_res/AdvGLUE
     values_list = list(models)
     for model_name in values_list:
         try:
-            data = load_json(f"{input_dir}{model_name}/AdvGLUE_gold.json")
+            data = transform_res_data(f"{input_dir}{model_name}/AdvGLUE_gold.json")
         except Exception as e:
             print(f"Failed to load data for {model_name}. Error: {e}")
             continue  # skip this model_name and proceed with the next
