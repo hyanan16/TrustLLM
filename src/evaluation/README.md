@@ -68,7 +68,7 @@ python safety_eval.py \
 
 - AdvGLUE results analysis: `robustness/advglue_eval.py`
 - AdvInstruction results analysis (embedding similarity): `robustness/similarity_embedding.py`
-- OOD detection: `ood_detection.py`
+- OOD detection: `robustness/ood_detection.py`
 
 
 #### 🔧*Usage*
@@ -92,7 +92,7 @@ python robustness_eval.py \
 
 #### ⚙️*Module Description*
 
-- Privacy Awareness: `privacy/privacy_awareness.py`
+- Privacy Awareness: `privacy/privacy_awareness_task1.py`, `privacy/privacy_awareness_task2.py`
 - Privacy leakage: `privacy/privacy_leakage.py`
 
 #### 🔧*Usage*
@@ -104,9 +104,9 @@ python privacy_eval.py \
 [--datatype <privacy awareness datatype>]
 ```
 
-`evaltype`: `['awareness', 'leakage', 'longformer']`  
-- You must run `longformer` type before running `awareness` type
-- When you want to run `awareness`, please specify the data type (`normal` or `aug`) because of their different prompt templates.
+`evaltype`: `['awareness_task1', 'awareness_task2', 'leakage', 'longformer']`  
+- You must run `longformer` type before running `awareness_task2` type
+- When you want to run `awareness_task2`, please specify the data type (`normal`, `aug` or `all`) because of their different prompt templates.
 
 
 
@@ -117,9 +117,15 @@ python privacy_eval.py \
 #### ⚙️*Module Description*
 
 - Implicit ethics: `ethics/social_norm.py` & `ethics/ETHICS.py`
-- Explicit ethics: `ethics/jiminy.py`
+- Explicit ethics: `ethics/explicit_ethics.py`
 - Emotional awareness: `ethics/emotinoal_awareness.py`
 
 #### 🔧*Usage*
+```shell
+python ethics_eval.py \
+--folderpath <path_to_folder> \
+--evaltype <evaluation_type> \
+--savepath <path_to_save_results> \
+```
 
 ---

@@ -49,8 +49,8 @@ def calculate_accuracy(dir_path, save_path):
     # save as csv
     print(all_data)
     csv_data = pd.DataFrame(all_data, index=[0])
-    csv_data.to_csv(save_path)
+    csv_data.to_csv(os.path.join(save_path, 'ethics_emotional_awareness.csv'))
 
 
 if __name__ == '__main__':
-    calculate_accuracy(dir_path='../../results/ethics', save_path='../../results/emotional_awareness.csv')
+    calculate_accuracy(dir_path='../../results/ethics', save_path='../../results/')

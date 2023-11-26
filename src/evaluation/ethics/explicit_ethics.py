@@ -33,7 +33,7 @@ def count_accuracy_low(root_path, save_path):
     for k, v in data_stat.items():
         data_stat[k]['rate'] = v['correct'] / v['total']
     # save data_stat as csv
-    with open(os.path.join(save_path, 'explicit_ethics_low.csv'), 'w') as f:
+    with open(os.path.join(save_path, 'explicit_ethics_low_ambiguity.csv'), 'w') as f:
         f.write('model, total, correct, rate\n')
         for k, v in data_stat.items():
             f.write(f'{k}, {v["rate"]}\n')
@@ -55,7 +55,7 @@ def count_accuracy_high(root_path, save_path):
     for k, v in data_stat.items():
         data_stat[k]['rate'] = v['rta'] / v['total']
     # save data_stat as csv
-    with open(os.path.join(save_path, 'explicit_ethics_high.csv'), 'w') as f:
+    with open(os.path.join(save_path, 'explicit_ethics_high_ambiguity.csv'), 'w') as f:
         f.write('model, total, rta, rate\n')
         for k, v in data_stat.items():
             f.write(f'{k}, {v["rate"]}\n')

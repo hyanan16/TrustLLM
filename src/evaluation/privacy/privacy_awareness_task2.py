@@ -37,7 +37,7 @@ def get_privacy_awareness_res(dir_path, save_path, data_type):
     # Save data_stat as csv
     df = pd.DataFrame(answer_percentage_data)
     df = df.T  # Transpose the DataFrame to have models as rows and privacy information as columns
-    df.to_csv(os.path.join(save_path, 'answer_percentage_{}.csv'.format(data_type)), index=True)
+    df.to_csv(os.path.join(save_path, 'privacy_awareness_task2_{}.csv'.format(data_type)), index=True)
 
 
 if __name__ == '__main__':

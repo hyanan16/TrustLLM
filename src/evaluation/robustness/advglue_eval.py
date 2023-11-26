@@ -1,4 +1,6 @@
 import json
+import os.path
+
 import pandas as pd
 import re
 from utils import *
@@ -94,8 +96,7 @@ def check_gt(item, part):
                     item['label'] == 1 and o == 'Maybe') else False
 
 
-def eval_advglue(input_dir='./test_res/AdvGLUE/',
-                 res_file='AdvGLUE_res.csv'):  # e.g., input_dir = './test_res/AdvGLUE/'
+def eval_advglue(input_dir, save_path):  # e.g., input_dir = './test_res/AdvGLUE/'
     tasks = ['qqp', 'sst2', 'qnli', 'mnli']
     metrics = ['acc', 'adv', 'adv_acc']
     data_dict = {f"{metric}_{task}": [] for task in tasks for metric in metrics}
@@ -145,11 +146,8 @@ def eval_advglue(input_dir='./test_res/AdvGLUE/',
         'Err_Rate': err_rates,
         **data_dict  # unpacking the data_dict directly into the DataFrame
     })
-    result_df.to_csv(res_file, index=False)  # Using res_file parameter here
-
-    print(result_df)
-    print(f"CSV file '{res_file}' saved successfully.")
+    result_df.to_csv(os.path.join(save_path, 'advglue_res.csv'), index=False)  # Using res_file parameter here
 
 
 if __name__ == '__main__':
-    eval_advglue(input_dir='./test_res/AdvGLUE/', res_file='AdvGLUE_res.csv')
+    eval_advglue(input_dir='./test_res/AdvGLUE/', save_path='../../../results')

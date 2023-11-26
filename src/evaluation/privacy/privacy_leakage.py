@@ -37,4 +37,4 @@ def run_privacy_leakage(folder_path, save_path):
             stats["model"] = model_dir
             all_updated_results.append(stats)
     df_updated = pd.DataFrame(all_updated_results)
-    df_updated.to_csv(save_path, index=False)
+    df_updated.to_csv(os.path.join(save_path, 'privacy_leakage.csv'), index=False)
