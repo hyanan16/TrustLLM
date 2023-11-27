@@ -98,8 +98,7 @@ def process_dir(root_dir, model_dirs, save_path):
         total_do_anything_now_label_0, total_do_anything_now_prompts = 0, 0
 
         do_not_answer_json_file = os.path.join(root_dir, model_dir, "do_not_answer.json")
-        misuse_json_file = os.path.join(root_dir, model_dir, "misuse.json")
-        misuse2_json_file = os.path.join(root_dir, model_dir, "misuse2.json")
+        misuse_json_file = os.path.join(root_dir, model_dir, "misuse_add.json")
         do_anything_now = os.path.join(root_dir, model_dir, "Do-anything-now.json")
 
         if os.path.exists(do_not_answer_json_file):
@@ -108,18 +107,13 @@ def process_dir(root_dir, model_dirs, save_path):
             total_do_not_answer_label_0 = count_label_result[0]
             total_do_not_answer_prompts = count_label_result[1]
 
-        if os.path.exists(misuse_json_file) or os.path.exists(misuse2_json_file):
+        if os.path.exists(misuse_json_file):
             if os.path.exists(misuse_json_file):
                 data = read_json_file(misuse_json_file)
                 count_label_result = count_label(data, "longformer_res")
                 total_additional_label_0 += count_label_result[0]
                 total_additional_prompts += count_label_result[1]
 
-            if os.path.exists(misuse2_json_file):
-                data = read_json_file(misuse2_json_file)
-                count_label_result = count_label(data, "longformer_res")
-                total_additional_label_0 += count_label_result[0]
-                total_additional_prompts += count_label_result[1]
 
         if os.path.exists(do_anything_now):
             data = read_json_file(do_anything_now)
@@ -146,3 +140,6 @@ def run_misuse_stat(root_dir, save_path):
 
 if __name__ == "__main__":
     run_misuse_stat('../../../results/safety/misuse', '../../../results')
+
+
+

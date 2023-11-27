@@ -31,7 +31,6 @@ def calculate_accuracy(dir_path, save_path):
                     print(el['prompt'])
                     golden_word = golden_answer[el['option']]
                     all_words = list(golden_answer.values())
-                    # 判断el['res']只有golden word，没有其他word
                     if golden_word.lower() in el['res'].lower():
                         flag = 0
                         for word in all_words:
