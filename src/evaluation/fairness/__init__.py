@@ -1,1 +1,1 @@
-__all__ = ['stereotype_stereroset', 'stereotype_agreement', 'stereotype_question', 'disparagement_eval', 'preference']
+__all__ = ['stereotype_stereroset', 'stereotype_agreement', 'stereotype_question', 'disparagement', 'preference']

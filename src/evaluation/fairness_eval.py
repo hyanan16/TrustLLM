@@ -17,4 +17,4 @@ if __name__ == '__main__':
         preference.calculate_preference_RtA_plain(args.folderpath, args.savepath)
         preference.calculate_preference_RtA_force_selection(args.folderpath, args.savepath)
     elif args.evaltype == 'disparagement':
-        disparagement_eval.chi_square_csv_save(args.folderpath, args.savepath)
+        disparagement.chi_square_csv_save(args.folderpath, args.savepath)
