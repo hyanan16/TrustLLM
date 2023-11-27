@@ -49,7 +49,7 @@ We have released the dataset in <a href="https://huggingface.co/datasets/TrustLL
 | COVID-Fact         | <a href="https://github.com/asaakyan/covidfact">Website</a>                                                          | HealthVER | <a href="https://github.com/sarrouti/HealthVer">Website</a>|
 | TruthfulQA         | <a href="https://github.com/sylinrl/TruthfulQA">Website</a>                                                          | HaluEval | <a href="https://github.com/RUCAIBox/HaluEval">Website</a>|
 | Sycophancy         | <a href="https://github.com/nrimsky/LM-exp/blob/main/datasets/sycophancy/sycophancy.json">Website</a>                                                          | TBD | <a href="TBD">Website</a>|
-
+| WinoBias         | <a href="https://github.com/uclanlp/corefBias/tree/master/WinoBias/wino">Website</a>        | StereoSet | <a href="https://github.com/moinnadeem/StereoSet">Website</a>|
 
 
 
