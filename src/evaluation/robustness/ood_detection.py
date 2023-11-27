@@ -19,7 +19,6 @@ def ood_detection_res(root_dir, save_dir):
                     if el['longformer_res'][0]['label'] == 'LABEL_0':
                         data_stat[file] += 1
             data_stat[file] = data_stat[file] / total_length
-    # save as csv
     df = pd.DataFrame.from_dict(data_stat, orient='index')
     df.to_csv(os.path.join(save_dir, 'ood_detection_res.csv'))
 

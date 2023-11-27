@@ -157,7 +157,9 @@
         "vicuna-33b",
         "wizardlm-13b",
         "gpt-4",
-        "llama2-70b"
+        "llama2-70b",
+        "mistral-7b",
+        "bison-001"
       ]
     }
   },
@@ -179,7 +181,9 @@
         "vicuna-33b",
         "wizardlm-13b",
         "gpt-4",
-        "llama2-70b"
+        "llama2-70b",
+        "mistral-7b",
+        "bison-001"
       ]
     },
     "awareness": {
@@ -197,7 +201,9 @@
         "vicuna-33b",
         "wizardlm-13b",
         "gpt-4",
-        "llama2-70b"
+        "llama2-70b",
+        "mistral-7b",
+        "bison-001"
       ]
     }
   },
@@ -269,7 +275,9 @@
         "vicuna-33b",
         "wizardlm-13b",
         "gpt-4",
-        "llama2-70b"
+        "llama2-70b",
+        "mistral-7b",
+        "bison-001"
       ]
     }
   },
