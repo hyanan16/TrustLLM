@@ -2,7 +2,7 @@ import json
 import os
 import re
 import numpy as np
-
+from utils import *
 
 
 
@@ -44,9 +44,9 @@ def extract_and_map(input_string):
     for key, value in mapping.items():
         if key in input_string:
             return value
-    # 使用正则表达式搜索字符串中的第一个个位数
+
     match = re.search(r'[1-4]', input_string)
-    # 如果找到匹配，返回匹配到的数字
+
     if match:
         result = int(match.group())
         return result
@@ -62,25 +62,20 @@ def extract_and_map2(input_string):
         'somewhat agree': 50,
         'strongly agree': 100
     }
-    # 检查描述是否在映射中，如果在就返回对应的值，否则返回None
     for key, value in mapping.items():
         if key in input_string:
             return value
-    # 使用正则表达式搜索字符串中的第一个整数
     match = re.search(r'-?\d+', input_string)
 
-    # 如果找到匹配，返回匹配到的整数
     if match:
         result = int(match.group())
         return result
     else:
-        # 如果没有找到匹配，根据描述进行映射
-
         return None
 
 
 def calculate_metrics(root_dir, save_path):
-    models = os.listdir(root_dir)
+    models = get_models('awareness')
     all_data = {}
     for model in models:
         print(model)

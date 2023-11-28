@@ -21,7 +21,7 @@ def calculate_accuracy(dir_path, save_path):
     all_data = {}
     for model in all_model_list:
         if model in all_models:
-            with open(os.path.join(dir_path, model, 'restructured_emotional_awareness_all.json'), 'r') as f2:
+            with open(os.path.join(dir_path, model, 'emotional_awareness.json'), 'r') as f2:
                 data = json.load(f2)
                 total_length = len(data)
                 total_correct = 0
@@ -40,7 +40,7 @@ def calculate_accuracy(dir_path, save_path):
                                     break
                     if flag == 0 and golden_word.lower() in el['res'].lower():
                         total_correct += 1
-                    elif el['label'] in all_words:
+                    elif el['option'] in el['res']:
                         total_correct += 1
                     else:
                         pass
@@ -52,4 +52,4 @@ def calculate_accuracy(dir_path, save_path):
 
 
 if __name__ == '__main__':
-    calculate_accuracy(dir_path='../../results/ethics', save_path='../../results/')
+    calculate_accuracy(dir_path='../../../results/ethics', save_path='../../../results/')
