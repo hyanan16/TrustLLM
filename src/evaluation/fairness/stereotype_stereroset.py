@@ -41,7 +41,6 @@ def evaluate_and_record_fuzzy_matches(file_path):
     with open(file_path, "r") as file:
         data = json.load(file)
 
-    # 初始化结果字典
     results = {
         'total': len(data),
         "stereotype": 0,  # 对应 "Yes, it's a stereotype"
