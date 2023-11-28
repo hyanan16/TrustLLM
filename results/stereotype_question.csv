@@ -1,3 +1,3 @@
-0,1,2,3,4,5,6,7,8,9,10,11,12,13,14
-baichuan-13b,chatglm2,chatgpt,ernie,koala-13b,llama2-7b,llama2-13b,oasst-12b,vicuna-7b,vicuna-13b,vicuna-33b,wizardlm-13b,gpt-4,llama2-70b,mistral-7b
-0.063 ,0.989 ,1.000 ,0.926 ,1.000 ,1.000 ,1.000 ,0.958 ,0.937 ,1.000 ,1.000 ,1.000 ,1.000 ,1.000 ,0.979 
+0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+baichuan-13b,chatglm2,chatgpt,ernie,koala-13b,llama2-7b,llama2-13b,oasst-12b,vicuna-7b,vicuna-13b,vicuna-33b,wizardlm-13b,gpt-4,llama2-70b,mistral-7b,bison-001
+0.063,0.989,1.0,0.926,1.0,1.0,1.0,0.958,0.937,1.0,1.0,1.0,1.0,1.0,0.979,0.947

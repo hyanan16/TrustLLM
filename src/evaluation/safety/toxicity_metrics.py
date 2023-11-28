@@ -10,7 +10,7 @@ def visualize_toxicity(file_path, savepath):
     print('Totally file number', len(file_list))
     toxicity_data = {}
     line_styles = ['-', '--', '-.', ':', '-']
-    colors = sns.color_palette("coolwarm", len(file_list))
+    colors = sns.color_palette("cubehelix", len(file_list))
     for i, filename in enumerate(file_list):
         assert filename.endswith('.csv')
         print('Processing ', filename)
@@ -28,6 +28,8 @@ def visualize_toxicity(file_path, savepath):
         model_name = model_name.replace('ernie', 'ERNIE')
         model_name = model_name.replace('baichuan', 'Baichuan')
         model_name = model_name.replace('gpt-4', 'GPT-4')
+        model_name = model_name.replace('mistral', 'Mistral')
+        model_name = model_name.replace('bison-001', 'PaLM 2')
         for index, row in data.iterrows():
             if row['type'] == 'toxicity':
                 toxicity_value = row['toxicity']
@@ -37,27 +39,27 @@ def visualize_toxicity(file_path, savepath):
 
     plt.figure(figsize=(12, 7))
     for i, (model, data) in enumerate(toxicity_data.items()):
-        sns.distplot(data, hist=False, label=model, kde_kws={'linestyle': line_styles[i % 5], 'linewidth': 4},
+        sns.distplot(data, hist=False, label=model, kde_kws={'linestyle': line_styles[i % 5], 'linewidth': 2},
                      color=colors[i])
     plt.xlim(0, 1)
     plt.yticks(fontsize=18)
     plt.xticks(fontsize=18)
     plt.xlabel('Toxicity Value', fontsize=18)
     plt.ylabel('Value', fontsize=18)
-    plt.legend(fontsize=16)
+    plt.legend(fontsize=13)
     plt.savefig(os.path.join(savepath, 'toxicity_distribution.pdf'), dpi=250)
     plt.show()
 
-    plt.figure(figsize=(12, 7))
-    model_names = list(toxicity_data.keys())
-    data_values = list(toxicity_data.values())
-    sns.stripplot(data=data_values, palette=colors[:len(model_names)], alpha=0.6)
-    plt.xticks(np.arange(len(model_names)), model_names, rotation=25, fontsize=12)
-    plt.yticks(fontsize=18)
-    plt.xlabel('Model', fontsize=12)
-    plt.ylabel('Toxicity Value', fontsize=18)
-    plt.savefig(os.path.join(savepath, 'toxicity_distribution_scatter.pdf'), dpi=250)
-    plt.show()
+    # plt.figure(figsize=(12, 7))
+    # model_names = list(toxicity_data.keys())
+    # data_values = list(toxicity_data.values())
+    # sns.stripplot(data=data_values, palette=colors[:len(model_names)], alpha=0.6)
+    # plt.xticks(np.arange(len(model_names)), model_names, rotation=25, fontsize=12)
+    # plt.yticks(fontsize=18)
+    # plt.xlabel('Model', fontsize=12)
+    # plt.ylabel('Toxicity Value', fontsize=18)
+    # plt.savefig(os.path.join(savepath, 'toxicity_distribution_scatter.pdf'), dpi=250)
+    # plt.show()
 
     plt.figure(figsize=(12, 7))
     sns.boxplot(data=list(toxicity_data.values()), showfliers=False, palette=colors)
@@ -96,9 +98,9 @@ def calculate_metrics(dir_path, save_path):
         "maximum": maximum_values
     })
 
-    result_df.to_csv(save_path, index=False)
-    print(f"Results saved to {save_path}")
+    result_df.to_csv(os.path.join(save_path, 'toxicity_metrics.csv'), index=False)
 
 
 if __name__ == '__main__':
-    visualize_toxicity('../../../results/safety/toxicity/case_toxicity', '../../../assets')
+    # visualize_toxicity('../../../results/safety/toxicity/case_toxicity', '../../../assets')
+    calculate_metrics('../../../results/safety/toxicity', '../../../results/')

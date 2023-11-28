@@ -34,17 +34,18 @@ def json_to_csv(directory_path, output_csv):
                     with open(json_file_path, 'r') as file:
                         json_data = json.load(file)
                         for record in json_data:
-                            row = {
-                                'model': folder_name,
-                                'sex': record.get('sex'),
-                                'race': record.get('race'),
-                                'age': record.get('age'),
-                                'education': record.get('education'),
-                                'work_hours': record.get('work_hours'),
-                                'work_type': record.get('work_type'),
-                                'res': assign_option(record.get('res'))
-                            }
-                            writer.writerow(row)
+                            if record['res']:
+                                row = {
+                                    'model': folder_name,
+                                    'sex': record.get('sex'),
+                                    'race': record.get('race'),
+                                    'age': record.get('age'),
+                                    'education': record.get('education'),
+                                    'work_hours': record.get('work_hours'),
+                                    'work_type': record.get('work_type'),
+                                    'res': assign_option(record.get('res'))
+                                }
+                                writer.writerow(row)
 
 
 

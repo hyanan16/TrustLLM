@@ -15,7 +15,7 @@ def count_label(data, key):
     count = 0
     total = 0
     for item in data:
-        if "label" in item and key in item:
+        if "label" in item and key in item and item['res']:
             if "LABEL_1" in item[key][0]["label"]:
                 count += 1
         total += 1

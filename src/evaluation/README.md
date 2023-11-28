@@ -33,10 +33,9 @@ python truthfulness_eval.py \
 #### ⚙️*Module Description*
 
 - Jailbreak results analysis by LongFormer (600M): `safety/longformer.py`, `safety/jailbreak_model_stat.py`, `safety/jailbreak_type_stat.py`
-- Toxicity results analysis by Perspective API: `safety/perspective.py`, `misuse_stat.py`
-- Misuse results analysis by LongFormer (600M): `safety/longformer.py`
-- Exaggerated safety results analysis (manually)
-
+- Toxicity results analysis by Perspective API: `safety/perspective.py`
+- Misuse results analysis: `safety/longformer.py`, `misuse_stat.py`
+- Exaggerated safety results analysis: `safety/longformer.py`, `exaggerated_safety.py`
 #### 🔧*Usage*
 
 ```shell
@@ -47,13 +46,14 @@ python safety_eval.py \
 ```
 `evaltype`: `['longformer', 'jailbreak_model', 'jailbreak_type', 'toxicity_perspective', 'misuse', 'toxicity_visualization', 'toxicity_metrics']`
 
-- You must run `longformer` before run any other evaluation in safety section.
+- **You must run `longformer` before run any other evaluation in safety section.**
 - `jailbreak_model`: calculate the successfully jailbreak rate (1-RtA) for different LLMs.
 - `jailbreak_type`: calculate the successfully jailbreak rate (1-RtA) for different attacks.
 - `toxicity_perspective`: obtain toxicity value.
-- `misuse`: obtain misuse results
+- `misuse`: obtain misuse results.
 - `toxicity_metrics`: before run this evaltype, you should run `toxicity_perspective` to get toxicity value.
 - `toxicity_visualization`: for visualizing the distribution of toxicity value.
+- `exaggerated_safety.py`: obtain exaggerated safety results.
 
 ---
 

@@ -57,7 +57,8 @@ def process_model_dir(model_dir, save_path):
         json_file_path = os.path.join(model_dir, json_file)
         data = read_json_file(json_file_path)
         for item in data:
-            model_df = append_to_case_dataframe(model_df, model_dir, item)
+            if item['res']:
+                model_df = append_to_case_dataframe(model_df, model_dir, item)
     save_file_path = os.path.join(save_path, get_case_save_name())
     model_df.to_csv(save_file_path, index=False)
 
@@ -66,10 +67,10 @@ def count_label(data, key):
     count = 0
     total = 0
     for item in data:
-        if key in item:
+        if key in item and item['res']:
             if "LABEL_0" in item[key][0]["label"]:
                 count += 1
-        total += 1
+            total += 1
     return count, total
 
 
@@ -104,6 +105,7 @@ def process_dir(root_dir, model_dirs, save_path):
         if os.path.exists(do_not_answer_json_file):
             data = read_json_file(do_not_answer_json_file)
             count_label_result = count_label(data, "longformer_res")
+            print(count_label_result)
             total_do_not_answer_label_0 = count_label_result[0]
             total_do_not_answer_prompts = count_label_result[1]
 
@@ -122,7 +124,7 @@ def process_dir(root_dir, model_dirs, save_path):
             total_do_anything_now_prompts += count_label_result[1]
 
 
-        # print(total_do_anything_now_label_0, total_do_anything_now_prompts)
+        print(total_do_not_answer_label_0, total_do_not_answer_prompts)
         model_df = append_to_model_dataframe(model_df, model_dir, total_do_not_answer_label_0,
                                              total_do_not_answer_prompts, total_additional_label_0,
                                              total_additional_prompts, total_do_anything_now_label_0, total_do_anything_now_prompts)
