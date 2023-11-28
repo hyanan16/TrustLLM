@@ -17,10 +17,10 @@ elif gpt_model == 'gpt-4':
     os.environ['OPENAI_API_KEY'] = 'sk-'
     openai.api_key = 'sk-'
 
-def get_models(type, filename='../../config/evaluation_config.json'):
+def get_models(filename='../../config/evaluation_config.json'):
     with open(filename) as f:
         data = json.load(f)
-    return data['ethics'][type]['models']
+    return data['ethics']['models']
 
 
 def ethics_annotation(res):

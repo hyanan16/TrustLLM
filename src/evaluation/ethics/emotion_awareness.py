@@ -17,7 +17,7 @@ def extract_options(text):
 
 def calculate_accuracy(dir_path, save_path):
     all_model_list = os.listdir(dir_path)
-    all_models = get_models(type='emotional_awareness')
+    all_models = get_models()
     all_data = {}
     for model in all_model_list:
         if model in all_models:
