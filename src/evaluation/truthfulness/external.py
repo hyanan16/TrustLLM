@@ -10,9 +10,13 @@ from tqdm import tqdm
 from sklearn.metrics import classification_report, confusion_matrix
 
 
-def eval_climate(model):
-    raw = pd.read_json(f"../../results/truthfulness/{model}/external.json")
+def eval_climate(folder_path, model):
+    raw = pd.read_json(f"{folder_path}/truthfulness/{model}/external.json")
     data = raw.loc[raw["source"] == "climate"]
+
+    original = pd.read_json("../../dataset/truthfulness/external.json").loc[
+        raw["source"] == "climate"
+    ]
 
     prediction_raw = []
     for i in data["res"]:
@@ -29,15 +33,16 @@ def eval_climate(model):
             )
         else:
             try:
-                a = i.split("Answer: ", 1)[1]
+                if "." in i:
+                    a = i.split("Answer: ", 1)[1].split(".")[0]
+                else:
+                    a = i.split("Answer: ", 1)[1]
                 prediction_raw.append(a)
             except:
                 prediction_raw.append("")
 
-    data_gold = pd.read_json(f"../../dataset/truthfulness/Gold/climate_gold_2.0.json")
-
     prediction, gold = [], []
-    for p, g in zip(prediction_raw, data_gold["answer"]):
+    for p, g in zip(prediction_raw, original["answer"]):
         if p != "Supports" and p != "Refutes":
             continue
         else:
@@ -59,9 +64,13 @@ def eval_climate(model):
     return report["macro avg"]["f1-score"]
 
 
-def eval_healthver(model):
-    raw = pd.read_json(f"../../results/truthfulness/{model}/external.json")
+def eval_healthver(folderpath, model):
+    raw = pd.read_json(f"{folderpath}/truthfulness/{model}/external.json")
     data = raw.loc[raw["source"] == "healthver"]
+
+    original = pd.read_json("../../dataset/truthfulness/external.json").loc[
+        raw["source"] == "healthver"
+    ]
 
     prediction_raw = []
     for i in data["res"]:
@@ -77,15 +86,16 @@ def eval_healthver(model):
             )
         else:
             try:
-                a = i.split("Answer: ", 1)[1]
+                if "." in i:
+                    a = i.split("Answer: ", 1)[1].split(".")[0]
+                else:
+                    a = i.split("Answer: ", 1)[1]
                 prediction_raw.append(a)
             except:
                 prediction_raw.append("")
 
-    data_gold = pd.read_json(f"../../dataset/truthfulness/Gold/healthver_gold_2.0.json")
-
     prediction, gold = [], []
-    for p, g in zip(prediction_raw, data_gold["answer"]):
+    for p, g in zip(prediction_raw, original["answer"]):
         if p != "Supports" and p != "Refutes":
             continue
         else:
@@ -104,9 +114,13 @@ def eval_healthver(model):
     return report["macro avg"]["f1-score"]
 
 
-def eval_covid(model):
-    raw = pd.read_json(f"../../results/truthfulness/{model}/external.json")
+def eval_covid(folderpath, model):
+    raw = pd.read_json(f"{folderpath}/truthfulness/{model}/external.json")
     data = raw.loc[raw["source"] == "covid"]
+
+    original = pd.read_json("../../dataset/truthfulness/external.json").loc[
+        raw["source"] == "covid"
+    ]
 
     prediction_raw = []
     for i in data["res"]:
@@ -122,15 +136,16 @@ def eval_covid(model):
             )
         else:
             try:
-                a = i.split("Answer: ", 1)[1]
+                if "." in i:
+                    a = i.split("Answer: ", 1)[1].split(".")[0]
+                else:
+                    a = i.split("Answer: ", 1)[1]
                 prediction_raw.append(a)
             except:
                 prediction_raw.append("")
 
-    data_gold = pd.read_json(f"../../dataset/truthfulness/Gold/covid_gold_2.0.json")
-
     prediction, gold = [], []
-    for p, g in zip(prediction_raw, data_gold["answer"]):
+    for p, g in zip(prediction_raw, original["answer"]):
         if p != "Supports" and p != "Refutes":
             continue
         else:
@@ -152,9 +167,13 @@ def eval_covid(model):
     return report["macro avg"]["f1-score"]
 
 
-def eval_scifact(model):
-    raw = pd.read_json(f"../../results/truthfulness/{model}/external.json")
+def eval_scifact(folderpath, model):
+    raw = pd.read_json(f"{folderpath}/truthfulness/{model}/external.json")
     data = raw.loc[raw["source"] == "scifact"]
+
+    original = pd.read_json("../../dataset/truthfulness/external.json").loc[
+        raw["source"] == "scifact"
+    ]
 
     prediction_raw = []
     for i in data["res"]:
@@ -170,15 +189,16 @@ def eval_scifact(model):
             )
         else:
             try:
-                a = i.split("Answer: ", 1)[1]
+                if "." in i:
+                    a = i.split("Answer: ", 1)[1].split(".")[0]
+                else:
+                    a = i.split("Answer: ", 1)[1]
                 prediction_raw.append(a)
             except:
                 prediction_raw.append("")
 
-    data_gold = pd.read_json(f"../../dataset/truthfulness/Gold/scifact_gold_2.0.json")
-
     prediction, gold = [], []
-    for p, g in zip(prediction_raw, data_gold["answer"]):
+    for p, g in zip(prediction_raw, original["answer"]):
         if p != "Supports" and p != "Refutes":
             continue
         else:
@@ -199,7 +219,7 @@ def eval_scifact(model):
     return report["macro avg"]["f1-score"]
 
 
-def run(results_save_path):
+def run(folder_path, results_save_path):
     model_list = []
     for root, dirs, files in os.walk("../../results/truthfulness", topdown=False):
         for name in dirs:
@@ -207,10 +227,11 @@ def run(results_save_path):
 
     result_climate, result_healthver, result_covid, result_scifact = [], [], [], []
     for model in model_list:
-        result_climate.append(eval_climate(model))
-        result_healthver.append(eval_healthver(model))
-        result_covid.append(eval_covid(model))
-        result_scifact.append(eval_scifact(model))
+        print(f"\033[93mEvaluating {model} ... ...\033[0m")
+        result_climate.append(eval_climate(folder_path, model))
+        result_healthver.append(eval_healthver(folder_path, model))
+        result_covid.append(eval_covid(folder_path, model))
+        result_scifact.append(eval_scifact(folder_path, model))
 
     result_df = pd.DataFrame(
         list(
@@ -226,5 +247,5 @@ def run(results_save_path):
     )
     result_df.to_csv(os.path.join(results_save_path, "external.csv"), index=False)
     print(
-        f"Finished Evaluating! Results are saved in {os.path.join(results_save_path, 'external.csv')}"
+        f"\033[92mFinished Evaluating! Results are saved in {os.path.join(results_save_path, 'external.csv')}\033[0m"
     )

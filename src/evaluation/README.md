@@ -16,12 +16,14 @@
 
 ```shell
 python truthfulness_eval.py \
+--folderpath <path_to_folder> \
 --evaltype <evaluation_type> \
 --savepath <path_to_save_results>
 ```
 
 `evaltype`: `['internal', 'external', 'hallucination', 'sycophancy', 'advfactuality']`
 
+- The default path for `--folderpath` is `/results/`
 - The default path for `--savepath` is `/results/`
 - All evaluation results are saved as `.csv` files.
 - Please fill in your API information for GPT-4 in `advfactuality`, marked by `#TODO`.
