@@ -131,7 +131,7 @@ def eval_advglue(input_dir, save_path):  # e.g., input_dir = './test_res/AdvGLUE
     values_list = list(models)
     for model_name in values_list:
         try:
-            data = transform_res_data(f"{input_dir}{model_name}/AdvGLUE_gold.json")
+            data = transform_res_data(os.path.join(input_dir, model_name, "AdvGLUE.json"))
         except Exception as e:
             print(f"Failed to load data for {model_name}. Error: {e}")
             continue  # skip this model_name and proceed with the next
@@ -160,8 +160,10 @@ def eval_advglue(input_dir, save_path):  # e.g., input_dir = './test_res/AdvGLUE
         err_rates.append(err_count / len(data))
         for task in tasks:
             data_dict[f"acc_{task}"].append(acc_counts[task] / all_counts[task])
-            data_dict[f"adv_{task}"].append(adv_succ_counts[task] / acc_counts[task])
             data_dict[f"adv_acc_{task}"].append(adv_acc_counts[task] / all_counts[task])
+            data_dict[f"adv_{task}"].append(adv_succ_counts[task] / acc_counts[task])
+
+
 
         model_list.append(model_name)
 
@@ -174,4 +176,4 @@ def eval_advglue(input_dir, save_path):  # e.g., input_dir = './test_res/AdvGLUE
 
 
 if __name__ == '__main__':
-    eval_advglue(input_dir='./test_res/AdvGLUE/', save_path='../../../results')
+    eval_advglue(input_dir='../../../results/robustness', save_path='../../../results')

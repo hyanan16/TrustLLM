@@ -52,18 +52,16 @@ def visualize_robustness_advinstruction(file_path, save_path):
 
 
 def visual_total_score(save_path):
-    import matplotlib.pyplot as plt
-
     # Data for LLMs and their corresponding scores
     llm_names = [
         'Baichuan-13b', 'ChatGLM2', 'Vicuna-13b', 'Vicuna-7b', 'Vicuna-33b',
         'Llama2-7b', 'Llama2-13b', 'Koala-13b', 'Oasst-12b', 'WizardLM-13b',
-        'ERNIE', 'ChatGPT', 'GPT-4', 'Llama2-70b'
+        'ERNIE', 'ChatGPT', 'GPT-4', 'Llama2-70b', 'Mistral-7b', 'PaLM 2'
     ]
     llm_scores = [
         0.363, 0.254, 0.180, 0.072, 0.219,
         0.374, 0.306, 0.116, 0.143, 0.152,
-        0.408, 0.326, 0.591, 0.471
+        0.408, 0.326, 0.591, 0.471, 0.331, 0.607
     ]
 
     # Pair the names and scores, then sort them by score
@@ -74,17 +72,19 @@ def visual_total_score(save_path):
     sorted_names, sorted_scores = zip(*sorted_llm_data)
 
     # Define the coolwarm colormap
-    cmap = plt.get_cmap('coolwarm')
+    cmap = plt.get_cmap('cubehelix')
     colors = [cmap(i / len(sorted_names)) for i in range(len(sorted_names))]
 
     # Plotting
-    plt.figure(figsize=(10, 8))
+    plt.figure(figsize=(10, 6))
     plt.barh(sorted_names, sorted_scores, color=colors)
     plt.xticks(fontsize=14)
-    plt.yticks(fontsize=11.5)
+    plt.yticks(fontsize=13.5)
     plt.xlabel('Scores', fontsize=16)
     plt.title('ACC (adv) - ASR', fontsize=18)
     plt.gca().invert_yaxis()  # Invert y-axis to have the highest score at the top
+
+    plt.subplots_adjust(left=0.3, right=0.7)
     plt.savefig(os.path.join(save_path, 'advglue_score.pdf'), dpi=200)
     plt.show()
 

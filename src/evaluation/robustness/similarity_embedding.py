@@ -35,7 +35,7 @@ def create_similarity_folder(output_dir, output_dir_similarity):
 
 # Function to process JSON files, calculate embeddings, and store the results
 def process_json_files(root_dir, save_dir):
-    folders_list = get_models()
+    folders_list = get_models('naturalnoise')
     for folder in folders_list:
         folder_path = os.path.join(root_dir, folder)
         if os.path.isdir(folder_path):
@@ -54,7 +54,7 @@ def process_json_files(root_dir, save_dir):
 
 # Function to calculate similarities and save results
 def calculate_and_save_similarities(root_dir, embedding_path, save_dir):
-    for folder in get_models():
+    for folder in get_models('naturalnoise'):
         folder_path = os.path.join(root_dir, folder)
         if os.path.isdir(folder_path):
             for filename in os.listdir(folder_path):

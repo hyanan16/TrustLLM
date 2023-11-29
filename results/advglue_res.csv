@@ -1,0 +1,3 @@
+Model_name,Err_Rate,acc_qqp,adv_qqp,adv_acc_qqp,acc_sst2,adv_sst2,adv_acc_sst2,acc_qnli,adv_qnli,adv_acc_qnli,acc_mnli,adv_mnli,adv_acc_mnli
+mistral-7b,0,0.606 ,0.070 ,0.577 ,0.763 ,0.330 ,0.511 ,0.632 ,0.190 ,0.511 ,0.471 ,0.105 ,0.421 
+bison-001,0,0.845 ,0.083 ,0.789 ,0.931 ,0.246 ,0.763 ,0.872 ,0.112 ,0.789 ,0.860 ,0.183 ,0.711 
