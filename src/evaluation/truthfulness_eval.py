@@ -5,6 +5,12 @@ from truthfulness import *
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
+        "--folderpath",
+        type=str,
+        default="../../results",
+        help="path to LLM responses foler",
+    )
+    parser.add_argument(
         "--evaltype", type=str, default=None, help="which part to evaluate"
     )
     parser.add_argument(
@@ -23,12 +29,12 @@ if __name__ == "__main__":
     ]:
         raise ValueError("Invalid evaluation type!")
     if args.evaltype == "internal":
-        internal.run(args.savepath)
+        internal.run(args.folderpath, args.savepath)
     elif args.evaltype == "external":
-        external.run(args.savepath)
+        external.run(args.folderpath, args.savepath)
     elif args.evaltype == "hallucination":
-        hallucination.run(args.savepath)
+        hallucination.run(args.folderpath, args.savepath)
     elif args.evaltype == "sycophancy":
-        sycophancy.run(args.savepath)
+        sycophancy.run(args.folderpath, args.savepath)
     elif args.evaltype == "advfactuality":
-        advfactuality.run(args.savepath)
+        advfactuality.run(args.folderpath, args.savepath)

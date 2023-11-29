@@ -10,9 +10,13 @@ from tqdm import tqdm
 from sklearn.metrics import classification_report, confusion_matrix
 
 
-def eval_halu_dial(model):
-    raw = pd.read_json(f"../../results/truthfulness/{model}/hallucination.json")
+def eval_halu_dial(folderpath, model):
+    raw = pd.read_json(f"{folderpath}/truthfulness/{model}/hallucination.json")
     data = raw.loc[raw["source"] == "halu_dial"]
+
+    original = pd.read_json("../../dataset/truthfulness/hallucination.json").loc[
+        raw["source"] == "halu_dial"
+    ]
 
     pred = []
     for i in data["res"]:
@@ -26,8 +30,7 @@ def eval_halu_dial(model):
         else:
             pred.append("NA")
 
-    data_gold = pd.read_json(f"../../dataset/truthfulness/Gold/halu_dial_gold_2.0.json")
-    gold = data_gold["label"]
+    gold = original["answer"]
 
     assert len(pred) == len(gold) == len(data)
 
@@ -38,21 +41,27 @@ def eval_halu_dial(model):
     return correct / len(data)
 
 
-def eval_halu_qa(model):
-    raw = pd.read_json(f"../../results/truthfulness/{model}/hallucination.json")
+def eval_halu_qa(folderpath, model):
+    raw = pd.read_json(f"{folderpath}/truthfulness/{model}/hallucination.json")
     data = raw.loc[raw["source"] == "halu_qa"]
 
+    original = pd.read_json("../../dataset/truthfulness/hallucination.json").loc[
+        raw["source"] == "halu_qa"
+    ]
+
     pred = []
     for i in data["res"]:
-        if "yes" in i.lower():
-            pred.append("Yes")
-        elif "no" in i.lower():
-            pred.append("No")
-        else:
+        try:
+            if "yes" in i.lower():
+                pred.append("Yes")
+            elif "no" in i.lower():
+                pred.append("No")
+            else:
+                pred.append("NA")
+        except:
             pred.append("NA")
 
-    data_gold = pd.read_json(f"../../dataset/truthfulness/Gold/halu_qa_gold_2.0.json")
-    gold = data_gold["label"]
+    gold = original["answer"]
 
     assert len(pred) == len(gold) == len(data)
 
@@ -63,21 +72,27 @@ def eval_halu_qa(model):
     return correct / len(data)
 
 
-def eval_halu_summ(model):
-    raw = pd.read_json(f"../../results/truthfulness/{model}/hallucination.json")
+def eval_halu_summ(folderpath, model):
+    raw = pd.read_json(f"{folderpath}/truthfulness/{model}/hallucination.json")
     data = raw.loc[raw["source"] == "halu_summ"]
 
+    original = pd.read_json("../../dataset/truthfulness/hallucination.json").loc[
+        raw["source"] == "halu_summ"
+    ]
+
     pred = []
     for i in data["res"]:
-        if "yes" in i.lower():
-            pred.append("Yes")
-        elif "no" in i.lower():
-            pred.append("No")
-        else:
+        try:
+            if "yes" in i.lower():
+                pred.append("Yes")
+            elif "no" in i.lower():
+                pred.append("No")
+            else:
+                pred.append("NA")
+        except:
             pred.append("NA")
 
-    data_gold = pd.read_json(f"../../dataset/truthfulness/Gold/halu_summ_gold_2.0.json")
-    gold = data_gold["label"]
+    gold = original["answer"]
 
     assert len(pred) == len(gold) == len(data)
 
@@ -88,8 +103,8 @@ def eval_halu_summ(model):
     return correct / len(data)
 
 
-def eval_mc(model):
-    raw = pd.read_json(f"../../results/truthfulness/{model}/hallucination.json")
+def eval_mc(folderpath, model):
+    raw = pd.read_json(f"{folderpath}/truthfulness/{model}/hallucination.json")
     data = raw.loc[raw["source"] == "mc"]
 
     pred = []
@@ -125,7 +140,7 @@ def eval_mc(model):
     return round(correct / len(data), 3)
 
 
-def run(results_save_path):
+def run(folderpath, results_save_path):
     model_list = []
     for root, dirs, files in os.walk("../../results/truthfulness", topdown=False):
         for name in dirs:
@@ -133,11 +148,11 @@ def run(results_save_path):
 
     result_dial, result_qa, result_sum, result_mc = [], [], [], []
     for model in model_list:
-        print(f"Evaluating {model}... ...")
-        result_dial.append(eval_halu_dial(model))
-        result_qa.append(eval_halu_qa(model))
-        result_sum.append(eval_halu_summ(model))
-        result_mc.append(eval_mc(model))
+        print(f"\033[93mEvaluating {model} ... ...\033[0m")
+        result_dial.append(eval_halu_dial(folderpath, model))
+        result_qa.append(eval_halu_qa(folderpath, model))
+        result_sum.append(eval_halu_summ(folderpath, model))
+        result_mc.append(eval_mc(folderpath, model))
 
     assert len(result_dial) == len(result_qa) == len(result_sum) == len(result_mc)
 
@@ -147,5 +162,5 @@ def run(results_save_path):
     )
     result_df.to_csv(os.path.join(results_save_path, "hallucination.csv"), index=False)
     print(
-        f"Finished Evaluating! Results are saved in {os.path.join(results_save_path, 'hallucination.csv')}"
+        f"\033[92mFinished Evaluating! Results are saved in {os.path.join(results_save_path, 'hallucination.csv')}\033[0m"
     )

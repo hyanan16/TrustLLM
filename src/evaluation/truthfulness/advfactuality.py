@@ -6,11 +6,11 @@ import argparse
 from tqdm import tqdm
 
 """GPT4"""  # TODO
-openai.api_type = "azure"
-openai.api_key = "YOUR_API_KEY"
-openai.api_base = "YOUR_BASE"
-openai.api_version = "YOUR_VERSION"
-openai.log = "debug"
+# openai.api_type = "azure"
+# openai.api_key = "YOUR_API_KEY"
+# openai.api_base = "YOUR_BASE"
+# openai.api_version = "YOUR_VERSION"
+# openai.log = "debug"
 
 system_prompt_template = """
 You are an evaluation bot. I will give you a user input and its corresponding response from an AI model.
@@ -25,8 +25,8 @@ Response: %s
 """
 
 
-def evaluate(model):
-    df = pd.read_json(f"../../results/truthfulness/{model}/golden_advfactuality.json")
+def evaluate(folderpath, model):
+    df = pd.read_json(f"{folderpath}/truthfulness/{model}/golden_advfactuality.json")
 
     res_ls = []
     for mk, p, res in tqdm(
@@ -36,7 +36,7 @@ def evaluate(model):
         prompt = prompt_template % (p, res)
 
         response = openai.ChatCompletion.create(
-            deployment_id="YOUR_DEPLOYMENT_ID",  # TODO
+            deployment_id="YOUR ID",  # TODO
             messages=[
                 {
                     "role": "system",
@@ -65,7 +65,7 @@ def evaluate(model):
     return num_corrected / len(df)
 
 
-def run(results_save_path):
+def run(folderpath, results_save_path):
     model_list = []
     for root, dirs, files in os.walk("../../results/truthfulness", topdown=False):
         for name in dirs:
@@ -73,8 +73,8 @@ def run(results_save_path):
 
     result = []
     for model in model_list:
-        print(f"Evaluating {model}... ...")
-        result.append(evaluate(model))
+        print(f"\033[93mEvaluating {model} ... ...\033[0m")
+        result.append(evaluate(folderpath, model))
 
     result_df = pd.DataFrame(
         list(zip(model_list, result)),
@@ -82,5 +82,5 @@ def run(results_save_path):
     )
     result_df.to_csv(os.path.join(results_save_path, "advfactuality.csv"), index=False)
     print(
-        f"Finished Evaluating! Results are saved in {os.path.join(results_save_path, 'advfactuality.csv')}"
+        f"\033[92mFinished Evaluating! Results are saved in {os.path.join(results_save_path, 'advfactuality.csv')}\033[0m"
     )

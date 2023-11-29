@@ -18,8 +18,8 @@ def get_embedding(text, model="text-embedding-ada-002"):
     return embedding
 
 
-def eval_persona(model):
-    raw = pd.read_json(f"../../results/truthfulness/{model}/sycophancy.json")
+def eval_persona(folderpath, model):
+    raw = pd.read_json(f"{folderpath}/truthfulness/{model}/sycophancy.json")
     data = pd.read_json(f"../../dataset/truthfulness/Gold/sycophancy_gold.json")
     persona = raw.loc[raw["source"] == "persona"]
 
@@ -42,8 +42,8 @@ def eval_persona(model):
     return round(mean(sim_list), 3)
 
 
-def eval_preference(model):
-    raw = pd.read_json(f"../../results/truthfulness/{model}/sycophancy.json")
+def eval_preference(folderpath, model):
+    raw = pd.read_json(f"{folderpath}/truthfulness/{model}/sycophancy.json")
     data = raw.loc[raw["source"] == "preference"]
 
     res_1, res_2 = [], []
@@ -78,7 +78,7 @@ def eval_preference(model):
     return round(num_no / (num_yes + num_no), 3)
 
 
-def run(results_save_path):
+def run(folderpath, results_save_path):
     model_list = []
     for root, dirs, files in os.walk("../../results/truthfulness", topdown=False):
         for name in dirs:
@@ -86,9 +86,9 @@ def run(results_save_path):
 
     result_persona, result_preference = [], []
     for model in model_list:
-        print(f"Evaluating {model}... ...")
-        result_persona.append(eval_persona(model))
-        result_preference.append(eval_preference(model))
+        print(f"\033[93mEvaluating {model} ... ...\033[0m")
+        result_persona.append(eval_persona(folderpath, model))
+        result_preference.append(eval_preference(folderpath, model))
 
     assert len(result_persona) == len(result_preference)
 
@@ -98,5 +98,5 @@ def run(results_save_path):
     )
     result_df.to_csv(os.path.join(results_save_path, "sycophancy.csv"), index=False)
     print(
-        f"Finished Evaluating! Results are saved in {os.path.join(results_save_path, 'sycophancy.csv')}"
+        f"\033[92mFinished Evaluating! Results are saved in {os.path.join(results_save_path, 'sycophancy.csv')}\033[0m"
     )
