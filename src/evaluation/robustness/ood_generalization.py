@@ -6,7 +6,7 @@ from collections import defaultdict
 
 
 # Path to the folder containing model folders
-root_path = '/Users/lxe/Downloads/trustLLM_ood/'
+root_path = '/.../.../trustLLM_ood/'
 
 # Function to extract target from the result based on the source type
 def extract_target(res, source, label):
