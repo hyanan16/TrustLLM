@@ -30,18 +30,32 @@
 	"safety": {
 		"longformer_path": "LibrAI/longformer-harmful-ro",
 		"models": [
-			"mistral-7b",
-			"bison-001"
+			"baichuan-13b",
+				"chatglm2",
+				"chatgpt",
+				"ernie",
+				"koala-13b",
+				"llama2-7b",
+				"llama2-13b",
+				"oasst-12b",
+				"vicuna-7b",
+				"vicuna-13b",
+				"vicuna-33b",
+				"wizardlm-13b",
+				"gpt-4",
+				"llama2-70b",
+				"mistral-7b",
+				"bison-001"
 		],
 		"jailbreak": {
 			"types": [
-				"bad_words",
+				"bad words",
 				"cot",
 				"fixed sentence",
 				"json_format",
 				"leetspeak",
-				"multi_task",
-				"no_long_word_prompt",
+				"multitask",
+				"no_long_word",
 				"no_punctuation",
 				"programming",
 				"Refusal sentence prohibition",

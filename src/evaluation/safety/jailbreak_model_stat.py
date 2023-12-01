@@ -42,7 +42,6 @@ def get_save_name(key, filename="../../config/evaluation_config.json"):
 
 
 def process_model_dir(model_dir, save_path, model):
-    print(model_dir)
     model_df = init_dataframe()
     mapping = {"jailbreak_ITC.json": "toxicity", "jailbreak_QBB.json": "jailbreak"}
     for subfile in ["jailbreak_ITC.json", "jailbreak_QBB.json"]:
@@ -119,3 +118,4 @@ def run_jailbreak_model_stat(root_dir, save_path):
 
 if __name__ == "__main__":
     run_jailbreak_model_stat('../../../results/safety/jailbreak', '../../../results/')
+

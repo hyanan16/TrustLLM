@@ -69,7 +69,7 @@ python safety_eval.py \
 #### ⚙️*Module Description*
 
 - AdvGLUE results analysis: `robustness/advglue_eval.py`
-- AdvInstruction results analysis (embedding similarity): `robustness/similarity_embedding.py`
+- AdvInstruction: `robustness/get_embedding.py`, `robustness/adv_instruction.py`
 - OOD detection: `robustness/ood_detection.py`
 
 
@@ -79,16 +79,17 @@ python safety_eval.py \
 python robustness_eval.py \
 --folderpath <path_to_folder> \
 --evaltype <evaluation_type> \
---savepath <path_to_save_results> \
-[--embeddingpath <path_to_embedding>]
+--savepath <path_to_save_results>
 ```
 
 `evaltype`: `['advglue', 'advinstruction_res', 'advinstruction_sim', 'ood_detection']`  
 - `advglue`: generate the results of AdvGlue dataset.  
-- `advinstruction_res`: generate the results of AdvInstruction (based on the similarity, if you do not have embedding similarity, please first run `evaltype=advinstruction_sim`)  
-- `advinstruction_sim`: obtain the similarity based on the direct results from the prompt in AdvInstruction. (`embeddingpath` is necessary in this  `evaltype`)
+- `advinstruction_sim`: obtain the similarity based on the direct results from the prompt in AdvInstruction. The embedding file will be saved in `folderpath`.
+- `advinstruction_res`: generate the results of AdvInstruction (based on the similarity. If you do not have embedding similarity, please first run `evaltype=advinstruction_sim`)
 - `ood_detection`: obtain the results of OOD detection. 
 ---
+
+
 
 ## Privacy
 

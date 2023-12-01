@@ -23,15 +23,22 @@ def count_label(data, key):
 
 
 def process_directory(model_dir, attack_mode, dir_type):
-    dir_path = os.path.join(model_dir, dir_type)
-    json_path = os.path.join(dir_path, attack_mode + ".json")
-    data = read_json_data(json_path)
-    return count_label(data, "longformer_res")
+    if dir_type == 'jailbreak':
+        target_file = 'jailbreak_QBB.json'
+    else:
+        target_file = 'jailbreak_ITC.json'
+    dir_path = os.path.join(model_dir, target_file)
+    try:
+        data = read_json_data(dir_path)
+        data = [el for el in data if el['label'] == [attack_mode]]
+        return count_label(data, "longformer_res")
+    except FileNotFoundError:
+        print(f"JSON file not found: {target_file}")
+        return 0, 0
 
 
 def calculate_rates(root_dir, model_dirs, attack_modes):
     attack_success_rates = {}
-
     for attack_mode in attack_modes:
         total_jailbreak_label_1, total_jailbreak_prompts = 0, 0
         total_toxicity_label_1, total_toxicity_prompts = 0, 0
@@ -53,6 +60,8 @@ def calculate_rates(root_dir, model_dirs, attack_modes):
                 "toxicity": total_toxicity_label_1 / total_toxicity_prompts,
                 "overall": total_overall_label_1 / total_overall_prompts,
             }
+        else:
+            print(attack_mode)
 
     return attack_success_rates
 
@@ -77,4 +86,4 @@ def run_jailbreak_type_stat(root_dir, save_path):
 
 
 if __name__ == "__main__":
-    run_jailbreak_type_stat(".", ".")
+    run_jailbreak_type_stat("../../../results/safety/jailbreak", "../../../results/")

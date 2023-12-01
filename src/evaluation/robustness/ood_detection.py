@@ -24,6 +24,6 @@ def ood_detection_res(root_dir, save_dir):
 
 
 if __name__ == '__main__':
-    ood_detection_res('../../../results/ood', '../../../results')
+    ood_detection_res('../../../results/robustness/ood', '../../../results')
 
 

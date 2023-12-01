@@ -1,1 +1,1 @@
-__all__ = ['advglue_eval', 'similarity_embedding', 'ood_detection']
+__all__ = ['advglue_eval', 'get_embedding', 'ood_detection', 'adv_instruction']

@@ -102,5 +102,5 @@ def calculate_metrics(dir_path, save_path):
 
 
 if __name__ == '__main__':
-    # visualize_toxicity('../../../results/safety/toxicity/case_toxicity', '../../../assets')
+    visualize_toxicity('../../../results/safety/toxicity/case_toxicity', '../../../assets')
     calculate_metrics('../../../results/safety/toxicity', '../../../results/')
