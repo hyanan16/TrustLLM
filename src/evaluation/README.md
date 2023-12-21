@@ -34,7 +34,7 @@ python truthfulness_eval.py \
 
 #### ⚙️*Module Description*
 
-- Jailbreak results analysis by LongFormer (600M): `safety/longformer.py`, `safety/jailbreak_model_stat.py`, `safety/jailbreak_type_stat.py`
+- Jailbreak results analysis: `safety/longformer.py`, `safety/jailbreak_model_stat.py`, `safety/jailbreak_type_stat.py`
 - Toxicity results analysis by Perspective API: `safety/perspective.py`
 - Misuse results analysis: `safety/longformer.py`, `misuse_stat.py`
 - Exaggerated safety results analysis: `safety/longformer.py`, `exaggerated_safety.py`

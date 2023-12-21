@@ -25,8 +25,9 @@ def del_embedding(output_dir):
 
 
 def get_similarity(base_dir, output_dir):
-    for folder in os.listdir(base_dir):
-        folder_path = os.path.join(base_dir, folder)
+    models = get_models('natrualnoise')
+    for model in models:
+        folder_path = os.path.join(base_dir, model)
         if os.path.isdir(folder_path):
             for filename in os.listdir(folder_path):
                 if filename.startswith('after_'):
@@ -41,7 +42,7 @@ def get_similarity(base_dir, output_dir):
                                     (x for x in data if x['type'] == 'original' and x['index'] == item['index']), None)
                                 if original_item:
                                     item['similarity'] = similarity(item['embedding'], original_item['embedding'])
-                    output_filename = folder + "_" + filename.replace('after_', '')
+                    output_filename = model + "_" + filename.replace('after_', '')
                     output_file_path = os.path.join(output_dir, output_filename)
                     with open(output_file_path, 'w') as f:
                         json.dump(data, f, indent=4)

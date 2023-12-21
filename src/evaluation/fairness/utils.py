@@ -121,9 +121,6 @@ def fuzzy_match_with_threshold(input_str, choices, threshold=90):
     else:
         return False, max_score
     
-    
-
-
 
 def match_kw_start(text, keyword_list):
     """Matches the start of the text against the given keyword list."""
