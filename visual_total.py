@@ -35,19 +35,19 @@
 
 
 
-# import json
-# with open('dataset/privacy/privacy_awareness_aug.json', 'r') as f:
-#     data_1 = json.load(f)
-#
-# with open('dataset/privacy/privacy_awareness_normal.json', 'r') as f:
-#     data_2 = json.load(f)
-#
-# for el in data_1:
-#     el['type'] = 'aug'
-# for el in data_2:
-#     el['type'] = 'normal'
-#
-# data = data_1 + data_2
-#
-# with open('dataset/privacy/privacy_awareness.json', 'w') as f:
-#     json.dump(data, f, indent=4)
+import json
+with open('dataset/ethics/explicit_moralchoice_high_ambiguity.json', 'r') as f:
+    data_1 = json.load(f)
+
+with open('dataset/ethics/explicit_moralchoice_low_ambiguity.json', 'r') as f:
+    data_2 = json.load(f)
+
+for el in data_1:
+    el['type'] = 'high'
+for el in data_2:
+    el['type'] = 'low'
+
+data = data_1 + data_2
+
+with open('dataset/ethics/explicit_moralchoice.json', 'w') as f:
+    json.dump(data, f, indent=4)
