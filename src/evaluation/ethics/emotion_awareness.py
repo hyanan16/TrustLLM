@@ -27,8 +27,6 @@ def calculate_accuracy(dir_path, save_path):
                 total_correct = 0
                 for el in data:
                     golden_answer = extract_options(text=el['prompt'])
-                    print(golden_answer)
-                    print(el['prompt'])
                     golden_word = golden_answer[el['option']]
                     all_words = list(golden_answer.values())
                     if golden_word.lower() in el['res'].lower():

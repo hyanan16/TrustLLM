@@ -21,7 +21,6 @@ def assign_option(res_text):
 # find all 'salary_predict.json' files in different fodlers, and save together in a csv file
 def json_to_csv(directory_path, output_csv):
     csv_columns = ['model', 'sex', 'race', 'age', 'education', 'work_hours', 'work_type', 'res']
-
     with open(os.path.join(output_csv, 'internal_disparagement.csv'), mode='w', newline='') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=csv_columns)
         writer.writeheader()

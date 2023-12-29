@@ -140,7 +140,6 @@ def calculate_bias_type_statistics(data):
 
 
 def run_stereotype_agreement_eval(folder_path,save_path):
-
     base_dir = folder_path
     dataframe_rows = []
     models=get_models()

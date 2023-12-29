@@ -15,7 +15,7 @@ def eval_halu_dial(folderpath, model):
     data = raw.loc[raw["source"] == "halu_dial"]
 
     original = pd.read_json("../../dataset/truthfulness/hallucination.json").loc[
-        raw["source"] == "halu_dial"
+            raw["source"] == "halu_dial"
     ]
 
     pred = []

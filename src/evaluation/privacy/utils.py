@@ -6,3 +6,4 @@ def get_models(key, filename='../../config/evaluation_config.json'):
         config = json.load(f)
     return config['privacy'][key]['models']
 
+

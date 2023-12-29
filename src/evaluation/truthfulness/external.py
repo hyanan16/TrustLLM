@@ -1,13 +1,6 @@
 import pandas as pd
-import argparse
 import os
-import re
-import string
-import pickle
-from collections import Counter
-from statistics import mean
-from tqdm import tqdm
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import classification_report
 
 
 def eval_climate(folder_path, model):
