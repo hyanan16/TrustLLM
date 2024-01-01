@@ -35,19 +35,76 @@
 
 
 
-import json
-with open('dataset/ethics/explicit_moralchoice_high_ambiguity.json', 'r') as f:
-    data_1 = json.load(f)
+# import json
+# with open('dataset/ethics/explicit_moralchoice_high_ambiguity.json', 'r') as f:
+#     data_1 = json.load(f)
+#
+# with open('dataset/ethics/explicit_moralchoice_low_ambiguity.json', 'r') as f:
+#     data_2 = json.load(f)
+#
+# for el in data_1:
+#     el['type'] = 'high'
+# for el in data_2:
+#     el['type'] = 'low'
+#
+# data = data_1 + data_2
+#
+# with open('dataset/ethics/explicit_moralchoice.json', 'w') as f:
+#     json.dump(data, f, indent=4)
 
-with open('dataset/ethics/explicit_moralchoice_low_ambiguity.json', 'r') as f:
-    data_2 = json.load(f)
+import pandas as pd
 
-for el in data_1:
-    el['type'] = 'high'
-for el in data_2:
-    el['type'] = 'low'
+# Load the Excel file
+file_path = 'authorlist.csv'
+data = pd.read_csv(file_path)
 
-data = data_1 + data_2
+all_data = []
+institution_list = []
 
-with open('dataset/ethics/explicit_moralchoice.json', 'w') as f:
-    json.dump(data, f, indent=4)
+for index, el in data.iterrows():
+    if el['Author'] and el['Institution']:
+        if el['Institution'] not in institution_list:
+            institution_list.append(el['Institution'])
+            number = len(el['Institution'])
+        if el['Institution'] in institution_list:
+            number = institution_list.index(el['Institution']) + 1
+        all_data.append({'author': el['Author'], 'institution': el['Institution'], 'number': number})
+
+total = 0
+number_count = 0
+for index, el in enumerate(all_data):
+
+    total += len(el['author'])
+    number += 1
+    # 每六个添加一个换行符
+    cut = '\quad'
+    if number_count == 6 or total > 50:
+        cut = '\\\\'
+        total = 0
+        number_count = 0
+    print("{\\bfseries " + el['author'] + '$^{' + str(el['number']) + '}$}' + cut)
+
+printed_numbers = set()
+
+# 使用sorted函数按照'number'键进行排序
+sorted_data = sorted(all_data, key=lambda x: x['number'])
+print('\\\\')
+
+
+number_count = 0
+
+# 打印排序后的'institution'，但不重复打印相同 'number' 的 'institution'
+for item in sorted_data:
+    number = item['number']
+    institution = item['institution']
+
+    cut = '\\quad'
+    if number not in printed_numbers:
+        number_count += len(item['institution'])
+        if number_count > 55:
+            cut = '\\\\'
+            number_count = 0
+        print("{\\bfseries $^{" + str(item['number']) + "}$" + institution.replace('&', '\\&') + '}' + cut)
+
+        # 将 'number' 添加到已打印的集合中
+        printed_numbers.add(number)
