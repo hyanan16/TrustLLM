@@ -1,5 +1,5 @@
 <div align="center">
-<img src="../TrustLLM/images/logo.png" >
+<img src="../TrustLLM/asserts/logo.png" >
 
 <p align="center">
    <a href="https://atlas.nomic.ai/map/2588798c-fd96-42db-8ad4-c94dd5d4daed/97226b7c-2ae2-457a-9ff0-53ba96659ee2?xs=-29.43858&xf=41.60393&ys=-43.87149&yf=43.64643" target="_blank">🌐 Dataset</a> | <a href="" target="_blank">📃 Paper </a> | <a href="https://github.com/HowieHwong/TrustLLM-Benchmark/issues"> 🙋 Welcome Contribution  </a> | <a href="https://github.com/HowieHwong/TrustLLM-Benchmark/blob/master/LICENSE"> 📜 License</a>
