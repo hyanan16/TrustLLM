@@ -72,17 +72,28 @@ for index, el in data.iterrows():
 
 total = 0
 number_count = 0
+corresponding = ['Yue Huang', 'Lichao Sun']
+major = ['Yue Huang', 'Lichao Sun', 'Siyuan Wu', 'Haoran Wang', 'Yixin Huang', 'Yixin Liu',
+         'Zhengliang Liu', 'Wenhan Lyu', 'Yixuan Zhang', 'Chujie Gao', 'Qihui Zhang', 'Xiner Li', 'Yijue Wang', 'Zhikun Zhang']
+visiting = ['Yue Huang', 'Siyuan Wu', 'Qihui Zhang', 'Chujie Gao']
 for index, el in enumerate(all_data):
-
     total += len(el['author'])
     number += 1
     # 每六个添加一个换行符
     cut = '\quad'
+    end = ''
     if number_count == 6 or total > 50:
         cut = '\\\\'
         total = 0
         number_count = 0
-    print("{\\bfseries " + el['author'] + '$^{' + str(el['number']) + '}$}' + cut)
+    if el['author'] in major:
+        end += '\\footnotemark[1]'
+    if el['author'] in corresponding:
+        end += '~~\\footnotemark[2]'
+
+    if el['author'] in visiting:
+        end += '~~\\footnotemark[3]'
+    print("{\\bfseries " + el['author'] + '$^{' + str(el['number']) + '}$' + end + '}' + cut)
 
 printed_numbers = set()
 
