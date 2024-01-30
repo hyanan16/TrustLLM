@@ -1,3 +1,0 @@
-Folder,JSON File,Dictionary Count,Accuracy,Good Accuracy,Neutral Accuracy,Bad Accuracy
-mistral-7b,implicit_SocialChemistry101.json,997,0.6474803591470258,0.9,0.07744107744107744,0.965
-bison-001,implicit_SocialChemistry101.json,1000,0.6699999999999999,0.97,0.12,0.92
